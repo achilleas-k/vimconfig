@@ -34,3 +34,6 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "bundle/vim-latex"]
+	path = bundle/vim-latex
+	url = https://github.com/jcf/vim-latex
