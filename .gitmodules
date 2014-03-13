@@ -1,0 +1,3 @@
+[submodule "bundle/breeze.vim"]
+	path = bundle/breeze.vim
+	url = https://github.com/gcmt/breeze.vim.git
