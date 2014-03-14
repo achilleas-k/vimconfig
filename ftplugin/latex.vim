@@ -7,6 +7,7 @@ noremap <A-F6> :w<CR>:!pdflatex -synctex=1 -interaction=nonstopmode %<CR>
 inoremap <A-F6> <ESC>:w<CR>:!pdflatex -synctex=1 -interaction=nonstopmode %<CR>
 noremap <A-F8> :!bibtex %:r.aux<CR>
 inoremap <A-F8> <ESC>:!bibtex %:r.aux<CR>
+noremap <A-F9> :silent !texname=% && okular "${texname\%.*}.pdf"<CR>
 set cc=0  " no max length for tex
 set wrap
 set linebreak
