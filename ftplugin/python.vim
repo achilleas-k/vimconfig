@@ -31,6 +31,9 @@ set textwidth=78
 set foldmethod=indent
 set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
+" don't remove indent on comments
+inoremap # X<BS>#
+
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 
