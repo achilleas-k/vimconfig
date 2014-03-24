@@ -1,4 +1,5 @@
-Installation:
+Installation
+============
 
     git clone git://github.com/achilleas-k/vimconfig ~/.vim
 
@@ -12,5 +13,11 @@ Switch to the `~/.vim` directory, and fetch submodules:
     cd ~/.vim
     git submodule init
     git submodule update
+
+Updating
+========
+
+    cd ~/.vim
+    git submodule foreach git pull
 
 
