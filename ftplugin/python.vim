@@ -19,7 +19,8 @@ let g:jedi#show_call_signatures = "1"
 "  autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/ftplugin/python/python_ide
 "endif
 
-" the following overlap with ~/.vimrc but might be removed for generality
+" the following currently overlap with ~/.vimrc but they might be removed from
+" the global conf
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
