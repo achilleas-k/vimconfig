@@ -1,6 +1,6 @@
 Installation:
 
-    git clone git://github.com/<TBD> ~/.vim
+    git clone git://github.com/achilleas-k/vimconfig ~/.vim
 
 Create symlinks:
 
