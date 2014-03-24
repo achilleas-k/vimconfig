@@ -80,13 +80,16 @@ noremap <C-L>     <C-W>l
 
 noremap <F4>      :NERDTreeToggle<CR>
 
+" relative line numbering
+noremap <F2>      :set relativenumber<CR>
+
 " next and previous buffer
 noremap <A-,>    :bp<CR>
 noremap <A-.>    :bn<CR>
 " switch back and forth between 2 buffers
 noremap <A-`>    :b#<CR>
 
-" don't remove indent on comments (put this in python.vim?)
+" don't remove indent on comments
 inoremap # X<BS>#
 
 " airline
