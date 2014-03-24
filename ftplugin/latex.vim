@@ -1,5 +1,3 @@
-"for vim-latexsuite
-set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 noremap j gj
 noremap k gk
