@@ -79,7 +79,7 @@ noremap <C-L>     <C-W>l
 noremap <F4>      :NERDTreeToggle<CR>
 
 " relative line numbering
-noremap <F2>      :set relativenumber<CR>
+noremap <F2>      :set relativenumber!<CR>
 
 " next and previous buffer
 noremap <A-,>    :bp<CR>
