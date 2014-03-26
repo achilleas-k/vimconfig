@@ -116,4 +116,7 @@ cnoremap <A-f> <S-Right>
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
 
+" always show gitgutter column
+" nicer for keeping text width and alignment fixed
+let g:gitgutter_sign_column_always = 1
 
