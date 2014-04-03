@@ -120,3 +120,6 @@ let g:calendar_google_task = 1
 " nicer for keeping text width and alignment fixed
 let g:gitgutter_sign_column_always = 1
 
+" nmodl filetype for hoc and mod
+au BufRead,BufNewFile *.hoc,*.mod set filetype nmodl
+
