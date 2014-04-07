@@ -26,7 +26,7 @@ set spell
 " latex box mappings and variables
 let g:LatexBox_output_type = 'pdf'
 let g:LatexBox_viewer = 'okular --unique'
-let g:LatexBox_latexmk_async = 1
+let g:LatexBox_latexmk_async = 0
 let g:LatexBox_latexmk_preview_continuously = 0  " can get annoying
 let g:LatexBox_quickfix = 2
 let g:LatexBox_show_warnings = 0
