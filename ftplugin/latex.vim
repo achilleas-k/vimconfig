@@ -27,14 +27,12 @@ set spell
 let g:LatexBox_output_type = 'pdf'
 let g:LatexBox_viewer = 'okular --unique'
 let g:LatexBox_latexmk_async = 1
-let g:LatexBox_latexmk_preview_continuously = 1
+let g:LatexBox_latexmk_preview_continuously = 0  " can get annoying
 let g:LatexBox_quickfix = 2
 let g:LatexBox_show_warnings = 0
 
 noremap <A-F6>      :w<CR>:Latexmk<CR>
 inoremap <A-F6>     <ESC>:w<CR>:Latexmk<CR>
 noremap <A-F9>      :LatexView<CR>
-
-
 
 
