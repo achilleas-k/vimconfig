@@ -123,3 +123,8 @@ let g:gitgutter_sign_column_always = 1
 " nmodl filetype for hoc and mod
 au BufRead,BufNewFile *.hoc,*.mod set filetype nmodl
 
+" mardown filetype extension
+au BufRead,BufNewFile *.md set filetype markdown
+
+
+
