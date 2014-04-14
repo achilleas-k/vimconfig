@@ -35,4 +35,7 @@ noremap <A-F6>      :w<CR>:Latexmk<CR>
 inoremap <A-F6>     <ESC>:w<CR>:Latexmk<CR>
 "noremap <A-F9>      :LatexView<CR>
 
+" clean latex junk on close
+au BufDelete *.tex,*.latex LatexmkClean
+au VimLeave *.tex,*.latex LatexmkClean
 
