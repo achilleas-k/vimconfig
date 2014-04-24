@@ -8,7 +8,6 @@ set linebreak
 set textwidth=0
 set wrapmargin=0
 
-set formatoptions+=a
 set formatoptions+=n
 
 

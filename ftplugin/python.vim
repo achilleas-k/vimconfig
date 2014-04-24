@@ -26,7 +26,7 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
-set formatoptions=caqj
+set formatoptions=cqj
 
 set textwidth=78
 set foldmethod=indent
