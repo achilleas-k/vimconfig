@@ -1,5 +1,3 @@
-let g:syntastic_cpp_check_header = 1
-let g:syntastic_cpp_auto_refresh_includes = 1
 set foldmethod=syntax
 set tags=$HOME/ctags/cpp.tags
 " generate ctags on save
@@ -12,4 +10,12 @@ set expandtab
 set autoindent
 set formatoptions=caqj
 set textwidth=78
+
+let g:syntastic_cpp_check_header = 1
+let g:syntastic_cpp_auto_refresh_includes = 1
+
+let g:clang_snippets = 1
+let g:clang_snippets_engine = 'clang_complete'
+
+let g:syntastic_cpp_checkers = ['cppcheck']
 
