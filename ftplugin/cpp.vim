@@ -1,3 +1,5 @@
+let g:syntastic_cpp_check_header = 1
+let g:syntastic_cpp_auto_refresh_includes = 1
 set foldmethod=syntax
 set tags=$HOME/ctags/cpp.tags
 " generate ctags on save
