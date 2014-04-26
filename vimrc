@@ -126,3 +126,4 @@ au BufRead,BufNewFile *.hoc,*.mod set filetype=nmodl
 " mardown filetype extension
 au BufRead,BufNewFile *.md set filetype=markdown
 
+let g:easytags_by_filetype = '~/tags'
