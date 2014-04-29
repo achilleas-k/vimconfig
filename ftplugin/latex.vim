@@ -39,3 +39,7 @@ inoremap <A-F6>     <ESC>:w<CR>:Latexmk<CR>
 au BufDelete *.tex,*.latex silent LatexmkClean
 au VimLeave *.tex,*.latex silent LatexmkClean
 
+" the following three options fix scrolling lag and unresponsiveness
+NoMatchParen
+set nocursorline
+set norelativenumber
