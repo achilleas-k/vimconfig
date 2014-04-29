@@ -1,5 +1,8 @@
 execute pathogen#infect()
 
+" remember previous position in file
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
 " leader
 let mapleader="-"
 
