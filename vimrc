@@ -40,7 +40,7 @@ set guioptions-=L
 nnoremap <space> za
 vnoremap <space> zf
 
-:set list listchars=tab:\|_,trail:·
+set list listchars=tab:\|_,trail:·
 
 " new improved whitespace cleaner - preserves prev search and cursor pos
 function! <SID>StripTrailingWhitespaces()
@@ -127,4 +127,7 @@ au BufRead,BufNewFile *.hoc,*.mod set filetype=nmodl
 " mardown filetype extension
 au BufRead,BufNewFile *.md set filetype=markdown
 
+" easytags options
 let g:easytags_by_filetype = '~/tags'
+let g:easytags_include_members = 1
+let g:easytags_events = ['BufWritePost']
