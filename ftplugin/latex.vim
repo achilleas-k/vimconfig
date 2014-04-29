@@ -16,10 +16,10 @@ set spell
 " forward searching function
 " from https://tex.stackexchange.com/questions/71619/how-to-do-forward-search-to-pdf-file-opened-with-okular-from-include-files-when
 function! SyncTexForward()
-let s:syncfile = fnamemodify(fnameescape(Tex_GetMainFileName()), ":r").".pdf"
-let execstr = "silent !okular --unique ".s:syncfile."\\#src:".line(".").expand("%\:p").' &'
-exec execstr
-echo s:syncfile
+    let s:syncfile = fnamemodify(fnameescape(Tex_GetMainFileName()), ":r").".pdf"
+    let execstr = "silent !okular --unique ".s:syncfile."\\#src:".line(".").expand("%\:p").' &'
+    exec execstr
+    echo s:syncfile
 endfunction
 nnoremap <A-F9> :call SyncTexForward()<CR>
 
