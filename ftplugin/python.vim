@@ -31,6 +31,7 @@ set formatoptions=cqj
 set textwidth=78
 set foldmethod=indent
 set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+set colorcolumn=80
 
 " don't remove indent on comments
 inoremap # X<BS>#

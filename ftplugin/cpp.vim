@@ -10,6 +10,7 @@ set expandtab
 set autoindent
 set formatoptions=cqj
 set textwidth=78
+set colorcolumn=80
 
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_auto_refresh_includes = 1

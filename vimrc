@@ -30,7 +30,6 @@ set nospell
 set cursorline
 set nocursorcolumn
 set hidden
-set colorcolumn=80
 "let &colorcolumn=join(range(81,999),",")
 "highlight ColorColumn ctermbg=244 guibg=#101010
 set foldcolumn=1
