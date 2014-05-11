@@ -133,6 +133,7 @@ au BufRead,BufNewFile *.md set filetype=markdown
 let g:easytags_by_filetype = '~/tags'
 let g:easytags_include_members = 1
 let g:easytags_events = ['BufWritePost']
+let g:easytags_auto_highlight = 0 " temporarily disable due to bug
 
 " syntastic checkers
 let g:syntastic_python_checkers = ['pyflakes']
