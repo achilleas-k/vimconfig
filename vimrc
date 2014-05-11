@@ -123,9 +123,9 @@ let g:calendar_google_task = 1
 " nicer for keeping text width and alignment fixed
 let g:gitgutter_sign_column_always = 1
 
+" Custom filetype extensions
 " nmodl filetype for hoc and mod
 au BufRead,BufNewFile *.hoc,*.mod set filetype=nmodl
-
 " mardown filetype extension
 au BufRead,BufNewFile *.md set filetype=markdown
 
@@ -136,3 +136,6 @@ let g:easytags_events = ['BufWritePost']
 
 " syntastic checkers
 let g:syntastic_python_checkers = ['pyflakes']
+
+" run syntastic on load (will do nothing for unsupported types)
+au BufWinEnter * SyntasticCheck
