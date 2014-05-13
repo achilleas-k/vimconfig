@@ -11,12 +11,12 @@ Switch to the `~/.vim` directory, and fetch submodules:
 
     cd ~/.vim
     git submodule init
-    git submodule update
+    git submodule update --recursive
 
 Updating plugins
 ================
 
     cd ~/.vim
-    git submodule foreach git pull
+    git submodule foreach --recursive git pull
 
 
