@@ -2,7 +2,7 @@
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_on_dot = 0
 " call signatures are nice but cause input lag - disable if lag (re)appears
-let g:jedi#show_call_signatures = "1"
+let g:jedi#show_call_signatures = 0
 
 " --Disabled to check if other plugins cover this--
 " set tags file
