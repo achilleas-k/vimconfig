@@ -41,6 +41,8 @@ set guioptions-=T
 set guioptions-=L
 nnoremap <space> za
 vnoremap <space> zf
+" for help and docstrings
+set splitbelow
 
 set list listchars=tab:\|_,trail:·
 
