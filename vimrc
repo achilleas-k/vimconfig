@@ -1,4 +1,5 @@
 execute pathogen#infect()
+Helptags
 
 " remember previous position in file
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
@@ -74,6 +75,7 @@ nmap <A-8> :b!8<CR>
 nmap <A-9> :b!9<CR>
 nmap <A-0> :b!10<CR>
 noremap <A-/> :nohlsearch<CR>
+noremap /   :nohlsearch<CR>
 
 noremap <C-J>     <C-W>j
 noremap <C-K>     <C-W>k
@@ -89,6 +91,8 @@ noremap <A-,>    :bp<CR>
 noremap <A-.>    :bn<CR>
 " switch back and forth between 2 buffers
 noremap <A-`>    :b#<CR>
+" same for terminal vim
+noremap `      :b#<CR>
 
 " don't remove indent on comments
 inoremap # X<BS>#
@@ -113,7 +117,9 @@ cnoremap <C-n> <Down>
 cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
 cnoremap <A-b> <S-Left>
+cnoremap b <S-Left>
 cnoremap <A-f> <S-Right>
+cnoremap f <S-Right>
 
 " calendar
 let g:calendar_google_calendar = 1
