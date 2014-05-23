@@ -132,7 +132,7 @@ au BufRead,BufNewFile *.md set filetype=markdown
 " easytags options
 let g:easytags_by_filetype = '~/tags'
 let g:easytags_include_members = 1
-let g:easytags_autorecurse = 1
+let g:easytags_autorecurse = 0
 "let g:easytags_events = ['BufWritePost']
 let g:easytags_auto_highlight = 0
 
