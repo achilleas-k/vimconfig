@@ -16,6 +16,6 @@ Updating plugins
 ================
 
     cd ~/.vim
-    git submodule foreach --recursive git pull
+    git submodule foreach git pull origin <branch>
 
 
