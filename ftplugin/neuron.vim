@@ -11,7 +11,7 @@ echom "Loading NMODL Vim syntax"
 setlocal foldmethod=syntax
 
 let b:current_syntax = "NMODL"
-
+set nospell
 
 " Keywords
 syntax keyword NMODLKeywords TITLE 
