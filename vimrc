@@ -45,6 +45,9 @@ vnoremap <space> zf
 " for help and docstrings
 set splitbelow
 
+" vertical split for diff
+set diffopt+=vertical
+
 set list listchars=tab:\|_,trail:·
 
 " new improved whitespace cleaner - preserves prev search and cursor pos
@@ -147,3 +150,5 @@ let g:syntastic_python_checkers = ['pyflakes']
 
 " run syntastic on load (will do nothing for unsupported types)
 au BufWinEnter * SyntasticCheck
+
+
