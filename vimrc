@@ -103,8 +103,6 @@ inoremap # X<BS>#
 " airline
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#left_sep = ' '
-"let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_powerline_fonts = 1
 
 " Unite bindings
@@ -142,8 +140,8 @@ au BufRead,BufNewFile *.md set filetype=markdown
 let g:easytags_by_filetype = '~/tags'
 let g:easytags_include_members = 1
 let g:easytags_autorecurse = 0
-"let g:easytags_events = ['BufWritePost']
-let g:easytags_auto_highlight = 0
+let g:easytags_events = ['BufWritePost', 'BufReadPost']
+let g:easytags_auto_highlight = 1
 
 " syntastic checkers
 let g:syntastic_python_checkers = ['pyflakes']
