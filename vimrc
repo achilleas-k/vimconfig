@@ -141,7 +141,8 @@ let g:easytags_by_filetype = '~/tags'
 let g:easytags_include_members = 1
 let g:easytags_autorecurse = 0
 let g:easytags_events = ['BufWritePost', 'BufReadPost']
-let g:easytags_auto_highlight = 1
+let g:easytags_auto_highlight = 0
+"let g:easytags_syntax_keyword = 'always'
 
 " syntastic checkers
 let g:syntastic_python_checkers = ['pyflakes']
