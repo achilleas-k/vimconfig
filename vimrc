@@ -131,10 +131,8 @@ let g:calendar_google_task = 1
 let g:gitgutter_sign_column_always = 1
 
 " Custom filetype extensions
-" java filetype for neuron's mod files (not great, but works)
-au BufRead,BufNewFile *.mod set filetype=java
 " neuron filetype for hoc
-au BufRead,BufNewFile *.hoc set filetype=neuron
+au BufRead,BufNewFile *.hoc,*.mod set filetype=NMODL
 " mardown filetype extension
 au BufRead,BufNewFile *.md set filetype=markdown
 
