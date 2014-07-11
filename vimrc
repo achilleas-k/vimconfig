@@ -131,8 +131,10 @@ let g:calendar_google_task = 1
 let g:gitgutter_sign_column_always = 1
 
 " Custom filetype extensions
-" nmodl filetype for hoc and mod
-au BufRead,BufNewFile *.hoc,*.mod set filetype=neuron
+" java filetype for neuron's mod files (not great, but works)
+au BufRead,BufNewFile *.mod set filetype=java
+" neuron filetype for hoc
+au BufRead,BufNewFile *.hoc set filetype=neuron
 " mardown filetype extension
 au BufRead,BufNewFile *.md set filetype=markdown
 
@@ -142,6 +144,7 @@ let g:easytags_include_members = 1
 let g:easytags_autorecurse = 0
 let g:easytags_events = ['BufWritePost', 'BufReadPost']
 let g:easytags_auto_highlight = 0
+let g:easytags_async = 1
 "let g:easytags_syntax_keyword = 'always'
 
 " syntastic checkers
@@ -149,5 +152,3 @@ let g:syntastic_python_checkers = ['pyflakes']
 
 " run syntastic on load (will do nothing for unsupported types)
 au BufWinEnter * SyntasticCheck
-
-
