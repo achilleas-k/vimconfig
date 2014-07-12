@@ -20,3 +20,4 @@ let g:clang_snippets = 1
 let g:clang_snippets_engine = 'clang_complete'
 let g:clang_jumpto_declaration_key = '<Leader>d'
 
+set tags+=~/tags/cpp
