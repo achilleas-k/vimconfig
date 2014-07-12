@@ -1,8 +1,5 @@
+let g:pathogen_disabled = ['supertab']
 set foldmethod=syntax
-"set tags=$HOME/ctags/cpp.tags
-" generate ctags on save
-"au BufWritePost *.c,*.cpp,*.h silent! !ctags --languages=C,C++ -a -f $HOME/ctags/cpp.tags -R $(pwd) &
-
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
@@ -19,5 +16,9 @@ let g:syntastic_cpp_checkers = ['cppcheck']
 let g:clang_snippets = 1
 let g:clang_snippets_engine = 'clang_complete'
 let g:clang_jumpto_declaration_key = '<Leader>d'
+let g:clang_complete_auto = 1
+let g:clang_use_library = 1
+
+set completeopt=menu,menuone
 
 set tags+=~/tags/cpp
