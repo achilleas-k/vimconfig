@@ -64,6 +64,3 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets
-[submodule "bundle/scratch.vim"]
-	path = bundle/scratch.vim
-	url = https://github.com/mtth/scratch.vim
