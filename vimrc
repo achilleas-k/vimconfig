@@ -27,7 +27,7 @@ set autochdir
 set hlsearch
 "set ignorecase
 "set smartcase
-set nospell
+set spell
 set cursorline
 set nocursorcolumn
 set hidden
