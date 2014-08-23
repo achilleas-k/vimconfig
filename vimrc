@@ -122,6 +122,9 @@ cnoremap b <S-Left>
 cnoremap <A-f> <S-Right>
 cnoremap f <S-Right>
 
+" tagbar sorting - default to order of appearance
+let g:tagbar_sort = 0
+
 " calendar
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
