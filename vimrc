@@ -124,6 +124,7 @@ cnoremap f <S-Right>
 
 " tagbar sorting - default to order of appearance
 let g:tagbar_sort = 0
+highlight TagbarHighlight guifg=cyan ctermfg=cyan
 
 " calendar
 let g:calendar_google_calendar = 1
