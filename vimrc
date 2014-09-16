@@ -137,6 +137,8 @@ let g:gitgutter_sign_column_always = 1
 " Custom filetype extensions
 " neuron filetype for mod
 au BufRead,BufNewFile *.mod set filetype=NMODL
+" neuron hoc files look OK with Java syntax highlighting
+au BufReadPost *.hoc set syntax=java
 " mardown filetype extension
 au BufRead,BufNewFile *.md set filetype=markdown
 
