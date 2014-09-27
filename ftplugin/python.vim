@@ -18,6 +18,8 @@ let g:jedi#show_call_signatures = 0
 "  autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/ftplugin/python/python_ide
 "endif
 
+set nospell
+
 " the following currently overlap with ~/.vimrc but they might be removed from
 " the global conf
 set tabstop=8
@@ -26,7 +28,6 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set formatoptions=cqj
-
 set textwidth=78
 set foldmethod=indent
 set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
