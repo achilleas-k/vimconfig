@@ -27,7 +27,8 @@ set autochdir
 set hlsearch
 "set ignorecase
 set smartcase
-set spell
+" I keep toggling spell. Perhaps a hotkey toggle or filetype options
+"set spell
 set cursorline
 set nocursorcolumn
 set hidden
@@ -152,8 +153,11 @@ let g:easytags_auto_highlight = 0
 let g:easytags_async = 1
 "let g:easytags_syntax_keyword = 'always'
 
-" syntastic checkers
+" syntastic
+nnoremap <F4> :llist<CR>
+
 let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_always_populate_loc_list = 1
 
 " run syntastic on load (will do nothing for unsupported types)
 au BufWinEnter * SyntasticCheck
