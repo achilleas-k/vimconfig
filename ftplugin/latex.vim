@@ -1,5 +1,6 @@
 let g:tex_flavor = "latex"
 let maplocalleader = "-"
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 noremap j gj
 noremap k gk
 "noremap <A-F6> :w<CR>:!pdflatex -synctex=1 -interaction=nonstopmode %<CR>
