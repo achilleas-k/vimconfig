@@ -1,4 +1,5 @@
 let g:tex_flavor = "latex"
+let maplocalleader = "-"
 noremap j gj
 noremap k gk
 "noremap <A-F6> :w<CR>:!pdflatex -synctex=1 -interaction=nonstopmode %<CR>
