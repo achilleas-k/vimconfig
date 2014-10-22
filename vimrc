@@ -13,7 +13,7 @@ filetype on
 filetype plugin on
 set t_Co=256
 colorscheme jellybeans
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
