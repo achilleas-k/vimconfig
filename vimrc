@@ -93,6 +93,8 @@ set relativenumber
 " next and previous buffer
 noremap <A-,>    :bp<CR>
 noremap <A-.>    :bn<CR>
+noremap ,      :bp<CR>
+noremap .      :bn<CR>
 " switch back and forth between 2 buffers
 noremap <A-`>    :b#<CR>
 " same for terminal vim
