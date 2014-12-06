@@ -1,8 +1,19 @@
 execute pathogen#infect()
 Helptags
 
-" remember previous position in file
-au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+" [copied from vimrc_example.vim]
+" When editing a file, always jump to the last known cursor position.
+" Don't do it when the position is invalid or when inside an event handler
+" (happens when dropping a file on gvim).
+" Also don't do it when the mark is in the first line, that is the default
+" position when opening a file.
+autocmd BufReadPost *
+\ if line("'\"") > 1 && line("'\"") <= line("$") |
+\   exe "normal! g`\"" |
+\ endif
+
+" Jump to first line if it is a git commit message
+autocmd BufReadPost gitcommit exe "normal! gg"
 
 " leader
 let mapleader="-"
@@ -163,3 +174,5 @@ let g:syntastic_always_populate_loc_list = 1
 
 " run syntastic on load (will do nothing for unsupported types)
 au BufWinEnter * SyntasticCheck
+
+normal! gg
