@@ -7,15 +7,9 @@ Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
 
-Switch to the `~/.vim` directory, and fetch submodules:
+Install Vundle and plugins
 
-    cd ~/.vim
-    git submodule update --init --recursive
-
-Updating plugins
-================
-
-    cd ~/.vim
-    git submodule foreach git pull origin <branch>
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall +qall
 
 

@@ -9,12 +9,12 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
 " Plugins
 Plugin 'gcmt/breeze.vim'
 Plugin 'itchyny/calendar.vim'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'nanotech/jellybeans.vim'
 Plugin 'vim-scripts/python.vim'
 Plugin 'wting/rust.vim'
 Plugin 'ervandew/supertab'
@@ -34,6 +34,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'cespare/vim-toml'
 Plugin 'Shougo/vimproc.vim'
 
+" Colour schemes
+Plugin 'nanotech/jellybeans.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
