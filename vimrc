@@ -1,5 +1,54 @@
-execute pathogen#infect()
-Helptags
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+" Plugins
+Plugin 'gcmt/breeze.vim'
+Plugin 'itchyny/calendar.vim'
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'vim-scripts/python.vim'
+Plugin 'wting/rust.vim'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'majutsushi/tagbar'
+Plugin 'tomtom/tlib_vim'
+Plugin 'Shougo/unite.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'bling/vim-airline'
+Plugin 'xolox/vim-easytags'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'ivanov/vim-ipython'
+Plugin 'xolox/vim-misc'
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'tpope/vim-surround'
+Plugin 'cespare/vim-toml'
+Plugin 'Shougo/vimproc.vim'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
 " [copied from vimrc_example.vim]
 " When editing a file, always jump to the last known cursor position.

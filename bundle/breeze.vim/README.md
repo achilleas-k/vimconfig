@@ -1,90 +1,79 @@
-# breeze.vim
+## breeze.vim
 
-### Features
-* HTML navigation inspired by vim-easymotion.
-* Tag matching.
-* Current element highlighting.
-* Low level DOM navigation.
+Breeze is little plugin that provides a handful of EasyMotion-like HTML motions.
 
-### Requirements
-* Vim compiled with python 2.6+
-* Linux, Mac, Windows
+> **Breeze has changed!**
+Since version 2.0 Breeze has undergone significant changes. While some features like tag matching and dom navigation have been removed, the jumping functionality have been strengthened. Have a look at [MatchTagAlways](https://github.com/Valloric/MatchTagAlways) for a good tag matching alternative.
+
+![Preview](_assets/preview.gif "Preview.")
 
 ### Installation
-The recommended way of installing the plugin is via 
-[Vundle](https://github.com/gmarik/vundle), [Pathogen](https://github.com/tpope/vim-pathogen)
-or [Neobundle](https://github.com/Shougo/neobundle.vim)
 
-### Houston, we have a problem
-For any functionality listed below, if it seems that something is not working
-correctly (e.g. unresponsive commands), run the `BreezeWhatsWrong` command and
-you will be shown the origin of the problem, usually something related to bad
-formatted HTML.
+Install either with [Vundle](https://github.com/gmarik/vundle), [Pathogen](https://github.com/tpope/vim-pathogen) or [Neobundle](https://github.com/Shougo/neobundle.vim).
 
+### Usage
 
-## Tag jumping
-![Screenshot](extra/jump.gif "Tag jumping inspired by vim-easymotion")   
+Breeze does not define any mappings for you, you have to map Breeze motions by yourself. Below an example of how you can set you own mappings:
 
-As you can see this way of navigating the document is heavily inspired by
-vim-easymotion. You can use the command `BreezeJumpF` to jump to following
-tags and the `BreezeJumpB` command to jump to preceding tags.
+```vim
+" jump to all visible opening tags after the cursor position
+nmap <leader>j <Plug>(breeze-jump-tag-forward)
+" jump to all visible opening tags before the cursor position
+nmap <leader>J <Plug>(breeze-jump-tag-backward)
 
-When you run one of the aforementioned commands, Breeze displays
-colored marks on the tags you can jump to and wait for your choice.
-Once you have moved to a tag you can easily jump back using the `CTRL+O` 
-vim mapping (:help CTRL+O). Note that when you are asked to insert the target
-key you can exit the whole process pressing either `<ESC>` or `CTRL+C`.
+" jump to all visible HTML attributes after the cursor position
+nmap <leader>a <Plug>(breeze-jump-attribute-forward)
+" jump to all visible HTML attributes before the cursor position
+nmap <leader>A <Plug>(breeze-jump-attribute-backward)
+```
 
+After triggering one of the mappings above, Breeze will ask you for where you want to jump to. To abort the whole process press either `<ESC>` or `CTRL+C`.
 
-## Tag matching and current element highlighting
-![Screenshot](extra/high.gif "Current element highlighting")   
+Breeze allows you to iterate directly over tags or attributes:
 
-By default Breeze highlights the opening and closing tags of the current
-element. To turn off this functionality you can set
-`g:breeze_highlight_curr_element` to 0. However, you always have at your
-disposal the `BreezeHlElement` command to highlight the current element.
+```vim
+" move to the next tag
+nmap <C-N> <Plug>(breeze-next-tag)
+" move to the previous tag
+nmap <C-B> <Plug>(breeze-prev-tag)
 
-Another useful command is `BreezeMatchTag`. If the cursor is on an opening tag,
-this command moves the cursor to the corresponding closing tag, and vice-versa.
-If the command is called within an element, this command moves the cursor to
-its opening tag. Remember that you can easily jump back to previous positions
-with `CTRL+O`.
+" move to the next attribute
+nmap <C-A> <Plug>(breeze-next-attribute)
+" move to the previous attribute
+nmap <C-S> <Plug>(breeze-prev-attribute)
+```
 
-**Limitations:** At the moment current element highlighting is still
-inefficient for large files and your movements may become quite slow when the
-file is modified.
+**TIP:** use `<Plug>(breeze-next-tag-hl)`, `<Plug>(breeze-prev-tag-hl)`, `<Plug>(breeze-next-attribute-hl)` and `<Plug>(breeze-prev-attribute-hl)` in order to highlight the line you move to.
 
+This is all you have to know to start jumping around your HTML files. Just remember that once you have jumped somewhere you can easily move back to the previous position with `CTRL+O` (`:h CTRL+O`).
 
-## DOM navigation
-![Screenshot](extra/dom.gif "DOM navigation")   
+### Settings
 
-Commands for DOM navigation cover only low level movements at the moment but
-might be useful for exploring dense HTML files. You can use commands
-such as `BreezeNextSibling`, `BreezePrevSibling`, `BreezeFirstSibling`,
-`BreezeLastSibling`, `BreezeFirstChild`, `BreezeLastChild` and `BreezeParent`.    
+**g:breeze\_prompt**
 
+With this option you can set your own custom prompt. You can change its color with the highlight group `BreezePrompt`.
 
-## Changelog
-See [CHANGELOG.md](CHANGELOG.md).
+Default: `" Target: "`
 
+**g:breeze\_marks**
 
-## License
-Copyright (c) 2013 Giacomo Comitti
+With this option you can set the marks used by Breeze to point out all the locations you can jump to. You can change their color with the highlight group `BreezeJumpMark`.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
+Default: `"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"`
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+### Changing default colors
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+You can change default colors with the following highlight groups:
+
+- `BreezeJumpMark` this color group is used to highlight all jump marks.
+- `BreezeShade` this color group is used to highlight anything but jump marks.
+- `BreezePrompt` this color group is used for the prompt look.
+- `BreezeHighlightedLine` this color group is used to highlight the current line whenever you move to a tag or attribute.
+
+Below an example of how you can customize default colors:
+
+```vim
+" put the following lines in your .vimrc
+hi link BreezeShade String
+hi BreezePrompt gui=bold
+```

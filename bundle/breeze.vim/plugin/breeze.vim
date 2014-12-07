@@ -1,91 +1,90 @@
 " ============================================================================
 " File: plugin/breeze.vim
-" Description: HTML utils
+" Description: HTML motions
 " Mantainer: Giacomo Comitti - https://github.com/gcmt
 " Url: https://github.com/gcmt/breeze.vim
 " License: MIT
-" Last Changed: 8 Sep 2013
 " ============================================================================
 
-
 " Init
-" ----------------------------------------------------------------------------
+" =============================================================================
 
-if exists("g:breeze_loaded") || &cp || !has('python') || exists("g:breeze_disable")
+if exists("g:loaded_breeze")
     finish
 endif
-let g:breeze_loaded = 1
+let g:loaded_breeze = 1
 
+let g:breeze_version = "v3.0"
+
+let s:save_cpo = &cpo
+set cpo&vim
+
+" Colors
+" =============================================================================
+
+fu! s:setup_colors()
+    hi default link BreezeJumpMark WarningMsg
+    hi default link BreezeShade Comment
+    hi default link BreezePrompt String
+    hi default link BreezeHighlightedLine CursorLine
+endfu
+
+cal s:setup_colors()
 
 " Settings
-" ----------------------------------------------------------------------------
+" =============================================================================
 
-" basic
+let g:breeze_prompt =
+    \ get(g:, "breeze_prompt", " Target: ")
 
-let g:breeze_active_filetypes =
-    \ "*.html,*.htm,*.xhtml,*.xml," . get(g:, 'breeze_active_filetypes', '')
-    " deprecated
-    \ . get(g:, 'breeze_highlight_filename_patterns', '')
+let g:breeze_marks =
+    \ get(g:, "breeze_marks", "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
-let g:breeze_highlight_curr_element =
-    \ get(g:, 'breeze_highlight_curr_element', 1)
-" deprecated
-let g:breeze_highlight_curr_element =
-    \ get(g:, 'breeze_hl_element', g:breeze_highlight_curr_element)
+" Highlight the current line
+" =============================================================================
 
-let g:breeze_jump_to_angle_bracket =
-    \ get(g:, 'breeze_jump_to_angle_bracket', 0)
+" To highlight the current line
+fu s:highlight_line()
+    sil! cal s:clear_highlighting()
+    let s:hl = matchadd("BreezeHighlightedLine", '\%'.line(".")."l")
+    redraw
+endfu
 
-" appearance
+fu s:clear_highlighting()
+    sil! cal matchdelete(s:hl)
+    unlet! s:hl
+endfu
 
-let g:breeze_hl_color =
-    \ get(g:, 'breeze_hl_color', 'MatchParen')
+" Mappings
+" =============================================================================
 
-let g:breeze_hl_color_darkbg =
-    \ get(g:, 'breeze_hl_color_darkbg', g:breeze_hl_color)
+nnoremap <silent> <Plug>(breeze-next-tag) :cal breeze#Jump("tag", 0)<CR>
+nnoremap <silent> <Plug>(breeze-prev-tag) :cal breeze#Jump("tag", 1)<CR>
+nnoremap <silent> <Plug>(breeze-next-tag-hl) :cal breeze#Jump("tag", 0)<CR>:cal <SID>highlight_line()<CR>
+nnoremap <silent> <Plug>(breeze-prev-tag-hl) :cal breeze#Jump("tag", 1)<CR>:cal <SID>highlight_line()<CR>
 
-let g:breeze_shade_color =
-    \ get(g:, 'breeze_shade_color', 'Comment')
+nnoremap <silent> <Plug>(breeze-next-attribute) :cal breeze#Jump("attribute", 0)<CR>
+nnoremap <silent> <Plug>(breeze-prev-attribute) :cal breeze#Jump("attribute", 1)<CR>
+nnoremap <silent> <Plug>(breeze-next-attribute-hl) :cal breeze#Jump("attribute", 0)<CR>:cal <SID>highlight_line()<CR>
+nnoremap <silent> <Plug>(breeze-prev-attribute-hl) :cal breeze#Jump("attribute", 1)<CR>:cal <SID>highlight_line()<CR>
 
-let g:breeze_shade_color_darkbg =
-    \ get(g:, 'breeze_shade_color_darkbg', g:breeze_shade_color)
+nnoremap <silent> <Plug>(breeze-jump-tag-forward) :cal breeze#JumpAsk("tag", 0)<CR>
+nnoremap <silent> <Plug>(breeze-jump-tag-backward) :cal breeze#JumpAsk("tag", 1)<CR>
 
-let g:breeze_jumpmark_color =
-    \ get(g:, 'breeze_jumpmark_color', 'WarningMsg')
-
-let g:breeze_jumpmark_color_darkbg =
-    \ get(g:, 'breeze_jumpmark_color_darkbg', g:breeze_jumpmark_color)
-
-
-" Commands
-" ----------------------------------------------------------------------------
-
-" tag jumping
-command! BreezeJumpF call breeze#JumpForward()
-command! BreezeJumpB call breeze#JumpBackward()
-
-" tag matching / highlighting
-command! BreezeMatchTag call breeze#MatchTag()
-command! BreezeHlElement call breeze#HighlightElement()
-
-" dom navigation
-command! BreezeNextSibling call breeze#NextSibling()
-command! BreezePrevSibling call breeze#PrevSibling()
-command! BreezeFirstSibling call breeze#FirstSibling()
-command! BreezeLastSibling call breeze#LastSibling()
-command! BreezeFirstChild call breeze#FirstChild()
-command! BreezeLastChild call breeze#LastChild()
-command! BreezeParent call breeze#Parent()
-
-" misc
-command! BreezePrintDom call breeze#PrintDom()
-command! BreezeWhatsWrong call breeze#WhatsWrong()
-
+nnoremap <silent> <Plug>(breeze-jump-attribute-forward) :cal breeze#JumpAsk("attribute", 0)<CR>
+nnoremap <silent> <Plug>(breeze-jump-attribute-backward) :cal breeze#JumpAsk("attribute", 1)<CR>
 
 " Autocommands
-" ----------------------------------------------------------------------------
+" =============================================================================
 
-augroup breeze_init
+augroup breeze
     au!
-    exe 'au BufWinEnter '.g:breeze_active_filetypes.' if !exists("g:breeze_initialized") | call breeze#init() | endif'
+    au BufWritePost .vimrc cal s:setup_colors()
+    au Colorscheme * cal s:setup_colors()
+    au CursorMoved,CursorMovedI,WinLeave * cal s:clear_highlighting()
 augroup END
+
+" =============================================================================
+
+let &cpo = s:save_cpo
+unlet s:save_cpo
