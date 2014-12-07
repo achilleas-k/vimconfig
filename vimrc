@@ -33,6 +33,7 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'tpope/vim-surround'
 Plugin 'cespare/vim-toml'
 Plugin 'Shougo/vimproc.vim'
+Plugin 'HgCi'
 
 " Colour schemes
 Plugin 'nanotech/jellybeans.vim'
