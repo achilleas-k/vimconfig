@@ -1,0 +1,16 @@
+'g:breeze_marks'	breeze.txt	/*'g:breeze_marks'*
+'g:breeze_prompt'	breeze.txt	/*'g:breeze_prompt'*
+<Plug>(breeze-jump-attribute-backward)	breeze.txt	/*<Plug>(breeze-jump-attribute-backward)*
+<Plug>(breeze-jump-attribute-forward)	breeze.txt	/*<Plug>(breeze-jump-attribute-forward)*
+<Plug>(breeze-jump-tag-backward)	breeze.txt	/*<Plug>(breeze-jump-tag-backward)*
+<Plug>(breeze-jump-tag-forward)	breeze.txt	/*<Plug>(breeze-jump-tag-forward)*
+breeze	breeze.txt	/*breeze*
+breeze-about	breeze.txt	/*breeze-about*
+breeze-appearance	breeze.txt	/*breeze-appearance*
+breeze-contents	breeze.txt	/*breeze-contents*
+breeze-intro	breeze.txt	/*breeze-intro*
+breeze-license	breeze.txt	/*breeze-license*
+breeze-mappings	breeze.txt	/*breeze-mappings*
+breeze-settings	breeze.txt	/*breeze-settings*
+breeze-usage	breeze.txt	/*breeze-usage*
+breeze.txt	breeze.txt	/*breeze.txt*
