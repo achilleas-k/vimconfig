@@ -1,0 +1,174 @@
+*breeze* *breeze.txt*
+
+
+				    Breeze
+
+
+
+==============================================================================
+CONTENTS                                                     *breeze-contents*
+
+        1. Intro ................................. |breeze-intro|
+        2. Usage ................................. |breeze-usage|
+        3. Mappings .............................. |breeze-mappings|
+        4. Settings .............................. |breeze-settings|
+	5. Appearance ............................ |breeze-appearance|
+        6. About ................................. |breeze-about|
+        7. License ............................... |breeze-license|
+
+
+==============================================================================
+1. Intro                                                        *breeze-intro*
+
+Breeze is little plugin that provides a handful of EasyMotion-like HTML
+motions.
+
+NOTE: Breeze has changed! Since version 2.0 Breeze has undergone significant
+changes. While some features like tag matching and dom navigation have been
+removed, the jumping functionality have been strengthened. If you liked real
+time tag matching I suggest you to try `github.com/Valloric/MatchTagAlways`,
+it seems to work much better.
+
+
+==============================================================================
+2. Usage                                                        *breeze-usage*
+
+Breeze does not define any mappings for you, you have to map Breeze motions
+by yourself. Below an example of how you can set you own mappings:
+>
+    " jump to all visible opening tags after the cursor position
+    nmap <leader>j <Plug>(breeze-jump-tag-forward)
+
+    " jump to all visible opening tags before the cursor position
+    nmap <leader>J <Plug>(breeze-jump-tag-backward)
+
+    " jump to all visible HTML attributes after the cursor position
+    nmap <leader>a <Plug>(breeze-jump-attribute-forward)
+
+    " jump to all visible HTML attributes before the cursor position
+    nmap <leader>A <Plug>(breeze-jump-attribute-backward)
+<
+After triggering one of the mappings above, Breeze will ask you for where
+you want to jump to. To abort the whole process press either `<ESC>` or `CTRL+C`.
+
+Breeze allows you to iterate directly over tags or attributes:
+>
+    " move to the next tag
+    nmap <C-N> <Plug>(breeze-next-tag)
+    " move to the previous tag
+    nmap <C-B> <Plug>(breeze-prev-tag)
+
+    " move to the next attribute
+    nmap <C-A> <Plug>(breeze-next-attribute)
+    " move to the previous attribute
+    nmap <C-S> <Plug>(breeze-prev-attribute)
+<
+
+TIP: use `<Plug>(breeze-next-tag-hl)`, `<Plug>(breeze-prev-tag-hl)`,
+`<Plug>(breeze-next-attribute-hl)` and `<Plug>(breeze-prev-attribute-hl)`
+in order to highlight the line you move to.
+
+This is all you have to know to start jumping around your HTML files. Just
+remember that once you have jumped somewhere you can easily move back to the
+previous position with `CTRL+O` (`:h CTRL+O`).
+
+
+==============================================================================
+3. Mappings                                                  *breeze-mappings*
+
+------------------------------------------------------------------------------
+					     *<Plug>(breeze-jump-tag-forward)*
+
+With this mapping you can jump to all visible opening tags after the cursor
+position.
+
+------------------------------------------------------------------------------
+					    *<Plug>(breeze-jump-tag-backward)*
+
+With this mapping you can jump to all visible opening tags before the cursor
+position.
+
+------------------------------------------------------------------------------
+                                       *<Plug>(breeze-jump-attribute-forward)*
+
+With this mapping you can jump to all visible HTML attributes after the cursor
+position.
+
+------------------------------------------------------------------------------
+				      *<Plug>(breeze-jump-attribute-backward)*
+
+With this mapping you can jump to all visible HTML attributes before the
+cursor position.
+
+
+==============================================================================
+4. Settings                                                  *breeze-settings*
+
+------------------------------------------------------------------------------
+							   *'g:breeze_prompt'*
+
+With this option  you can set your own custom prompt. You can change its
+color with the highlight group `BreezePrompt`.
+
+Default: " Target: "
+
+------------------------------------------------------------------------------
+                                                            *'g:breeze_marks'*
+
+With this option you can set the marks used by Breeze to point out all the
+locations you can jump to. You can change their color with the highlight
+group `BreezeJumpMark`.
+
+Default: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+
+==============================================================================
+5. Appearance                                              *breeze-appearance*
+
+You can change default colors with the following highlight groups:
+
+- `BreezeJumpMark`: this color group is used to highlight all jump marks.
+- `BreezeShade`: this color group is used to highlight anything but jump marks.
+- `BreezePrompt`: this color group is used for the prompt look.
+- `BreezeHighlightedLine`: this color group is used to highlight the current line
+   whenever you move to a tag or attribute.
+
+Below an example of how you can customize default colors:
+>
+    " put the following lines in your .vimrc
+    hi link BreezeShade String
+    hi BreezePrompt gui=bold
+<
+
+==============================================================================
+6. About                                                        *breeze-about*
+
+Author: Giacomo Comitti
+Contributors: https://github.com/gcmt/breeze.vim/contributors
+Git repository: https://github.com/gcmt/breeze.vim
+
+
+==============================================================================
+7. License                                                    *breeze-license*
+
+Copyright (c) 2014 Giacomo Comitti
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+vim:tw=78:sw=4:ts=8:ft=help:norl:noet:
