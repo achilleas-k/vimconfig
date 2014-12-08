@@ -63,8 +63,7 @@ autocmd BufReadPost *
 \   exe "normal! g`\"" |
 \ endif
 
-" Jump to first line if it is a git commit message
-autocmd BufReadPost gitcommit exe "normal! gg"
+au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 
 " leader
 let mapleader="-"
