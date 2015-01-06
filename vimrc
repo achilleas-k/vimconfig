@@ -187,6 +187,9 @@ cnoremap b <S-Left>
 cnoremap <A-f> <S-Right>
 cnoremap f <S-Right>
 
+" fixes problem with folding breaking syntax highlighting
+syn sync fromstart
+
 " tagbar sorting - default to order of appearance
 let g:tagbar_sort = 0
 highlight TagbarHighlight guifg=cyan ctermfg=cyan
