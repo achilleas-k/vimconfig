@@ -33,6 +33,7 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'tpope/vim-surround'
 Plugin 'cespare/vim-toml'
 Plugin 'Shougo/vimproc.vim'
+Plugin 'mbbill/undotree'
 
 " Colour schemes
 Plugin 'nanotech/jellybeans.vim'
@@ -227,5 +228,11 @@ let g:syntastic_always_populate_loc_list = 1
 
 " run syntastic on load (will do nothing for unsupported types)
 au BufWinEnter * SyntasticCheck
+
+" undo stuff
+set undodir=~/.undodir/
+set undofile
+" undotree
+nnoremap <F5> :UndotreeToggle<CR>
 
 normal! gg
