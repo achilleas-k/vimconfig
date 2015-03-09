@@ -34,6 +34,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'cespare/vim-toml'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'mbbill/undotree'
+Plugin 't9md/vim-choosewin'
 
 " Colour schemes
 Plugin 'nanotech/jellybeans.vim'
@@ -231,5 +232,8 @@ set undodir=~/.undodir/
 set undofile
 " undotree
 nnoremap <F5> :UndotreeToggle<CR>
+
+" choosewin
+nmap <leader>q <Plug>(choosewin)
 
 normal! gg
