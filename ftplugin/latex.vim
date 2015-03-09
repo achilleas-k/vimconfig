@@ -45,3 +45,16 @@ au VimLeave *.tex,*.latex silent LatexmkClean
 NoMatchParen
 set nocursorline
 set norelativenumber
+
+let g:tagbar_type_tex = {
+    \ 'ctagstype' : 'latex',
+    \ 'kinds'     : [
+        \ 's:sections',
+        \ 'g:graphics:0:0',
+        \ 'l:labels',
+        \ 'r:refs:1:0',
+        \ 'p:pagerefs:1:0'
+    \ ],
+    \ 'sort'    : 0,
+    \ 'deffile' : expand('<sfile>:p:h:h') . '/tagdef/latex'
+\ }
