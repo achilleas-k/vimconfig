@@ -46,6 +46,12 @@ NoMatchParen
 set nocursorline
 set norelativenumber
 
+" tagbar workaround
+noremap <C-B> :TagbarClose<CR>:Unite buffer<CR>
+noremap <C-F> :TagbarClose<CR>:Unite file_rec/async<CR>
+noremap <C-G> :TagbarClose<CR>:Unite grep:.<CR>
+
+" tags for tex
 let g:tagbar_type_tex = {
     \ 'ctagstype' : 'latex',
     \ 'kinds'     : [
