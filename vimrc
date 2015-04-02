@@ -35,6 +35,8 @@ Plugin 'cespare/vim-toml'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'mbbill/undotree'
 Plugin 't9md/vim-choosewin'
+Plugin 'tommcdo/vim-exchange'
+Plugin 'tpope/vim-commentary'
 
 " Colour schemes
 Plugin 'nanotech/jellybeans.vim'
@@ -158,6 +160,10 @@ noremap <A-,>    :bp<CR>
 noremap <A-.>    :bn<CR>
 noremap ,      :bp<CR>
 noremap .      :bn<CR>
+noremap <A-->    :bp<CR>
+noremap <A-=>    :bn<CR>
+noremap -      :bp<CR>
+noremap =      :bn<CR>
 " switch back and forth between 2 buffers
 noremap <A-`>    :b#<CR>
 " same for terminal vim
