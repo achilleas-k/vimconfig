@@ -180,7 +180,7 @@ let g:airline_powerline_fonts = 1
 " Unite bindings
 " following two replace scroll up and down without cursor, which I rarely use
 noremap <C-B>   :Unite buffer<CR>
-noremap <C-F>   :Unite file_rec/async<CR>
+noremap <C-F>   :UniteWithProjectDir file_rec/async<CR>
 noremap <C-G>   :Unite grep:.<CR>
 
 " command line editing
