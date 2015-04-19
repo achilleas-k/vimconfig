@@ -13,7 +13,7 @@ Plug 'ervandew/supertab'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'Shougo/unite.vim', { 'on': 'Unite' }
+Plug 'Shougo/unite.vim'
 Plug 'bling/vim-airline'
 Plug 'xolox/vim-easytags'
 Plug 'tpope/vim-fugitive'
