@@ -4,16 +4,16 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins
 Plug 'gcmt/breeze.vim'
-Plug 'itchyny/calendar.vim'
-Plug 'LaTeX-Box-Team/LaTeX-Box'
-Plug 'davidhalter/jedi-vim'
-Plug 'vim-scripts/python.vim'
-Plug 'wting/rust.vim'
+Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
+Plug 'LaTeX-Box-Team/LaTeX-Box', { 'for': 'latex' }
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+Plug 'vim-scripts/python.vim', { 'for': 'python' }
+Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'ervandew/supertab'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'Shougo/vimproc.vim'
-Plug 'Shougo/unite.vim'
+Plug 'Shougo/unite.vim', { 'on': 'Unite' }
 Plug 'bling/vim-airline'
 Plug 'xolox/vim-easytags'
 Plug 'tpope/vim-fugitive'
@@ -21,8 +21,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
 Plug 'xolox/vim-misc'
-Plug 'hynek/vim-python-pep8-indent'
-Plug 'mbbill/undotree'
+Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
+Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 't9md/vim-choosewin'
 Plug 'tommcdo/vim-exchange'
 " Plug 'tomtom/tlib_vim'
