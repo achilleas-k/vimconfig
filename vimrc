@@ -12,7 +12,7 @@ Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'ervandew/supertab'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
-Plug 'Shougo/vimproc.vim'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'Shougo/unite.vim', { 'on': 'Unite' }
 Plug 'bling/vim-airline'
 Plug 'xolox/vim-easytags'
