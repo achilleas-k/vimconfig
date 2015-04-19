@@ -1,62 +1,39 @@
 " vim:fdm=marker
-" Vundle plugin setup {{{
-set nocompatible
-filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+" Plugin setup {{{
+call plug#begin('~/.vim/plugged')
 
 " Plugins
-Plugin 'gcmt/breeze.vim'
-Plugin 'itchyny/calendar.vim'
-Plugin 'LaTeX-Box-Team/LaTeX-Box'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'vim-scripts/python.vim'
-Plugin 'wting/rust.vim'
-Plugin 'ervandew/supertab'
-Plugin 'scrooloose/syntastic'
-Plugin 'majutsushi/tagbar'
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/unite.vim'
-Plugin 'bling/vim-airline'
-Plugin 'xolox/vim-easytags'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-commentary'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'xolox/vim-misc'
-Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'mbbill/undotree'
-Plugin 't9md/vim-choosewin'
-Plugin 'tommcdo/vim-exchange'
-" Plugin 'tomtom/tlib_vim'
-" Plugin 'cespare/vim-toml'
-" Plugin 'ivanov/vim-ipython'
-" Plugin 'MarcWeber/vim-addon-mw-utils'
+Plug 'gcmt/breeze.vim'
+Plug 'itchyny/calendar.vim'
+Plug 'LaTeX-Box-Team/LaTeX-Box'
+Plug 'davidhalter/jedi-vim'
+Plug 'vim-scripts/python.vim'
+Plug 'wting/rust.vim'
+Plug 'ervandew/supertab'
+Plug 'scrooloose/syntastic'
+Plug 'majutsushi/tagbar'
+Plug 'Shougo/vimproc.vim'
+Plug 'Shougo/unite.vim'
+Plug 'bling/vim-airline'
+Plug 'xolox/vim-easytags'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'airblade/vim-gitgutter'
+Plug 'xolox/vim-misc'
+Plug 'hynek/vim-python-pep8-indent'
+Plug 'mbbill/undotree'
+Plug 't9md/vim-choosewin'
+Plug 'tommcdo/vim-exchange'
+" Plug 'tomtom/tlib_vim'
+" Plug 'cespare/vim-toml'
+" Plug 'ivanov/vim-ipython'
+" Plug 'MarcWeber/vim-addon-mw-utils'
 
 " Colour schemes
-Plugin 'nanotech/jellybeans.vim'
+Plug 'nanotech/jellybeans.vim'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+call plug#end()
 " }}}
 
 " Initial cursor positioning {{{
