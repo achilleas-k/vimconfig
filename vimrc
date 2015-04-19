@@ -96,6 +96,7 @@ set smartcase
 "set spell
 set cursorline
 set nocursorcolumn
+set lazyredraw
 set hidden
 "let &colorcolumn=join(range(81,999),",")
 "highlight ColorColumn ctermbg=244 guibg=#101010
