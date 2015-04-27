@@ -124,16 +124,16 @@ com! Cleanws call <SID>StripTrailingWhitespaces()
 
 " Custom mappings {{{
 nmap <F8> :TagbarToggle<CR>
-nmap 1 :b!1<CR>
-nmap 2 :b!2<CR>
-nmap 3 :b!3<CR>
-nmap 4 :b!4<CR>
-nmap 5 :b!5<CR>
-nmap 6 :b!6<CR>
-nmap 7 :b!7<CR>
-nmap 8 :b!8<CR>
-nmap 9 :b!9<CR>
-nmap 0 :b!10<CR>
+nmap <A-1> :b!1<CR>
+nmap <A-2> :b!2<CR>
+nmap <A-3> :b!3<CR>
+nmap <A-4> :b!4<CR>
+nmap <A-5> :b!5<CR>
+nmap <A-6> :b!6<CR>
+nmap <A-7> :b!7<CR>
+nmap <A-8> :b!8<CR>
+nmap <A-9> :b!9<CR>
+nmap <A-0> :b!10<CR>
 nmap 1 :b!1<CR>
 nmap 2 :b!2<CR>
 nmap 3 :b!3<CR>
