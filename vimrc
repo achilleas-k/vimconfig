@@ -155,18 +155,17 @@ noremap <C-L>     <C-W>l
 noremap <F2>      :set relativenumber!<CR>
 
 " next and previous buffer
-noremap <A-,>    :bp<CR>
-noremap <A-.>    :bn<CR>
-noremap ,      :bp<CR>
-noremap .      :bn<CR>
-noremap <A-->    :bp<CR>
-noremap <A-=>    :bn<CR>
-noremap -      :bp<CR>
-noremap =      :bn<CR>
+noremap <silent> <A-,>    :<C-U>exe v:count1."bp"<CR>
+noremap <silent> <A-.>    :<C-U>exe v:count1."bn"<CR>
+noremap <silent> ,      :<C-U>exe v:count1."bp"<CR>
+noremap <silent> .      :<C-U>exe v:count1."bn"<CR>
+noremap <silent> <A-->    :<C-U>exe v:count1."bp"<CR>
+noremap <silent> <A-=>    :<C-U>exe v:count1."bn"<CR>
+noremap <silent> -      :<C-U>exe v:count1."bp"<CR>
+noremap <silent> =      :<C-U>exe v:count1."bn"<CR>
 " switch back and forth between 2 buffers
-noremap <A-`>    :b#<CR>
-" same for terminal vim
-noremap `      :b#<CR>
+noremap <silent> <A-`>    :b#<CR>
+noremap <silent> `      :b#<CR>
 
 " don't remove indent on comments
 inoremap # X<BS>#
