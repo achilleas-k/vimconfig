@@ -3,7 +3,6 @@
 call plug#begin('~/.vim/plugged')
 
 " Plugins
-Plug 'gcmt/breeze.vim'
 Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
 Plug 'LaTeX-Box-Team/LaTeX-Box', { 'for': ['latex', 'tex'] }
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
@@ -25,6 +24,7 @@ Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 't9md/vim-choosewin'
 Plug 'tommcdo/vim-exchange'
+Plug 'Valloric/MatchTagAlways'
 " Plug 'tomtom/tlib_vim'
 " Plug 'cespare/vim-toml'
 " Plug 'ivanov/vim-ipython'
