@@ -72,7 +72,7 @@ set incsearch
 set number
 set autochdir
 set hlsearch
-"set ignorecase
+set ignorecase
 set smartcase
 " I keep toggling spell. Perhaps a hotkey toggle or filetype options
 "set spell
