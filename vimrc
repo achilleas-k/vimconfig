@@ -122,7 +122,17 @@ com! Cleanws call <SID>StripTrailingWhitespaces()
 " }}}
 
 " Custom mappings {{{
-nmap <F8> :TagbarToggle<CR>
+" General {{{
+noremap <A-/> :nohlsearch<CR>
+noremap /   :nohlsearch<CR>
+
+noremap <F2>      :set relativenumber!<CR>
+
+" don't remove indent on comments
+inoremap # X<BS>#
+" }}}
+
+" Buffer movement {{{
 nmap <A-1> :b!1<CR>
 nmap <A-2> :b!2<CR>
 nmap <A-3> :b!3<CR>
@@ -143,15 +153,6 @@ nmap 7 :b!7<CR>
 nmap 8 :b!8<CR>
 nmap 9 :b!9<CR>
 nmap 0 :b!10<CR>
-noremap <A-/> :nohlsearch<CR>
-noremap /   :nohlsearch<CR>
-
-noremap <C-J>     <C-W>j
-noremap <C-K>     <C-W>k
-noremap <C-H>     <C-W>h
-noremap <C-L>     <C-W>l
-
-noremap <F2>      :set relativenumber!<CR>
 
 " next and previous buffer
 noremap <silent> <A-,>    :<C-U>exe v:count1."bp"<CR>
@@ -162,12 +163,19 @@ noremap <silent> <A-->    :<C-U>exe v:count1."bp"<CR>
 noremap <silent> <A-=>    :<C-U>exe v:count1."bn"<CR>
 noremap <silent> -      :<C-U>exe v:count1."bp"<CR>
 noremap <silent> =      :<C-U>exe v:count1."bn"<CR>
+
 " switch back and forth between 2 buffers
 noremap <silent> <A-`>    :b#<CR>
 noremap <silent> `      :b#<CR>
 
-" don't remove indent on comments
-inoremap # X<BS>#
+" }}}
+
+" Split movement {{{
+noremap <C-J>     <C-W>j
+noremap <C-K>     <C-W>k
+noremap <C-H>     <C-W>h
+noremap <C-L>     <C-W>l
+" }}}
 
 " Plugin related mappings {{{
 " Unite bindings
@@ -175,7 +183,23 @@ noremap <C-b>   :Unite buffer<CR>
 noremap <C-f>   :UniteWithProjectDir file_rec/async<CR>
 noremap <C-g>   :Unite grep:.<CR>
 
-" command line editing
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
+
+" syntastic
+nnoremap <F4> :llist<CR>
+
+nnoremap <F5> :UndotreeToggle<CR>
+
+" choosewin
+nmap <leader>q <Plug>(choosewin)
+
+" fugitive
+nmap <leader>c :Gwrite<CR>:Gcommit<CR>
+
+" }}}
+
+" command line editing {{{
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 cnoremap <C-p> <Up>
@@ -186,16 +210,8 @@ cnoremap <A-b> <S-Left>
 cnoremap b <S-Left>
 cnoremap <A-f> <S-Right>
 cnoremap f <S-Right>
-
-" syntastic
-nnoremap <F4> :llist<CR>
-
-nnoremap <F5> :UndotreeToggle<CR>
-
-" choosewin
-nmap <leader>q <Plug>(choosewin)
-
 " }}}
+
 " }}}
 
 " Plugin related settings {{{
