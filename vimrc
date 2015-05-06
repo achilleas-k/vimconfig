@@ -1,4 +1,3 @@
-" vim:fdm=marker
 " Plugin setup {{{
 call plug#begin('~/.vim/plugged')
 
@@ -254,3 +253,5 @@ set undodir=~/.undodir/
 set undofile
 " }}}
 " }}}
+
+" vim:fdm=marker
