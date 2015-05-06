@@ -195,7 +195,7 @@ nnoremap <F5> :UndotreeToggle<CR>
 nmap <leader>q <Plug>(choosewin)
 
 " fugitive
-nmap <leader>gc :Gwrite<CR>:Gcommit<CR>
+nmap <leader>gc :Gwrite \| Gcommit<CR>
 nmap <leader>gd :Gdiff<CR>
 nmap <leader>gs :Gstatus<CR>
 
