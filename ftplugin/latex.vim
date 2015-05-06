@@ -47,9 +47,9 @@ set nocursorline
 set norelativenumber
 
 " tagbar workaround
-noremap <C-B>   :TagbarClose \| Unite buffer<CR>
+noremap <C-B>   :TagbarClose<CR>:Unite buffer<CR>
 noremap <C-F>   :UniteWithProjectDir file_rec/async<CR>
-noremap <C-G>   :TagbarClose \| Unite grep:.<CR>
+noremap <C-G>   :TagbarClose<CR>:Unite grep:.<CR>
 
 " tags for tex
 let g:tagbar_type_tex = {
