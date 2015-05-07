@@ -76,7 +76,7 @@ set smartcase
 " I keep toggling spell. Perhaps a hotkey toggle or filetype options
 "set spell
 set cursorline
-set nocursorcolumn
+set cursorcolumn
 set relativenumber
 set hidden
 set lazyredraw
