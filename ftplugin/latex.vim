@@ -44,6 +44,7 @@ au VimLeave *.tex,*.latex silent LatexmkClean
 " the following three options fix scrolling lag and unresponsiveness
 NoMatchParen
 set nocursorline
+set nocursorcolumn
 set norelativenumber
 
 " tagbar workaround
