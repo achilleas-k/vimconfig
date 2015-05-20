@@ -24,6 +24,8 @@ Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 't9md/vim-choosewin'
 Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
+Plug 'plasticboy/vim-markdown'
+Plug 'godlygeek/tabular'
 " Plug 'tomtom/tlib_vim'
 " Plug 'cespare/vim-toml'
 " Plug 'ivanov/vim-ipython'
