@@ -1,5 +1,5 @@
 setlocal cc=0
-setlocal nospell
+setlocal spell
 noremap j gj
 noremap k gk
 setlocal wrap

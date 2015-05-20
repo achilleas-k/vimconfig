@@ -5,8 +5,8 @@ let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = 0
 
 " --Disabled to check if other plugins cover this--
-" set tags file
-" set tags=$HOME/ctags/python.tags
+" setlocal tags file
+" setlocal tags=$HOME/ctags/python.tags
 " generate ctags on save
 " au BufWritePost *.py silent! !ctags -a --languages=python -f $HOME/ctags/python.tags -R $(pwd) &
 
@@ -18,20 +18,20 @@ let g:jedi#show_call_signatures = 0
 "  autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/ftplugin/python/python_ide
 "endif
 
-set nospell
+setlocal nospell
 
 " the following currently overlap with ~/.vimrc but they might be removed from
 " the global conf
-set tabstop=8
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-set autoindent
-set formatoptions=cqj
-set textwidth=78
-set foldmethod=indent
-set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-set colorcolumn=80
+setlocal tabstop=8
+setlocal softtabstop=4
+setlocal shiftwidth=4
+setlocal expandtab
+setlocal autoindent
+setlocal formatoptions=cqj
+setlocal textwidth=78
+setlocal foldmethod=indent
+setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+setlocal colorcolumn=80
 
 " don't remove indent on comments
 inoremap # X<BS>#
@@ -47,7 +47,7 @@ import sys
 import vim
 for p in sys.path:
     if os.path.isdir(p):
-        vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
+        vim.command(r"setlocal path+=%s" % (p.replace(" ", r"\ ")))
 EOF
 
 

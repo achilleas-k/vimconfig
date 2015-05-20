@@ -1,11 +1,11 @@
-set spell
+setlocal spell
 noremap j gj
 noremap k gk
-set autoindent
-set cc=0
-set wrap
-set linebreak
-set textwidth=0
-set wrapmargin=0
+setlocal autoindent
+setlocal cc=0
+setlocal wrap
+setlocal linebreak
+setlocal textwidth=0
+setlocal wrapmargin=0
 
 

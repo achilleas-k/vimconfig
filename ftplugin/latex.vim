@@ -7,13 +7,13 @@ noremap k gk
 "inoremap <A-F6> <ESC>:w<CR>:!pdflatex -synctex=1 -interaction=nonstopmode %<CR>
 "noremap <A-F8> :!bibtex %:r.aux<CR>
 "inoremap <A-F8> <ESC>:!bibtex %:r.aux<CR>
-set cc=0  " no max length for tex
-set wrap
-set linebreak
-set nolist
-set textwidth=0
-set wrapmargin=0
-set spell
+setlocal cc=0  " no max length for tex
+setlocal wrap
+setlocal linebreak
+setlocal nolist
+setlocal textwidth=0
+setlocal wrapmargin=0
+setlocal spell
 
 " forward searching function
 " from https://tex.stackexchange.com/questions/71619/how-to-do-forward-search-to-pdf-file-opened-with-okular-from-include-files-when
@@ -43,9 +43,9 @@ au VimLeave *.tex,*.latex silent LatexmkClean
 
 " the following three options fix scrolling lag and unresponsiveness
 NoMatchParen
-set nocursorline
-set nocursorcolumn
-set norelativenumber
+setlocal nocursorline
+setlocal nocursorcolumn
+setlocal norelativenumber
 
 " tagbar workaround
 noremap <C-B>   :TagbarClose<CR>:Unite buffer<CR>
