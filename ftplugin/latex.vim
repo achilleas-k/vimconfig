@@ -10,7 +10,6 @@ noremap k gk
 setlocal cc=0  " no max length for tex
 setlocal wrap
 setlocal linebreak
-setlocal nolist
 setlocal textwidth=0
 setlocal wrapmargin=0
 setlocal spell
