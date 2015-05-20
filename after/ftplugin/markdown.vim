@@ -1,10 +1,10 @@
-set cc=0
-set spell
+setlocal cc=0
+setlocal nospell
 noremap j gj
 noremap k gk
-set wrap
-set linebreak
-set nolist
-set textwidth=0
-set wrapmargin=0
-set fo-=a
+setlocal wrap
+setlocal linebreak
+setlocal nolist
+setlocal textwidth=0
+setlocal wrapmargin=0
+setlocal fo-=a
