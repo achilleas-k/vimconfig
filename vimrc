@@ -239,15 +239,6 @@ let g:calendar_google_task = 1
 let g:gitgutter_sign_column_always = 1
 " }}}
 
-" Custom filetype extensions {{{
-" neuron filetype for mod
-au BufRead,BufNewFile *.mod set filetype=NMODL
-" neuron hoc files look OK with Java syntax highlighting
-au BufReadPost *.hoc,*.ses set syntax=java
-" mardown filetype extension
-au BufRead,BufNewFile *.md set filetype=markdown
-" }}}
-
 " Easytags options {{{
 let g:easytags_by_filetype = '~/tags'
 let g:easytags_include_members = 1
@@ -270,6 +261,13 @@ au BufWinEnter * SyntasticCheck
 set undodir=~/.undodir/
 set undofile
 " }}}
+" }}}
+
+" Custom filetype extensions {{{
+" neuron filetype for mod
+au BufRead,BufNewFile *.mod set filetype=NMODL
+" neuron hoc files look OK with Java syntax highlighting
+au BufReadPost *.hoc,*.ses set syntax=java
 " }}}
 
 " vim:fdm=marker
