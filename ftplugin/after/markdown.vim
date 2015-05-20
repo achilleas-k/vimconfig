@@ -1,4 +1,4 @@
-set cc=0
+set cc=80
 set spell
 noremap j gj
 noremap k gk
