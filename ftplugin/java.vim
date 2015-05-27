@@ -4,7 +4,6 @@ setlocal foldmethod=syntax
 " local match is the only option now
 let g:SuperTabDefaultCompletionType = "<C-N>"
 
-setlocal tabstop=8
 setlocal softtabstop=4
 setlocal shiftwidth=4
 setlocal expandtab
