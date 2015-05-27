@@ -22,7 +22,6 @@ setlocal nospell
 
 " the following currently overlap with ~/.vimrc but they might be removed from
 " the global conf
-setlocal tabstop=8
 setlocal softtabstop=4
 setlocal shiftwidth=4
 setlocal expandtab
