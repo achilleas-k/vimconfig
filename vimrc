@@ -105,6 +105,10 @@ set guioptions-=r
 set guioptions-=m
 set guioptions-=T
 set guioptions-=L
+
+" Spell checker colours and styles
+highlight clear SpellBad
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline gui=undercurl guisp=#ff0000
 " }}}
 
 " Whitespace cleaner function {{{
