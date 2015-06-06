@@ -95,10 +95,6 @@ set splitbelow
 set diffopt+=vertical
 set list listchars=tab:\|_,trail:·
 
-" Common remappings
-inoremap <C-U> <C-G>u<C-U>
-nnoremap <space> za
-vnoremap <space> zf
 " }}}
 
 " Colours and GUI {{{
@@ -136,6 +132,11 @@ com! Cleanws call <SID>StripTrailingWhitespaces()
 " General {{{
 noremap <A-/> :nohlsearch<CR>
 noremap /   :nohlsearch<CR>
+
+inoremap <C-U> <C-G>u<C-U>
+
+nnoremap <space> za
+vnoremap <space> zf
 
 noremap <F2>      :set relativenumber!<CR>
 
