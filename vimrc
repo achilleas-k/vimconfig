@@ -89,13 +89,16 @@ set sidescrolloff=5
 "highlight ColorColumn ctermbg=244 guibg=#101010
 set foldcolumn=1
 set foldlevelstart=99
-nnoremap <space> za
-vnoremap <space> zf
 " for help and docstrings
 set splitbelow
 " vertical split for diff
 set diffopt+=vertical
 set list listchars=tab:\|_,trail:·
+
+" Common remappings
+inoremap <C-U> <C-G>u<C-U>
+nnoremap <space> za
+vnoremap <space> zf
 " }}}
 
 " Colours and GUI {{{
