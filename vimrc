@@ -84,6 +84,7 @@ set hidden
 set lazyredraw
 set wildmenu
 set scrolloff=5
+set sidescrolloff=5
 "let &colorcolumn=join(range(81,999),",")
 "highlight ColorColumn ctermbg=244 guibg=#101010
 set foldcolumn=1
