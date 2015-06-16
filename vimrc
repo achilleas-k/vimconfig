@@ -142,9 +142,14 @@ noremap <F2>      :set relativenumber!<CR>
 
 " don't remove indent on comments
 inoremap # X<BS>#
+
+" error jumping
+noremap <leader>e   :lnext<CR>
+noremap <leader>E   :lprev<CR>
+
 " }}}
 
-" Buffer movement {{{
+" Buffer switching {{{
 nmap <A-1> :b!1<CR>
 nmap <A-2> :b!2<CR>
 nmap <A-3> :b!3<CR>
