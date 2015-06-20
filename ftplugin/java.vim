@@ -11,4 +11,3 @@ setlocal autoindent
 setlocal formatoptions=cqj
 setlocal textwidth=78
 setlocal colorcolumn=80
-

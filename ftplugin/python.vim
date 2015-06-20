@@ -1,27 +1,12 @@
-"for python-jedi
+" {{{ python-jedi
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_on_dot = 0
-" call signatures are nice but cause input lag - disable if lag (re)appears
+" call signatures are nice but cause input lag
 let g:jedi#show_call_signatures = 0
+" }}}
 
-" --Disabled to check if other plugins cover this--
-" setlocal tags file
-" setlocal tags=$HOME/ctags/python.tags
-" generate ctags on save
-" au BufWritePost *.py silent! !ctags -a --languages=python -f $HOME/ctags/python.tags -R $(pwd) &
-
-" The following was added ages ago and I don't know if it's relevant any more
-" See ~/notsotemp on Tessa for related files
-" from https://dev.launchpad.net/UltimateVimPythonSetup
-"if !exists("autocommands_loaded")
-"  let autocommands_loaded = 1
-"  autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/ftplugin/python/python_ide
-"endif
-
+" {{{ general
 setlocal nospell
-
-" the following currently overlap with ~/.vimrc but they might be removed from
-" the global conf
 setlocal softtabstop=4
 setlocal shiftwidth=4
 setlocal expandtab
@@ -31,13 +16,16 @@ setlocal textwidth=78
 setlocal foldmethod=indent
 setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 setlocal colorcolumn=80
+" }}}
 
+" {{{ python specific behaviour and bindings
 " don't remove indent on comments
 inoremap # X<BS>#
 
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+" }}}
 
-
+" {{{ gf - jump to file at import
 " `gf` jumps to the filename under the cursor (import statement)
 " Similar to <leader>d with Jedi, but slightly different handling
 python << EOF
@@ -48,8 +36,9 @@ for p in sys.path:
     if os.path.isdir(p):
         vim.command(r"setlocal path+=%s" % (p.replace(" ", r"\ ")))
 EOF
+" }}}
 
-
+" {{{ breakpoints
 " Use F7/Shift-F7 to add/remove a breakpoint (pdb.set_trace)
 python << EOF
 def SetBreakpoint():
@@ -96,4 +85,6 @@ def RemoveBreakpoints():
 
 vim.command( "map <s-f7> :py RemoveBreakpoints()<cr>")
 EOF
+" }}}
 
+" vim:fdm=marker

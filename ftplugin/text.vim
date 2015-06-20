@@ -9,5 +9,3 @@ setlocal wrapmargin=0
 "setlocal formatoptions+=a
 setlocal formatoptions+=n
 setlocal autoindent
-
-
