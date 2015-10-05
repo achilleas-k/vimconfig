@@ -24,7 +24,7 @@ Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 't9md/vim-choosewin'
 Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
-Plug 'plasticboy/vim-markdown'
+" Plug 'plasticboy/vim-markdown'  " issues with < and '
 Plug 'godlygeek/tabular'
 " Plug 'tomtom/tlib_vim'
 " Plug 'cespare/vim-toml'
@@ -284,9 +284,11 @@ set undofile
 
 " Custom filetype extensions {{{
 " neuron filetype for mod
-au BufRead,BufNewFile *.mod set filetype=NMODL
+au BufNewFile,BufReadPost *.mod set filetype=NMODL
 " neuron hoc files look OK with Java syntax highlighting
-au BufReadPost *.hoc,*.ses set syntax=java
+au BufNewFile,BufReadPost *.hoc,*.ses set syntax=java
+" markdown - from https://github.com/tpope/vim-markdown
+au BufNewFile,BufReadPost *.md set filetype=markdown
 " }}}
 
 " vim:fdm=marker
