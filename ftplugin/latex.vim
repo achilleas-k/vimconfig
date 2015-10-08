@@ -16,9 +16,10 @@ setlocal spell
 " from https://tex.stackexchange.com/questions/71619/how-to-do-forward-search-to-pdf-file-opened-with-okular-from-include-files-when
 function! SyncTexForward()
     let s:syncfile = fnamemodify(fnameescape(LatexBox_GetMainFileName()), ":r").".pdf"
-    let execstr = "silent !okular --unique ".s:syncfile."\\#src:".line(".").expand("%\:p").' &'
+    let execstr = "silent !okular --unique ".s:syncfile."\\#src:".line(".").expand("%\:p").' &> /dev/null &'
     exec execstr
     echo s:syncfile
+    :redraw!
 endfunction
 nnoremap <A-F9> :call SyncTexForward()<CR>
 nnoremap <F9> :call SyncTexForward()<CR>
