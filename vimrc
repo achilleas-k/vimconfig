@@ -291,5 +291,15 @@ au BufNewFile,BufReadPost *.hoc,*.ses set syntax=java
 " markdown - from https://github.com/tpope/vim-markdown
 au BufNewFile,BufReadPost *.md set filetype=markdown
 " }}}
+"
+" " Set terminal window title {{{
+au BufEnter * let &titlestring = 'vim(' . v:servername . '): ' . expand("%:t")
+if &term =~ "screen"
+    set t_ts=k
+    set t_fs=\
+endif
+if &term =~ "screen" || &term =~ "xterm"
+    set title
+endif
 
 " vim:fdm=marker
