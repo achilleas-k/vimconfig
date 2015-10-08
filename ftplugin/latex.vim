@@ -21,6 +21,7 @@ function! SyncTexForward()
     echo s:syncfile
 endfunction
 nnoremap <A-F9> :call SyncTexForward()<CR>
+nnoremap <F9> :call SyncTexForward()<CR>
 " }}}
 
 " {{{ latex box mappings and options
@@ -33,8 +34,9 @@ let g:LatexBox_show_warnings = 0
 let g:LatexBox_Folding = 1
 
 noremap <A-F6>      :w<CR>:Latexmk<CR>
+noremap <F6>      :w<CR>:Latexmk<CR>
 inoremap <A-F6>     <ESC>:w<CR>:Latexmk<CR>
-"noremap <A-F9>      :LatexView<CR>
+inoremap <F6>      :w<CR>:Latexmk<CR>
 
 " clean latex junk on close
 au BufDelete *.tex,*.latex silent LatexmkClean
