@@ -37,7 +37,7 @@ let g:LatexBox_Folding = 1
 noremap <A-F6>      :w<CR>:Latexmk<CR>
 noremap <F6>      :w<CR>:Latexmk<CR>
 inoremap <A-F6>     <ESC>:w<CR>:Latexmk<CR>
-inoremap <F6>      :w<CR>:Latexmk<CR>
+inoremap <F6>     <ESC>:w<CR>:Latexmk<CR>
 
 " clean latex junk on close
 au BufDelete *.tex,*.latex silent LatexmkClean
