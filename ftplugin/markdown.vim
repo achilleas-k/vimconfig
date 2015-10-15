@@ -2,6 +2,7 @@ setlocal tabstop=2
 setlocal softtabstop=2
 setlocal shiftwidth=2
 
+let g:vim_markdown_math = 1
 
 " {{{ Compile to PDF using pandoc (function and binding)
 function! CompilePDF()
