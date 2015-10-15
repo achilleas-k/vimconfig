@@ -27,6 +27,7 @@ function! OpenPDF()
     echo l:pdffile
     :redraw!
 endfunction
+
 nnoremap <A-F9> :call OpenPDF()<CR>
 nnoremap <F9> :call OpenPDF()<CR>
 " }}}
