@@ -8,7 +8,7 @@ let g:vim_markdown_math = 1
 function! CompilePDF()
     let l:curfile = fnameescape(expand('%:p'))
     let l:outfile = fnamemodify(l:curfile, ":r").".pdf"
-    let execstr = "silent !pandoc -f markdown -t latex -o".l:outfile." ".l:curfile
+    let execstr = "silent !pandoc -f markdown -t latex -o".l:outfile." ".l:curfile." &> /dev/null &"
     exec execstr
     echo l:outfile
     :redraw!
