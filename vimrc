@@ -25,7 +25,7 @@ Plug 't9md/vim-choosewin'
 Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
 Plug 'vim-scripts/TaskList.vim'
-" Plug 'plasticboy/vim-markdown'  " issues with < and '
+Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 " Plug 'tomtom/tlib_vim'
 " Plug 'cespare/vim-toml'
@@ -288,7 +288,7 @@ set undofile
 au BufNewFile,BufReadPost *.mod set filetype=NMODL
 " neuron hoc files look OK with Java syntax highlighting
 au BufNewFile,BufReadPost *.hoc,*.ses set syntax=java
-" markdown - from https://github.com/tpope/vim-markdown
+" markdown - probably unnecessary
 au BufNewFile,BufReadPost *.md set filetype=markdown
 " }}}
 "
