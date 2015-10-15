@@ -4,7 +4,7 @@ setlocal shiftwidth=2
 
 
 " {{{ Compile to PDF using pandoc (function and binding)
-function! PDFCompile()
+function! CompilePDF()
     let l:curfile = fnameescape(expand('%:p'))
     let l:outfile = fnamemodify(l:curfile, ":r").".pdf"
     let execstr = "silent !pandoc -f markdown -t latex -o".l:outfile." ".l:curfile
@@ -13,10 +13,10 @@ function! PDFCompile()
     :redraw!
 endfunction
 
-noremap <A-F6>      :w<CR>:call PDFCompile()<CR>
-noremap <F6>      :w<CR>:call PDFCompile()<CR>
-inoremap <A-F6>     <ESC>:w<CR>:call PDFCompile()<CR>
-inoremap <F6>     <ESC>:w<CR>:call PDFCompile()<CR>
+noremap <A-F6>      :w<CR>:call CompilePDF()<CR>
+noremap <F6>      :w<CR>:call CompilePDF()<CR>
+inoremap <A-F6>     <ESC>:w<CR>:call CompilePDF()<CR>
+inoremap <F6>     <ESC>:w<CR>:call CompilePDF()<CR>
 " }}}
 
 " {{{ Open PDF (function and binding)
