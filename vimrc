@@ -199,6 +199,7 @@ noremap <C-L>     <C-W>l
 
 " Plugin related mappings {{{
 " Unite bindings
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
 noremap <C-b>   :Unite buffer<CR>
 noremap <C-f>   :UniteWithProjectDir file_rec/async<CR>
 noremap <C-g>   :Unite grep:.<CR>
