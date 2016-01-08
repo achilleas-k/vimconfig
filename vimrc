@@ -27,9 +27,6 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'vim-scripts/TaskList.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
-" Plug 'tomtom/tlib_vim'
-" Plug 'cespare/vim-toml'
-" Plug 'MarcWeber/vim-addon-mw-utils'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
