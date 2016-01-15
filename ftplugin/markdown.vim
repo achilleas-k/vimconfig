@@ -1,6 +1,14 @@
 setlocal tabstop=2
 setlocal softtabstop=2
 setlocal shiftwidth=2
+setlocal spell
+noremap j gj
+noremap k gk
+setlocal wrap
+setlocal linebreak
+setlocal textwidth=0
+setlocal wrapmargin=0
+setlocal fo-=a
 
 let g:vim_markdown_math = 1
 
