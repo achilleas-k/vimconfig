@@ -9,6 +9,10 @@ let g:jedi#smart_auto_mappings = 0
 set completeopt+=noinsert
 " }}}
 
+" {{{ syntastic
+let g:syntastic_python_checkers = ['pyflakes']
+" }}}
+
 " {{{ general
 setlocal nospell
 setlocal softtabstop=4

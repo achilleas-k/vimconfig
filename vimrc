@@ -267,7 +267,6 @@ let g:easytags_async = 1
 " }}}
 
 " Syntastic {{{
-let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_always_populate_loc_list = 1
 
 " run syntastic on load (will do nothing for unsupported types)
