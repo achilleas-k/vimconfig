@@ -28,6 +28,7 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'vim-scripts/TaskList.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
