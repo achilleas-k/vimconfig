@@ -29,6 +29,8 @@ Plug 'vim-scripts/TaskList.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'posva/vim-vue', { 'for': 'vue' }
+Plug 'sekel/vim-vue-syntastic', { 'for': 'vue' }
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
@@ -289,6 +291,8 @@ au BufNewFile,BufReadPost *.mod set filetype=NMODL
 au BufNewFile,BufReadPost *.hoc,*.ses set syntax=java
 " markdown - probably unnecessary
 au BufNewFile,BufReadPost *.md set filetype=markdown
+" syntax vue as html
+au BufNewFile,BufReadPost *.vue set ft=html
 " }}}
 "
 " " Set terminal window title {{{
