@@ -31,6 +31,7 @@ Plug 'godlygeek/tabular'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'posva/vim-vue', { 'for': 'vue' }
 Plug 'sekel/vim-vue-syntastic', { 'for': 'vue' }
+Plug 'roxma/SimpleAutoComplPop'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
