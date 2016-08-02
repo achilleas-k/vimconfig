@@ -291,6 +291,8 @@ au BufNewFile,BufReadPost *.mod set filetype=NMODL
 au BufNewFile,BufReadPost *.hoc,*.ses set syntax=java
 " markdown - probably unnecessary
 au BufNewFile,BufReadPost *.md set filetype=markdown
+" vue as html
+au BufNewFile,BufReadPost *.vue set filetype=html
 " }}}
 "
 " " Set terminal window title {{{
