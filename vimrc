@@ -103,7 +103,7 @@ set list listchars=tab:\|_,trail:·
 " Colours and GUI {{{
 set t_Co=256
 colorscheme jellybeans
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 8
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set guicursor+=a:blinkon0
 set guioptions-=r
 set guioptions-=m
