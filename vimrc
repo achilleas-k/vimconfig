@@ -212,7 +212,7 @@ noremap <C-f>   :UniteWithProjectDir file_rec/async<CR>
 noremap <C-g>   :Unite grep:.<CR>
 
 " Tagbar
-nmap <F8> :TagbarToggle<CR>
+nmap <silent> <F8> :TagbarToggle<CR>
 
 " syntastic
 nnoremap <F4> :llist<CR>
