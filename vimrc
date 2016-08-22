@@ -32,7 +32,8 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'roxma/SimpleAutoComplPop'
 Plug 'othree/html5.vim'
 Plug 'fatih/vim-go', { 'for': 'go' }
-Plug 'jiangmiao/auto-pairs'
+Plug 'luochen1990/rainbow'
+Plug 'cohama/lexima.vim'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
