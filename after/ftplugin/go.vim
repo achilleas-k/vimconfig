@@ -5,9 +5,6 @@ map <leader>i   :GoImport<space>
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_aggregate_errors = 1
 
-" GoFmt breaks auto-pair behaviour
-let g:go_fmt_autosave = 0
-
 " let g:go_highlight_functions = 1
 " let g:go_highlight_methods = 1
 " let g:go_highlight_fields = 1
@@ -17,3 +14,4 @@ let g:go_fmt_autosave = 0
 let g:go_fmt_command = "goimports"
 let g:go_play_open_browser = 0
 
+setlocal foldmethod=syntax
