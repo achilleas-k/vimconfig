@@ -282,11 +282,6 @@ set regexpengine=1
 " Syntastic {{{
 let g:syntastic_always_populate_loc_list = 1
 
-" vim-go + syntastic settings
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
-let g:go_list_type = "quickfix"
-
 " run syntastic on load (will do nothing for unsupported types)
 au BufWinEnter * SyntasticCheck
 " }}}
