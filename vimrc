@@ -298,7 +298,7 @@ let g:go_play_open_browser = 0
 " }}}
 
 " Undo stuff {{{
-set undodir=~/.undodir/
+set undodir=~/.vim/undodir/
 set undofile
 " }}}
 " }}}
