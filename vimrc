@@ -131,6 +131,9 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 com! Cleanws call <SID>StripTrailingWhitespaces()
+
+" run the cleaner on save (this will definitely come back to haunt me)
+au BufWritePost * Cleanws
 " }}}
 
 " Custom mappings {{{
