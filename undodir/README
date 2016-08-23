@@ -1,1 +1,1 @@
-This directory should remain empty in the repository but created for undo tracking.
+This directory is used for undo tracking. The contents should not be added to the repository.
