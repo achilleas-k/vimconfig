@@ -142,8 +142,8 @@ au BufWritePost * Cleanws
 
 " Make escape delay extremely short
 set timeout
-set timeoutlen=0
-set ttimeoutlen=10
+set timeoutlen=300
+set ttimeoutlen=0
 
 " General {{{
 noremap <A-/> :nohlsearch<CR>
