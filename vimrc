@@ -139,6 +139,12 @@ au BufWritePost * Cleanws
 " }}}
 
 " Custom mappings {{{
+
+" Make escape delay extremely short
+set timeout
+set timeoutlen=0
+set ttimeoutlen=10
+
 " General {{{
 noremap <A-/> :nohlsearch<CR>
 noremap /   :nohlsearch<CR>
