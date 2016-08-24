@@ -1,6 +1,9 @@
 map <silent> <leader>d   :GoDef<CR>
-map <silent> <leader>k   :GoDoc<CR>
+map <silent> <leader>k   :GoDocBrowser<CR>
 map <leader>i   :GoImport<space>
+map <leader>r   :GoErrCheck<CR>
+map <leader>e   :cnext<CR>
+map <leader>E   :cprev<CR>
 
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_aggregate_errors = 1
