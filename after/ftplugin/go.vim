@@ -1,7 +1,8 @@
 map <silent> <leader>d   :GoDef<CR>
 map <silent> <leader>k   :GoDocBrowser<CR>
 map <leader>i   :GoImport<space>
-map <leader>r   :GoMetaLinter<CR>
+map <leader>r   :GoRename<space>
+map <leader>c   :GoMetaLinter<CR>
 map <leader>e   :cnext<CR>
 map <leader>E   :cprev<CR>
 
