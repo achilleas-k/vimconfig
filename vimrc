@@ -98,7 +98,7 @@ set foldlevelstart=99
 set splitbelow
 " vertical split for diff
 set diffopt+=vertical
-set list listchars=tab:\|_,trail:·
+set list listchars=tab:\|·,trail:·
 " update stuff quicker (default 4000)
 set updatetime=1000
 
