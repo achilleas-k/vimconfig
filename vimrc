@@ -31,7 +31,7 @@ Plug 'godlygeek/tabular'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'roxma/SimpleAutoComplPop'
 Plug 'othree/html5.vim'
-Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'fatih/vim-go', { 'for': 'go', 'branch': 'vim-8.0' }
 Plug 'jiangmiao/auto-pairs'
 
 " Colour schemes
