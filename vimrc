@@ -33,7 +33,7 @@ Plug 'roxma/SimpleAutoComplPop'
 Plug 'othree/html5.vim'
 Plug 'fatih/vim-go', { 'for': 'go', 'branch': 'vim-8.0' }
 Plug 'jiangmiao/auto-pairs'
-
+Plug 'luochen1990/rainbow'
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
 
