@@ -34,6 +34,7 @@ Plug 'othree/html5.vim'
 Plug 'fatih/vim-go', { 'for': 'go', 'branch': 'vim-8.0' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow'
+
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
 
@@ -300,6 +301,10 @@ au BufWinEnter * SyntasticCheck
 " Undo stuff {{{
 set undodir=~/.vim/undodir/
 set undofile
+" }}}
+
+" Rainbow disabled by default {{{
+let g:rainbow_active = 0
 " }}}
 " }}}
 
