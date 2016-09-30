@@ -134,8 +134,8 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 com! Cleanws call <SID>StripTrailingWhitespaces()
 
-" run the cleaner on save (this will definitely come back to haunt me)
-" au BufWritePost * Cleanws
+" run the cleaner on save for certain types
+au BufWritePost *.py Cleanws
 " }}}
 
 " Custom mappings {{{
