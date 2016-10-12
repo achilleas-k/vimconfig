@@ -222,7 +222,7 @@ noremap <C-L>     <C-W>l
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 noremap <C-b>   :Unite buffer<CR>
 noremap <C-f>   :UniteWithProjectDir file_rec/async<CR>
-noremap <C-g>   :Unite grep:.<CR>
+noremap <C-g>   :Unite grep/git:/<CR>
 
 " Tagbar
 nmap <silent> <F8> :TagbarToggle<CR>
