@@ -33,7 +33,7 @@ setlocal colorcolumn=80
 " don't remove indent on comments
 inoremap # X<BS>#
 
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+" let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " }}}
 
 " {{{ gf - jump to file at import

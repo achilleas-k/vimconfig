@@ -1,7 +1,7 @@
 " {{{ general options
 let g:tex_flavor = "latex"
 let maplocalleader = "-"
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+" let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 noremap j gj
 noremap k gk
 setlocal cc=0  " no max length for tex
