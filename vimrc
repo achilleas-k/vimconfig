@@ -306,6 +306,11 @@ set undofile
 " Rainbow disabled by default {{{
 let g:rainbow_active = 0
 " }}}
+
+" SuperTab {{{
+let g:SuperTabDefaultCompletionType = "context"
+" }}}
+
 " }}}
 
 " Custom filetype extensions {{{
