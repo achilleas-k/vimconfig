@@ -11,7 +11,8 @@ set noshowmode  " required for call signatures in command line
 " }}}
 
 " {{{ syntastic
-let g:syntastic_python_checkers = ['pyflakes', 'python']
+" let g:syntastic_python_checkers = ['pyflakes', 'python']
+let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_auto_loc_list = 1
 " }}}
@@ -33,6 +34,7 @@ setlocal colorcolumn=80
 " don't remove indent on comments
 inoremap # X<BS>#
 
+" commenting out to try global 'context' option
 " let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " }}}
 
