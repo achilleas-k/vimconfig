@@ -62,8 +62,8 @@ def SetBreakpoint():
     strWhite = re.search( '^(\s*)', strLine).group(1)
 
     vim.current.buffer.append(
-       "%(space)spdb.set_trace() %(mark)s Breakpoint %(mark)s" %
-         {'space':strWhite, 'mark': '#' * 30}, nLine - 1)
+       "%(space)spdb.set_trace()  # BREAKPOINT" %
+         {'space':strWhite, 'mark': '# ***'}, nLine - 1)
 
     for strLine in vim.current.buffer:
         if strLine == "import pdb":
