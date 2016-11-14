@@ -7,6 +7,7 @@ map <leader>r   :GoRename<space>
 map <leader>c   :GoMetaLinter<CR>
 map <leader>e   :cnext<CR>
 map <leader>E   :cprev<CR>
+map <leader>h   :GoDoc<CR>
 
 let g:syntastic_go_checkers = [] " ['go', 'golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = {'mode': 'active', 'passive_filetypes' : ['go']}
