@@ -103,6 +103,8 @@ set diffopt+=vertical
 set list listchars=tab:\|·,trail:·
 " update stuff quicker (default 4000)
 set updatetime=1000
+" show keystrokes for combined mappings
+set showcmd
 
 " }}}
 
