@@ -246,6 +246,9 @@ nmap <leader>gc :Gwrite<CR>:Gcommit<CR>
 nmap <leader>gd :Gdiff<CR>
 nmap <leader>gs :Gstatus<CR>
 
+" auto pair
+let g:AutoPairsShortcutFastWrap = 'e'
+
 " }}}
 
 " command line editing {{{
