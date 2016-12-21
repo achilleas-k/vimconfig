@@ -31,7 +31,7 @@ Plug 'godlygeek/tabular'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'roxma/SimpleAutoComplPop'
 Plug 'othree/html5.vim'
-Plug 'fatih/vim-go', { 'for': 'go', 'branch': 'vim-8.0' }
+Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow'
 Plug 'lilydjwg/colorizer'
@@ -105,13 +105,16 @@ set list listchars=tab:\|·,trail:·
 set updatetime=1000
 " show keystrokes for combined mappings
 set showcmd
+" mouse stuff for terminal
+set mouse=a
+set ttymouse=xterm2  " makes selections fast in tmux
 
 " }}}
 
 " Colours and GUI {{{
 set t_Co=256
 colorscheme jellybeans
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 9
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 11
 set guicursor+=a:blinkon0
 set guioptions-=r
 set guioptions-=m
