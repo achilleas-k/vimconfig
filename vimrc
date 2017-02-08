@@ -8,7 +8,7 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'vim-scripts/python.vim', { 'for': 'python' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'ervandew/supertab'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'Shougo/unite.vim'
@@ -35,7 +35,7 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow'
 Plug 'lilydjwg/colorizer'
-Plug 'yuttie/comfortable-motion.vim'
+Plug 'w0rp/ale'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
@@ -235,7 +235,7 @@ noremap <C-g>   :Unite grep/git:/<CR>
 " Tagbar
 nmap <silent> <F8> :TagbarToggle<CR>
 
-" syntastic
+" Toggle location list
 nnoremap <F4> :llist<CR>
 
 nnoremap <F5> :UndotreeToggle<CR>
@@ -302,11 +302,17 @@ let g:easytags_syntax_keyword = 'always'
 set regexpengine=1
 " }}}
 
+" ALE {{{
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_text_changed = 1
+" }}}
+
 " Syntastic {{{
-let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_always_populate_loc_list = 1
 
 " run syntastic on load (will do nothing for unsupported types)
-au BufWinEnter * SyntasticCheck
+" au BufWinEnter * SyntasticCheck
 " }}}
 
 " Undo stuff {{{
