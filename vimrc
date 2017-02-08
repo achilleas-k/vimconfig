@@ -35,6 +35,7 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow'
 Plug 'lilydjwg/colorizer'
+Plug 'yuttie/comfortable-motion.vim'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
