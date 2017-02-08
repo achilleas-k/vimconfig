@@ -147,9 +147,10 @@ au BufWritePost *.py Cleanws
 
 " Custom mappings {{{
 
-" Make escape delay extremely short
+" Key combo timeouts
 set timeout
-set timeoutlen=300
+set ttimeout
+set timeoutlen=1000
 set ttimeoutlen=0
 
 " General {{{
