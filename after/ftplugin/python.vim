@@ -11,11 +11,8 @@ set completeopt+=noinsert
 set noshowmode  " required for call signatures in command line
 " }}}
 
-" {{{ syntastic
-" let g:syntastic_python_checkers = ['pyflakes', 'python']
-" let g:syntastic_python_checkers = ['flake8']
-" let g:syntastic_aggregate_errors = 1
-" let g:syntastic_auto_loc_list = 1
+" ALE linters {{{
+let g:ale_linters = {'python': ['pyflakes', 'python', 'flake8']}
 " }}}
 
 " {{{ general
