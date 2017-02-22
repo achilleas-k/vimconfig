@@ -8,10 +8,9 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'vim-scripts/python.vim', { 'for': 'python' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'ervandew/supertab'
-" Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'Shougo/unite.vim'
+Plug 'Shougo/denite.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'xolox/vim-easytags'
@@ -220,11 +219,10 @@ noremap <C-L>     <C-W>l
 " }}}
 
 " Plugin related mappings {{{
-" Unite bindings
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-noremap <C-b>   :Unite buffer<CR>
-noremap <C-f>   :UniteWithProjectDir file_rec/async<CR>
-noremap <C-g>   :Unite grep/git:/<CR>
+" Denite bindings
+noremap <C-b>   :Denite buffer<CR>
+noremap <C-f>   :DeniteProjectDi file_rec<CR>
+noremap <C-g>   :Denite grep<CR>
 
 " Tagbar
 nmap <silent> <F8> :TagbarToggle<CR>
