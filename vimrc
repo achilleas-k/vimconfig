@@ -146,6 +146,8 @@ au BufWritePost *.py Cleanws
 " }}}
 
 " Custom mappings {{{
+" Buffer swapping
+noremap <silent> <leader>`  :b#<CR>
 
 " Key combo timeouts
 set timeout
