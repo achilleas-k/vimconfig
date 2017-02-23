@@ -204,7 +204,7 @@ nmap <leader>gd :Gdiff<CR>
 nmap <leader>gs :Gstatus<CR>
 
 " auto pair
-let g:AutoPairsShortcutFastWrap = 'e'
+let g:AutoPairsShortcutFastWrap = '<C-e>'
 
 " }}}
 
