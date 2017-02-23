@@ -154,8 +154,7 @@ set timeoutlen=1000
 set ttimeoutlen=0
 
 " General {{{
-noremap <A-/> :nohlsearch<CR>
-noremap /   :nohlsearch<CR>
+noremap <C-/> :nohlsearch<CR>
 
 inoremap <C-U> <C-G>u<C-U>
 
@@ -170,44 +169,6 @@ inoremap # X<BS>#
 " error jumping
 noremap <leader>e   :lnext<CR>
 noremap <leader>E   :lprev<CR>
-
-" }}}
-
-" Buffer switching {{{
-nmap <A-1> :b!1<CR>
-nmap <A-2> :b!2<CR>
-nmap <A-3> :b!3<CR>
-nmap <A-4> :b!4<CR>
-nmap <A-5> :b!5<CR>
-nmap <A-6> :b!6<CR>
-nmap <A-7> :b!7<CR>
-nmap <A-8> :b!8<CR>
-nmap <A-9> :b!9<CR>
-nmap <A-0> :b!10<CR>
-nmap 1 :b!1<CR>
-nmap 2 :b!2<CR>
-nmap 3 :b!3<CR>
-nmap 4 :b!4<CR>
-nmap 5 :b!5<CR>
-nmap 6 :b!6<CR>
-nmap 7 :b!7<CR>
-nmap 8 :b!8<CR>
-nmap 9 :b!9<CR>
-nmap 0 :b!10<CR>
-
-" next and previous buffer
-noremap <silent> <A-,>    :<C-U>exe v:count1."bp"<CR>
-noremap <silent> <A-.>    :<C-U>exe v:count1."bn"<CR>
-noremap <silent> ,      :<C-U>exe v:count1."bp"<CR>
-noremap <silent> .      :<C-U>exe v:count1."bn"<CR>
-noremap <silent> <A-->    :<C-U>exe v:count1."bp"<CR>
-noremap <silent> <A-=>    :<C-U>exe v:count1."bn"<CR>
-noremap <silent> -      :<C-U>exe v:count1."bp"<CR>
-noremap <silent> =      :<C-U>exe v:count1."bn"<CR>
-
-" switch back and forth between 2 buffers
-noremap <silent> <A-`>    :b#<CR>
-noremap <silent> `      :b#<CR>
 
 " }}}
 
