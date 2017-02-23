@@ -156,7 +156,8 @@ set timeoutlen=1000
 set ttimeoutlen=0
 
 " General {{{
-noremap <C-/> :nohlsearch<CR>
+noremap <A-/> :nohlsearch<CR>
+noremap /   :nohlsearch<CR>
 
 inoremap <C-U> <C-G>u<C-U>
 
