@@ -185,7 +185,7 @@ noremap <C-L>     <C-W>l
 " Plugin related mappings {{{
 " Denite bindings
 noremap <C-b>   :Denite buffer<CR>
-noremap <C-f>   :DeniteProjectDi file_rec<CR>
+noremap <C-f>   :DeniteProjectDir file_rec<CR>
 noremap <C-g>   :Denite grep<CR>
 
 " Tagbar
