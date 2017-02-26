@@ -114,7 +114,7 @@ set ttymouse=xterm2  " makes selections fast in tmux
 " Colours and GUI {{{
 set t_Co=256
 colorscheme jellybeans
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 11
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 8
 set guicursor+=a:blinkon0
 set guioptions-=r
 set guioptions-=m
