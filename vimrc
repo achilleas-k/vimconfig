@@ -186,7 +186,7 @@ noremap <C-L>     <C-W>l
 " Denite bindings
 noremap <C-b>   :Denite buffer<CR>
 noremap <C-f>   :DeniteProjectDir file_rec<CR>
-noremap <C-g>   :Denite grep<CR>
+noremap <C-g>   :DeniteProjectDir grep<CR>
 
 " Tagbar
 nmap <silent> <F8> :TagbarToggle<CR>
