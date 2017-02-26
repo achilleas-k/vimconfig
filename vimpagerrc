@@ -1,0 +1,12 @@
+call plug#begin('~/.vim/plugged')
+Plug 'nanotech/jellybeans.vim'
+call plug#end()
+
+" Colours and GUI {{{
+set t_Co=256
+colorscheme jellybeans
+" }}}
+
+let vimpager_passthrough = 0
+
+" vim:fdm=marker ft=vim
