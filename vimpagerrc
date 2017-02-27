@@ -8,5 +8,6 @@ colorscheme jellybeans
 " }}}
 
 let vimpager_passthrough = 0
+let vimpager_disable_x11 = 1
 
 " vim:fdm=marker ft=vim
