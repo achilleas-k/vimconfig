@@ -173,6 +173,9 @@ inoremap # X<BS>#
 noremap <leader>e   :lnext<CR>
 noremap <leader>E   :lprev<CR>
 
+" tag jumping
+noremap     t   :MtaJumpToOtherTag<CR>
+
 " }}}
 
 " Split movement {{{
