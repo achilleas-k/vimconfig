@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins
 Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
-Plug 'LaTeX-Box-Team/LaTeX-Box', { 'for': ['latex', 'tex'] }
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'vim-scripts/python.vim', { 'for': 'python' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
