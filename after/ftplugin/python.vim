@@ -4,7 +4,7 @@ let g:jedi#popup_on_dot = 1
 let g:jedi#auto_vim_configuration = 1
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_select_first = 0
-let g:jedi#show_call_signatures = 2
+let g:jedi#show_call_signatures = 0
 let g:jedi#smart_auto_mappings = 0
 let g:jedi#auto_close_doc = 1
 set completeopt+=noinsert
@@ -12,7 +12,7 @@ set noshowmode  " required for call signatures in command line
 " }}}
 
 " ALE linters {{{
-let g:ale_linters = {'python': ['pyflakes', 'python', 'flake8']}
+let g:ale_linters = {'python': ['flake8', 'mypy']}
 " }}}
 
 " {{{ general
