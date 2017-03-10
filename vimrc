@@ -158,6 +158,12 @@ set ttimeoutlen=0
 noremap <silent> <A-/> :nohlsearch<CR>
 noremap <silent> /   :nohlsearch<CR>
 
+" Previous/Next code block (function, method, etc)
+map <A-k> [[
+map k   [[
+map <A-j> ]]
+map j   ]]
+
 inoremap <C-U> <C-G>u<C-U>
 
 nnoremap <space> za
