@@ -290,13 +290,6 @@ let g:ale_lint_on_text_changed = 1
 let g:ale_sign_column_always = 1
 " }}}
 
-" Syntastic {{{
-" let g:syntastic_always_populate_loc_list = 1
-
-" run syntastic on load (will do nothing for unsupported types)
-" au BufWinEnter * SyntasticCheck
-" }}}
-
 " Undo stuff {{{
 set undodir=~/.vim/undodir/
 set undofile
@@ -313,17 +306,13 @@ let g:SuperTabDefaultCompletionType = "context"
 " }}}
 
 " Custom filetype extensions {{{
-" neuron filetype for mod
-au BufNewFile,BufReadPost *.mod set filetype=NMODL
-" neuron hoc files look OK with Java syntax highlighting
-au BufNewFile,BufReadPost *.hoc,*.ses set syntax=java
 " markdown - probably unnecessary
 au BufNewFile,BufReadPost *.md set filetype=markdown
 " vue as html
 au BufNewFile,BufReadPost *.vue set filetype=html
 " }}}
-"
-" " Set terminal window title {{{
+
+" Set terminal window title {{{
 au BufEnter * let &titlestring = 'vim(' . v:servername . '): ' . expand("%:t")
 if &term =~ "screen"
     set t_ts=k
