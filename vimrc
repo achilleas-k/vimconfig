@@ -26,7 +26,7 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'vim-scripts/TaskList.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
-Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'achilleas-k/vim-tmux-focus-events'
 Plug 'roxma/SimpleAutoComplPop'
 Plug 'othree/html5.vim'
 Plug 'fatih/vim-go', { 'for': 'go' }
