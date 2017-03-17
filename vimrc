@@ -23,15 +23,15 @@ Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 't9md/vim-choosewin'
 Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
-Plug 'vim-scripts/TaskList.vim'
+Plug 'vim-scripts/TaskList.vim', { 'on': 'TaskList' }
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'achilleas-k/vim-tmux-focus-events'
 Plug 'roxma/SimpleAutoComplPop'
-Plug 'othree/html5.vim'
+Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'jiangmiao/auto-pairs'
-Plug 'luochen1990/rainbow'
+Plug 'luochen1990/rainbow', { 'on': 'RainbowToggle' }
 Plug 'lilydjwg/colorizer'
 Plug 'w0rp/ale'
 
