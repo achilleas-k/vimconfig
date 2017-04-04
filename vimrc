@@ -217,7 +217,7 @@ noremap <C-g>   :DeniteProjectDir -no-empty grep<CR>
 nmap <silent> <F8> :TagbarToggle<CR>
 
 " Toggle location list
-nnoremap <F4> :llist<CR>
+nnoremap <F4> :lwindow<CR>
 
 nnoremap <F5> :UndotreeToggle<CR>
 
