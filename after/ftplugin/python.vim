@@ -1,4 +1,7 @@
 " {{{ python-jedi
+" disabling completion for completor
+" this makes most of the other opts redundant
+let g:jedi#completions_enabled = 0
 let g:jedi#auto_initialization = 1
 let g:jedi#popup_on_dot = 1
 let g:jedi#auto_vim_configuration = 1
