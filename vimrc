@@ -209,8 +209,8 @@ noremap <C-L>     <C-W>l
 " Plugin related mappings {{{
 " Denite bindings
 noremap <C-b>   :Denite buffer<CR>
-noremap <C-f>   :DeniteProjectDir file_rec<CR>
-noremap <C-g>   :DeniteProjectDir -no-empty grep<CR>
+noremap <C-f>   :DeniteProjectDir -path=getcwd() file_rec<CR>
+noremap <C-g>   :DeniteProjectDir -path=getcwd() -no-empty grep<CR>
 
 " Tagbar
 nmap <silent> <F8> :TagbarToggle<CR>
