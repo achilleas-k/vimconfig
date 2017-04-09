@@ -20,7 +20,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'xolox/vim-misc'
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
-Plug 't9md/vim-choosewin'
 Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
 Plug 'vim-scripts/TaskList.vim', { 'on': 'TaskList' }
@@ -220,9 +219,6 @@ nmap <silent> <F8> :TagbarToggle<CR>
 nnoremap <F4> :lwindow<CR>
 
 nnoremap <F5> :UndotreeToggle<CR>
-
-" choosewin
-nmap <leader>q <Plug>(choosewin)
 
 " fugitive
 nmap <leader>gc :Gwrite<CR>:Gcommit<CR>
