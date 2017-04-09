@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins
 Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
-Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'vim-scripts/python.vim', { 'for': 'python' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'ervandew/supertab'
@@ -27,7 +26,7 @@ Plug 'vim-scripts/TaskList.vim', { 'on': 'TaskList' }
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'achilleas-k/vim-tmux-focus-events'
-Plug 'roxma/SimpleAutoComplPop'
+Plug 'maralla/completor.vim'
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'jiangmiao/auto-pairs'
