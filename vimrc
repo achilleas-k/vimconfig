@@ -252,6 +252,19 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 " }}}
 
+" Denite {{{
+call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
+            \ [
+            \   '*~', '*.o', '*.exe', '*.bak',
+            \   '.DS_Store', '*.pyc', '*.sw[po]', '*.class',
+            \   '.hg/', '.git/', '.bzr/', '.svn/',
+            \   'tags', 'tags-*',
+            \   'build/', 'dist/', '.idea/'
+            \ ])
+call denite#custom#source('file_rec', 'matchers',
+            \ ['matcher_fuzzy', 'matcher_ignore_globs'])
+" }}}
+
 " Tagbar {{{
 " tagbar sorting - default to order of appearance
 let g:tagbar_sort = 0
