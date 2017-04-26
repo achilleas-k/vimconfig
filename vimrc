@@ -9,7 +9,6 @@ Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'Shougo/denite.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'xolox/vim-easytags'
@@ -33,6 +32,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow', { 'on': 'RainbowToggle' }
 Plug 'lilydjwg/colorizer'
 Plug 'w0rp/ale'
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
@@ -207,10 +208,10 @@ noremap <C-L>     <C-W>l
 " }}}
 
 " Plugin related mappings {{{
-" Denite bindings
-noremap <C-b>   :Denite buffer<CR>
-noremap <C-f>   :DeniteProjectDir -path=getcwd() file_rec<CR>
-noremap <C-g>   :DeniteProjectDir -path=getcwd() -no-empty grep<CR>
+" FZF bindings
+noremap <C-b>   :Buffers<CR>
+noremap <C-f>   :Files<CR>
+noremap <C-g>   :Ag<SPACE>
 
 " Tagbar
 nmap <silent> <F8> :TagbarToggle<CR>
@@ -250,19 +251,6 @@ cnoremap f <S-Right>
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-" }}}
-
-" Denite {{{
-call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
-            \ [
-            \   '*~', '*.o', '*.exe', '*.bak',
-            \   '.DS_Store', '*.pyc', '*.sw[po]', '*.class',
-            \   '.hg/', '.git/', '.bzr/', '.svn/',
-            \   'tags', 'tags-*',
-            \   'build/', 'dist/', '.idea/'
-            \ ])
-call denite#custom#source('file_rec', 'matchers',
-            \ ['matcher_fuzzy', 'matcher_ignore_globs'])
 " }}}
 
 " Tagbar {{{
