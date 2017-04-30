@@ -120,6 +120,9 @@ set guioptions-=m
 set guioptions-=T
 set guioptions-=L
 
+" Highlight word under cursor passively
+autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+
 " Spell checker colours and styles
 highlight clear SpellBad
 highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline gui=undercurl guisp=#ff0000
