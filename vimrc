@@ -121,7 +121,7 @@ set guioptions-=T
 set guioptions-=L
 
 " Highlight word under cursor passively
-autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+autocmd CursorMoved * exe printf('match MatchParen /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
 " Spell checker colours and styles
 highlight clear SpellBad
