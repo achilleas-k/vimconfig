@@ -3,8 +3,6 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins
 Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
-Plug 'davidhalter/jedi-vim', { 'for': 'python' }
-Plug 'vim-scripts/python.vim', { 'for': 'python' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
@@ -17,7 +15,10 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
 Plug 'xolox/vim-misc'
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+Plug 'vim-scripts/python.vim', { 'for': 'python' }
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
+Plug 'okcompute/vim-python-motions', { 'for': 'python' }
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
