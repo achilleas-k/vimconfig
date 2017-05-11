@@ -9,7 +9,6 @@ Plug 'majutsushi/tagbar'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'xolox/vim-easytags'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -271,17 +270,6 @@ let g:calendar_google_task = 1
 " Gitgutter {{{
 " always show gitgutter column
 let g:gitgutter_sign_column_always = 1
-" }}}
-
-" Easytags options {{{
-let g:easytags_by_filetype = '~/tags'
-let g:easytags_include_members = 1
-let g:easytags_autorecurse = 0
-let g:easytags_events = ['BufWritePost', 'BufReadPost']
-let g:easytags_auto_highlight = 0
-let g:easytags_async = 1
-let g:easytags_syntax_keyword = 'always'
-set regexpengine=1
 " }}}
 
 " ALE {{{
