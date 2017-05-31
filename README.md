@@ -7,3 +7,8 @@ Installation
 
 Run `~/.vim/clinstupd` to *clean*, *install*, and *update* plugins.
 
+Dependencies
+============
+
+Plugins and configuration options depend on the following packages:
+- `...`
