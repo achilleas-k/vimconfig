@@ -7,6 +7,10 @@ set t_Co=256
 colorscheme jellybeans
 " }}}
 
+set hlsearch
+set ignorecase
+set smartcase
+
 let vimpager_passthrough = 0
 let vimpager_disable_x11 = 1
 

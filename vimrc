@@ -76,7 +76,6 @@ set showmatch
 set ruler
 set incsearch
 set number
-set autochdir
 set hlsearch
 set ignorecase
 set smartcase
