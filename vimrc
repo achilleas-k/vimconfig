@@ -274,7 +274,7 @@ let g:gitgutter_sign_column_always = 1
 
 " Easytags options {{{
 let g:easytags_suppress_ctags_warning = 1
-let g:easytags_by_filetype = '~/tags'
+let g:easytags_by_filetype = '~/.vim/tags'
 let g:easytags_include_members = 1
 let g:easytags_autorecurse = 0
 let g:easytags_events = ['BufWritePost', 'BufReadPost']
