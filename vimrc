@@ -35,7 +35,6 @@ Plug 'lilydjwg/colorizer'
 Plug 'w0rp/ale'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
-Plug 'tmhedberg/SimpylFold'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'

@@ -26,6 +26,7 @@ setlocal expandtab
 setlocal autoindent
 setlocal formatoptions=cqj
 setlocal textwidth=78
+setlocal foldmethod=indent
 setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 setlocal colorcolumn=80
 " }}}
