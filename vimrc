@@ -6,7 +6,6 @@ Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'xolox/vim-easytags'
@@ -22,7 +21,6 @@ Plug 'okcompute/vim-python-motions', { 'for': 'python' }
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
-Plug 'vim-scripts/TaskList.vim', { 'on': 'TaskList' }
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'achilleas-k/vim-tmux-focus-events'
