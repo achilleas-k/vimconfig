@@ -15,7 +15,7 @@ set noshowmode  " required for call signatures in command line
 " }}}
 
 " ALE linters {{{
-let g:ale_linters = {'python': ['flake8', 'mypy']}
+let g:ale_linters = {'python': ['flake8', 'pylint']}
 " }}}
 
 " {{{ general
