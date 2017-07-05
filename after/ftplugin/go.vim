@@ -9,7 +9,6 @@ map <leader>h   :GoDoc<CR>
 
 let g:go_fmt_command = "goimports"
 let g:go_play_open_browser = 0
-" ALE handles automatic linting and checks, but GoMetaLinter can be used manually
 let g:go_metalinter_enabled = ['go', 'vet', 'golint', 'errcheck', 'ineffassign', 'staticcheck', 'gosimple']
 let g:go_metalinter_deadline = "30s"
 let g:go_metalinter_autosave = 0
