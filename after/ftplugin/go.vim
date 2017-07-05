@@ -13,7 +13,8 @@ let g:go_play_open_browser = 0
 let g:go_metalinter_enabled = ['go', 'vet', 'golint', 'errcheck', 'ineffassign', 'staticcheck', 'gosimple']
 let g:go_metalinter_deadline = "30s"
 let g:go_metalinter_autosave = 0
-let g:go_metalinter_autosave_enabled = []
+let g:go_metalinter_autosave_enabled = ['go', 'vet', 'golint', 'errcheck', 'ineffassign', 'staticcheck', 'gosimple']
+let g:go_highlight_types = 0
+let g:go_highlight_operators = 0
 
 let g:ale_linters = {'go': ['go build', 'gofmt', 'golint', 'gometalinter', 'gosimple', 'go vet', 'staticcheck']}
-
