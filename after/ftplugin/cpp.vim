@@ -1,4 +1,3 @@
-let g:pathogen_disabled = ['supertab']
 setlocal foldmethod=syntax
 setlocal softtabstop=4
 setlocal shiftwidth=4

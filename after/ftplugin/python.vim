@@ -34,8 +34,6 @@ setlocal colorcolumn=80
 " {{{ python specific behaviour and bindings
 " don't remove indent on comments
 inoremap # X<BS>#
-
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " }}}
 
 " {{{ gf - jump to file at import
