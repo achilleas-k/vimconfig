@@ -33,6 +33,7 @@ Plug 'lilydjwg/colorizer'
 Plug 'w0rp/ale'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
+Plug 'Matt-Deacalion/vim-systemd-syntax'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
