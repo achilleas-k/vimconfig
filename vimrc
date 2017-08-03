@@ -268,7 +268,7 @@ let g:calendar_google_task = 1
 
 " Gitgutter {{{
 " always show gitgutter column
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 " }}}
 
 " Easytags options {{{
