@@ -23,7 +23,7 @@ Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
-Plug 'achilleas-k/vim-tmux-focus-events'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'maralla/completor.vim'
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'fatih/vim-go', { 'for': 'go' }
