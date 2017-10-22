@@ -177,8 +177,8 @@ noremap <F2>      :set relativenumber!<CR>
 inoremap # X<BS>#
 
 " error jumping
-noremap <leader>e   :lnext<CR>
-noremap <leader>E   :lprev<CR>
+noremap <leader>e   :ALENext<CR>
+noremap <leader>E   :ALEPrevious<CR>
 
 " tag jumping
 noremap     t   :MtaJumpToOtherTag<CR>
