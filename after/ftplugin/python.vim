@@ -17,8 +17,8 @@ set noshowmode  " required for call signatures in command line
 " ALE linters {{{
 let g:ale_linters = {'python': ['flake8', 'pylint', 'mypy', 'pycodestyle']}
 let g:ale_python_mypy_options = '--ignore-missing-imports'
-let g:ale_fixers = {'python': ['autopep8', 'yapf']}
-let g:ale_fix_on_save = 1
+let g:ale_fixers = {'python': ['yapf']}
+let g:ale_fix_on_save = 0
 " }}}
 
 " {{{ general
