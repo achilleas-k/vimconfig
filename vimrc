@@ -255,6 +255,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#flags = 'f'  " show full tag hierarchy
 let g:airline_left_sep = '' " '┃'
 let g:airline_right_sep = '' " '┃'
+let g:airline_inactive_collapse = 0
 if !exists('g:airline_symbols')
 let g:airline_symbols = {}
 endif
