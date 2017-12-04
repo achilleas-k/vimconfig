@@ -20,3 +20,4 @@ let g:go_highlight_operators = 1
 
 " let g:ale_linters = {'go': ['go build', 'gofmt', 'golint', 'gometalinter', 'gosimple', 'go vet', 'staticcheck']}
 let g:ale_linters = {'go': ['gometalinter']}
+let g:ale_go_gometalinter_options = '--fast'
