@@ -153,7 +153,7 @@ noremap <silent> <leader>`  :b#<CR>
 " Key combo timeouts
 set timeout
 set ttimeout
-set timeoutlen=1000
+set timeoutlen=600
 set ttimeoutlen=0
 
 " General {{{
