@@ -9,8 +9,6 @@ setlocal colorcolumn=80
 setlocal completeopt=menu,menuone
 setlocal tags+=~/tags/cpp
 
-let g:clang_snippets = 1
-let g:clang_snippets_engine = 'clang_complete'
 let g:clang_jumpto_declaration_key = '<Leader>d'
-let g:clang_complete_auto = 0
+let g:clang_complete_auto = 1
 let g:clang_use_library = 1
