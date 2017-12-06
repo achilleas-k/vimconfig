@@ -2,6 +2,7 @@
 " disabling completion for completor
 " this makes most of the other opts redundant
 let g:jedi#auto_initialization = 1
+let g:jedi#force_py_version = 3
 let g:jedi#completions_enabled = 0
 let g:jedi#popup_on_dot = 0
 let g:jedi#auto_vim_configuration = 0
@@ -16,7 +17,7 @@ set noshowmode  " required for call signatures in command line
 " }}}
 
 " ALE linters {{{
-let g:ale_linters = {'python': ['mypy', 'pycodestyle', 'pyflakes']}
+let g:ale_linters = {'python': ['pycodestyle', 'pyflakes']}
 let g:ale_python_mypy_options = '--ignore-missing-imports'
 let g:ale_fixers = {'python': ['yapf']}
 let g:ale_fix_on_save = 0
