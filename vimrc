@@ -107,7 +107,8 @@ set showcmd
 " mouse stuff for terminal
 set mouse=a
 set ttymouse=xterm2  " makes selections fast in tmux
-
+" never autoinsert a completion option
+set completeopt+=noinsert
 " }}}
 
 " Colours and GUI {{{
