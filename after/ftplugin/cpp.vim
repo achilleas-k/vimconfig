@@ -6,7 +6,6 @@ setlocal autoindent
 setlocal formatoptions=cqj
 setlocal textwidth=78
 setlocal colorcolumn=80
-setlocal completeopt=menu,menuone
 setlocal tags+=~/tags/cpp
 
 let g:clang_jumpto_declaration_key = '<Leader>d'
