@@ -109,6 +109,8 @@ set mouse=a
 set ttymouse=xterm2  " makes selections fast in tmux
 " never autoinsert a completion option
 set completeopt+=noinsert
+set completeopt+=menuone
+set completeopt+=noselect
 " }}}
 
 " Colours and GUI {{{
