@@ -8,7 +8,7 @@ Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'xolox/vim-easytags'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -289,16 +289,8 @@ let g:calendar_google_task = 1
 set signcolumn=yes
 " }}}
 
-" Easytags options {{{
-let g:easytags_suppress_ctags_warning = 1
-let g:easytags_by_filetype = '~/.vim/tags'
-let g:easytags_include_members = 1
-let g:easytags_autorecurse = 0
-let g:easytags_events = ['BufWritePost', 'BufReadPost']
-let g:easytags_auto_highlight = 0
-let g:easytags_async = 1
-let g:easytags_syntax_keyword = 'always'
-set regexpengine=1
+" GutenTags {{{
+let g:gutentags_cache_dir = '~/.vim/tags'
 " }}}
 
 " ALE {{{
