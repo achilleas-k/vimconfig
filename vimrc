@@ -35,7 +35,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'rip-rip/clang_complete'
-Plug 'lervag/vimtex'
+Plug 'lervag/vimtex', { 'for': 'tex' }
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
