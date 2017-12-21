@@ -28,6 +28,13 @@ inoremap <A-F6>     <ESC>:w<CR>:call CompilePDF()<CR>
 inoremap <F6>     <ESC>:w<CR>:call CompilePDF()<CR>
 " }}}
 
+" open in browser {{{
+noremap <A-F7>      :w<CR>:!urlhandler '%:p'<CR>
+noremap <F7>      :w<CR>:!urlhandler '%:p'<CR>
+inoremap <A-F7>     <ESC>:w<CR>:!urlhandler '%:p'<CR>
+inoremap <F7>     <ESC>:w<CR>:!urlhandler '%:p'<CR>
+" }}}
+
 " {{{ Open PDF (function and binding)
 function! OpenPDF()
     let l:pdffile = fnamemodify(fnameescape(expand('%:p')), ":r").".pdf"
