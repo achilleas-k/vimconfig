@@ -220,6 +220,8 @@ noremap <C-L>     <C-W>l
 noremap <C-b>   :Buffers<CR>
 noremap <C-f>   :Files<CR>
 noremap <C-g>   :Ag<SPACE>
+noremap <C-a>   :Ag<SPACE>
+noremap <C-i>   :GFiles<CR>
 
 " Tagbar
 nmap <silent> <F8> :TagbarToggle<CR>
