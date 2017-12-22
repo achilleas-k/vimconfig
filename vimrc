@@ -32,9 +32,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow', { 'on': 'RainbowToggle' }
 Plug 'lilydjwg/colorizer'
 Plug 'w0rp/ale'
+Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
-Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'rip-rip/clang_complete'
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'kshenoy/vim-signature'
@@ -152,6 +152,9 @@ let $vimcachedir = expand('~/.cache/vim')
 " Undo directory
 set undodir=$vimcachedir/undo
 set undofile
+
+" backspace
+set backspace=indent,eol,start
 
 " }}}
 
