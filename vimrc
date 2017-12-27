@@ -67,7 +67,7 @@ filetype plugin on
 " }}}
 
 " Common settings {{{
-let mapleader="-"
+let mapleader=" "
 let maplocalleader=";"
 set tabstop=4
 set softtabstop=4
@@ -174,8 +174,8 @@ map j   ]]
 
 inoremap <C-U> <C-G>u<C-U>
 
-nnoremap <space> za
-vnoremap <space> zf
+nnoremap - za
+vnoremap - zf
 
 noremap <F2>      :set relativenumber!<CR>
 
