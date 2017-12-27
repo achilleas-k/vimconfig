@@ -149,7 +149,7 @@ endfunction
 com! Cleanws call <SID>StripTrailingWhitespaces()
 
 " run the cleaner on save for certain types
-au BufWritePost *.py,*.tex,*.txt Cleanws
+au BufWritePre *.py,*.tex,*.txt Cleanws
 " }}}
 
 " Custom mappings {{{
