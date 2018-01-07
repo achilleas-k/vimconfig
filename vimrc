@@ -163,14 +163,11 @@ set timeoutlen=600
 set ttimeoutlen=0
 
 " General {{{
-noremap <silent> <A-/> :nohlsearch<CR>
-noremap <silent> /   :nohlsearch<CR>
+noremap <silent><leader>/ :nohlsearch<CR>
 
 " Previous/Next code block (function, method, etc)
-map <A-k> [[
-map k   [[
-map <A-j> ]]
-map j   ]]
+nmap <leader>k [[
+nmap <leader>j ]]
 
 inoremap <C-U> <C-G>u<C-U>
 
@@ -188,23 +185,6 @@ noremap <leader>E   :ALEPrevious<CR>
 
 " tag jumping
 noremap     t   :MtaJumpToOtherTag<CR>
-
-" }}}
-
-" Buffer switching {{{
-" next and previous buffer
-noremap <silent> <A-,>    :<C-U>exe v:count1."bp"<CR>
-noremap <silent> <A-.>    :<C-U>exe v:count1."bn"<CR>
-noremap <silent> ,      :<C-U>exe v:count1."bp"<CR>
-noremap <silent> .      :<C-U>exe v:count1."bn"<CR>
-noremap <silent> <A-->    :<C-U>exe v:count1."bp"<CR>
-noremap <silent> <A-=>    :<C-U>exe v:count1."bn"<CR>
-noremap <silent> -      :<C-U>exe v:count1."bp"<CR>
-noremap <silent> =      :<C-U>exe v:count1."bn"<CR>
-
-" switch back and forth between 2 buffers
-noremap <silent> <A-`>    :b#<CR>
-noremap <silent> `      :b#<CR>
 
 " }}}
 
