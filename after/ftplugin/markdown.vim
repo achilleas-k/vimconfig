@@ -22,17 +22,13 @@ function! CompilePDF()
     :redraw!
 endfunction
 
-noremap <A-F6>      :w<CR>:call CompilePDF()<CR>
-noremap <F6>      :w<CR>:call CompilePDF()<CR>
-inoremap <A-F6>     <ESC>:w<CR>:call CompilePDF()<CR>
-inoremap <F6>     <ESC>:w<CR>:call CompilePDF()<CR>
+noremap  <buffer> <F6>      :w<CR>:call CompilePDF()<CR>
+inoremap <buffer> <F6>      <ESC>:w<CR>:call CompilePDF()<CR>
 " }}}
 
 " open in browser {{{
-noremap <A-F7>      :w<CR>:!urlhandler '%:p'<CR>
-noremap <F7>      :w<CR>:!urlhandler '%:p'<CR>
-inoremap <A-F7>     <ESC>:w<CR>:!urlhandler '%:p'<CR>
-inoremap <F7>     <ESC>:w<CR>:!urlhandler '%:p'<CR>
+noremap  <buffer>  <F7>      :w<CR>:!urlhandler '%:p'<CR>
+inoremap <buffer> <F7>     <ESC>:w<CR>:!urlhandler '%:p'<CR>
 " }}}
 
 " {{{ Open PDF (function and binding)
@@ -44,6 +40,5 @@ function! OpenPDF()
     :redraw!
 endfunction
 
-nnoremap <A-F9> :call OpenPDF()<CR>
-nnoremap <F9> :call OpenPDF()<CR>
+nnoremap <buffer> <F9> :call OpenPDF()<CR>
 " }}}
