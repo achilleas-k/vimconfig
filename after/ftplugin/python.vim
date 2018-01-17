@@ -24,7 +24,7 @@ let g:ale_fix_on_save = 0
 " }}}
 
 " {{{ general
-setlocal nospell
+setlocal spell
 setlocal softtabstop=4
 setlocal shiftwidth=4
 setlocal expandtab
