@@ -227,10 +227,6 @@ cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
-cnoremap <A-b> <S-Left>
-cnoremap b <S-Left>
-cnoremap <A-f> <S-Right>
-cnoremap f <S-Right>
 " }}}
 
 " }}}
