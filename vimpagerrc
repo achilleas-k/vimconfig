@@ -11,7 +11,8 @@ set hlsearch
 set ignorecase
 set smartcase
 
-let vimpager_passthrough = 0
+let vimpager_passthrough = 1
 let vimpager_disable_x11 = 1
+let vimpager_disable_ansiesc = 1
 
 " vim:fdm=marker ft=vim
