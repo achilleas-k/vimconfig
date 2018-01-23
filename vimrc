@@ -168,6 +168,8 @@ noremap <silent><leader>/ :nohlsearch<CR>
 " Previous/Next code block (function, method, etc)
 nmap <leader>k [[
 nmap <leader>j ]]
+vmap <leader>k [[
+vmap <leader>j ]]
 
 inoremap <C-U> <C-G>u<C-U>
 
