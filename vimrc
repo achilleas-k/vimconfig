@@ -81,8 +81,7 @@ set number
 set hlsearch
 set ignorecase
 set smartcase
-" I keep toggling spell. Perhaps a hotkey toggle or filetype options
-"set spell
+set spell
 set cursorline
 set cursorcolumn
 set relativenumber
@@ -164,6 +163,7 @@ set ttimeoutlen=0
 
 " General {{{
 noremap <silent><leader>/ :nohlsearch<CR>
+noremap <silent><leader>s :set spell!<CR>
 
 " Previous/Next code block (function, method, etc)
 nmap <leader>k [[
