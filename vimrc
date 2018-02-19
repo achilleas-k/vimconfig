@@ -294,6 +294,10 @@ let g:rainbow_active = 0
 let g:SuperTabDefaultCompletionType = "context"
 " }}}
 
+" rooter: don't echo directory change {{{
+let g:rooter_silent_chdir = 1
+" }}}
+
 " }}}
 
 " Custom filetype extensions {{{
