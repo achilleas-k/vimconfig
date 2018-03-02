@@ -39,6 +39,7 @@ Plug 'lervag/vimtex', { 'for': 'tex' }
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 " }}}
