@@ -3,7 +3,7 @@ setlocal foldmethod=syntax
 set spell
 
 map <silent> <leader>d   :GoDef<CR>
-map <leader>i   :GoImport<space>
+map <leader>i   :GoInfo<CR>
 map <leader>r   :GoRename<space>
 map <leader>c   :GoMetaLinter<CR>
 map <leader>h   :GoDoc<CR>
