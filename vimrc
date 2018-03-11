@@ -4,7 +4,6 @@ call plug#begin('~/.vim/plugged')
 " Plugins
 Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
-Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -289,12 +288,6 @@ set undofile
 
 " Rainbow disabled by default {{{
 let g:rainbow_active = 0
-" }}}
-
-" SuperTab {{{
-let g:SuperTabDefaultCompletionType = "context"
-" }}}
-
 " }}}
 
 " Custom filetype extensions {{{
