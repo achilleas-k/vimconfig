@@ -164,6 +164,7 @@ set ttimeoutlen=0
 " General {{{
 noremap <silent><leader>/ :nohlsearch<CR>
 noremap <silent><leader>s :set spell!<CR>
+noremap <silent><leader>p :set paste!<CR>
 
 " Previous/Next code block (function, method, etc)
 nmap <leader>k [[
