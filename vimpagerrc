@@ -16,7 +16,6 @@ setlocal t_ve=
 set hlsearch
 set ignorecase
 set smartcase
-set scrolloff=999
 " }}}
 
 " vimpager stuff {{{
@@ -24,6 +23,7 @@ set scrolloff=999
 let g:vimpager = {}
 let g:less     = {}
 
+let g:less.enabled = 1
 let g:less.scrolloff = 999
 let g:vimpager.passthrough = 1
 let g:vimpager.disable_x11 = 1
@@ -32,5 +32,7 @@ let g:vimpager.disable_ansiesc = 1
 
 " Restore cursor on exit
 au VimLeave * let &t_ve = s:cursor
+" Start at top of file
+au VimEnter * exe "norm g"
 
 " vim:fdm=marker ft=vim
