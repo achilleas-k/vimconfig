@@ -1,19 +1,36 @@
+" Plugins (colour scheme only) {{{
 call plug#begin('~/.vim/plugged')
 Plug 'nanotech/jellybeans.vim'
-Plug 'arcticicestudio/nord-vim'
 call plug#end()
+" }}}
 
 " Colours and GUI {{{
 set t_Co=256
 colorscheme jellybeans
+" Disable cursor
+let s:cursor = &l:t_ve
+setlocal t_ve=
 " }}}
 
+" Common options {{{
 set hlsearch
 set ignorecase
 set smartcase
+set scrolloff=999
+" }}}
 
-let vimpager_passthrough = 1
-let vimpager_disable_x11 = 1
-let vimpager_disable_ansiesc = 1
+" vimpager stuff {{{
+" Init dicts
+let g:vimpager = {}
+let g:less     = {}
+
+let g:less.scrolloff = 999
+let g:vimpager.passthrough = 1
+let g:vimpager.disable_x11 = 1
+let g:vimpager.disable_ansiesc = 1
+" }}}
+
+" Restore cursor on exit
+au VimLeave * let &t_ve = s:cursor
 
 " vim:fdm=marker ft=vim
