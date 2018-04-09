@@ -10,6 +10,7 @@ setlocal colorcolumn=80
 let g:clang_jumpto_declaration_key = '<Leader>d'
 let g:clang_complete_auto = 1
 let g:clang_use_library = 1
+let g:ale_cpp_clangtidy_checks = []
 
 map [[ ?{<CR>w99[{:noh<CR>
 map ][ /}<CR>b99]}:noh<CR>
