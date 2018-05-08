@@ -16,3 +16,9 @@ map [[ ?{<CR>w99[{:noh<CR>
 map ][ /}<CR>b99]}:noh<CR>
 map ]] j0[[%/{<CR>:noh<CR>
 map [] k$][%?}<CR>:noh<CR>
+
+" Completion placeholder jumping
+" C-g does some funky things with tab
+unmap <C-g>
+map <tab> <Plug>CompletorCppJumpToPlaceholder
+imap <tab> <Plug>CompletorCppJumpToPlaceholder
