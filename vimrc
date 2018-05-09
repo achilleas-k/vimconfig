@@ -165,6 +165,7 @@ set ttimeoutlen=0
 noremap <silent><leader>/ :nohlsearch<CR>
 noremap <silent><leader>s :set spell!<CR>
 noremap <silent><leader>p :set paste!<CR>
+noremap <silent><leader>Y :%y+<CR>:echo "Buffer copied to clipboard"<CR>
 
 " Previous/Next code block (function, method, etc)
 nmap <leader>k [[
