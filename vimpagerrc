@@ -25,7 +25,7 @@ let g:less     = {}
 
 let g:less.enabled = 1
 let g:less.scrolloff = 999
-let g:vimpager.passthrough = 1
+let g:vimpager.passthrough = 0
 let g:vimpager.disable_x11 = 1
 let g:vimpager.disable_ansiesc = 1
 " }}}
