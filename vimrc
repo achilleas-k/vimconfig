@@ -173,8 +173,6 @@ nmap <leader>j ]]
 vmap <leader>k [[
 vmap <leader>j ]]
 
-inoremap <C-U> <C-G>u<C-U>
-
 nnoremap - za
 vnoremap - zf
 
