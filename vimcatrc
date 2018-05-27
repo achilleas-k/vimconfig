@@ -1,0 +1,11 @@
+" Plugins (colour scheme only) {{{
+call plug#begin('~/.vim/plugged')
+Plug 'nanotech/jellybeans.vim'
+call plug#end()
+" }}}
+
+" Colours and GUI {{{
+colorscheme jellybeans
+" }}}
+
+" vim:fdm=marker ft=vim
