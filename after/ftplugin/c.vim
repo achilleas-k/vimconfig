@@ -17,5 +17,6 @@ map ][ /}<CR>b99]}:noh<CR>
 map ]] j0[[%/{<CR>:noh<CR>
 map [] k$][%?}<CR>:noh<CR>
 
-map <tab> <Plug>CompletorCppJumpToPlaceholder
-imap <tab> <Plug>CompletorCppJumpToPlaceholder
+unmap <C-G>
+imap <C-L> <Plug>CompletorCppJumpToPlaceholder
+vmap <C-L> <Plug>CompletorCppJumpToPlaceholder
