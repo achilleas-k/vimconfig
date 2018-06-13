@@ -17,6 +17,6 @@ map ][ /}<CR>b99]}:noh<CR>
 map ]] j0[[%/{<CR>:noh<CR>
 map [] k$][%?}<CR>:noh<CR>
 
-unmap <C-G>
+silent! unmap <C-G>
 imap <C-L> <Plug>CompletorCppJumpToPlaceholder
 vmap <C-L> <Plug>CompletorCppJumpToPlaceholder
