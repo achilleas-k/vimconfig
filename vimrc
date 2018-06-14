@@ -200,7 +200,7 @@ noremap <C-L>     <C-W>l
 " Plugin related mappings {{{
 " FZF bindings
 noremap <c-f><c-b>  :Buffers<CR>
-noremap <c-f><c-f>  :Files<CR>
+noremap <c-f><c-o>  :Files<CR>
 noremap <c-f><c-g>  :Ag<SPACE>
 noremap <c-f><c-i>  :GFiles<CR>
 
