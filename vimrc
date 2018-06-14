@@ -199,10 +199,10 @@ noremap <C-L>     <C-W>l
 
 " Plugin related mappings {{{
 " FZF bindings
-noremap <C-b>   :Buffers<CR>
-noremap <C-f>   :Files<CR>
-noremap <C-g>   :Ag<SPACE>
-noremap <C-i>   :GFiles<CR>
+noremap <c-f><c-b>  :Buffers<CR>
+noremap <c-f><c-f>  :Files<CR>
+noremap <c-f><c-g>  :Ag<SPACE>
+noremap <c-f><c-i>  :GFiles<CR>
 
 " Tagbar
 nmap <silent> <F8> :TagbarToggle<CR>
