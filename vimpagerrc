@@ -24,7 +24,7 @@ let g:vimpager = {}
 let g:less     = {}
 
 let g:less.enabled = 1
-let g:less.scrolloff = 999
+let g:less.scrolloff = 5
 let g:vimpager.passthrough = 1
 let g:vimpager.disable_x11 = 1
 let g:vimpager.disable_ansiesc = 1
@@ -32,13 +32,5 @@ let g:vimpager.disable_ansiesc = 1
 
 " Restore cursor on exit
 au VimLeave * let &t_ve = s:cursor
-
-" WORKAROUND FOR scrolloff 999 Makes the file start at line 1000, so we move
-" to top of file (g) on VimEnter
-"
-" This then puts the cursor in a weird (stuck) state: when a search is started
-" and there are results on the first page, the cursor doesn't move. Move the
-" cursor one line down (j) to resolve this.
-au VimEnter * exe "norm gj"
 
 " vim:fdm=marker ft=vim
