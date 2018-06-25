@@ -38,7 +38,7 @@ au VimLeave * let &t_ve = s:cursor
 "
 " This then puts the cursor in a weird (stuck) state: when a search is started
 " and there are results on the first page, the cursor doesn't move. Move the
-" cursor one line down (j) to resolve this.
-au VimEnter * exe "norm gj"
+" cursor one line up (k) to resolve this.
+au VimEnter * exe "norm gk"
 
 " vim:fdm=marker ft=vim
