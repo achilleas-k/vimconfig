@@ -112,6 +112,7 @@ set ttymouse=xterm2  " makes selections fast in tmux
 set completeopt+=noinsert
 set completeopt+=menuone
 set completeopt+=noselect
+set completeopt+=preview
 " }}}
 
 " Colours and GUI {{{
