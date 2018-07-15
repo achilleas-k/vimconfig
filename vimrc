@@ -109,10 +109,7 @@ set showcmd
 set mouse=a
 set ttymouse=xterm2  " makes selections fast in tmux
 " never autoinsert a completion option
-set completeopt+=noinsert
-set completeopt+=menuone
-set completeopt+=noselect
-set completeopt+=preview
+set completeopt=noinsert,menuone,noselect
 " }}}
 
 " Colours and GUI {{{
@@ -221,6 +218,10 @@ nmap <leader>gs :Gstatus<CR>
 
 " auto pair
 let g:AutoPairsShortcutFastWrap = '<C-e>'
+
+" completor options {{{
+let g:completor_complete_options = 'noinsert,menuone,noselect'
+" }}}
 
 " }}}
 
