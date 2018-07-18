@@ -115,7 +115,7 @@ set completeopt=noinsert,menuone,noselect
 " Colours and GUI {{{
 set t_Co=256
 colorscheme jellybeans
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 11
+set guifont=monospace\ 9
 set guicursor+=a:blinkon0
 set guioptions-=r
 set guioptions-=m
