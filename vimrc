@@ -11,6 +11,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-vinegar'
 Plug 'airblade/vim-gitgutter'
 Plug 'xolox/vim-misc'
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
@@ -172,8 +173,8 @@ nmap <leader>j ]]
 vmap <leader>k [[
 vmap <leader>j ]]
 
-nnoremap - za
-vnoremap - zf
+nnoremap = za
+vnoremap = zf
 
 noremap <F2>      :set relativenumber!<CR>
 
