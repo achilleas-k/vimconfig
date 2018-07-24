@@ -173,8 +173,8 @@ nmap <leader>j ]]
 vmap <leader>k [[
 vmap <leader>j ]]
 
-nnoremap = za
-vnoremap = zf
+nnoremap + za
+vnoremap + zf
 
 noremap <F2>      :set relativenumber!<CR>
 
