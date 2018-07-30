@@ -83,8 +83,8 @@ set hlsearch
 set ignorecase
 set smartcase
 set spell
-set cursorline
-set cursorcolumn
+set nocursorline
+set nocursorcolumn
 set relativenumber
 set hidden
 set lazyredraw
