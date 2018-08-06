@@ -190,7 +190,9 @@ noremap     t   :MtaJumpToOtherTag<CR>
 
 " }}}
 
-" Split movement {{{
+" Splits {{{
+noremap <leader>- :split<CR>
+noremap <leader>= :vsplit<CR>
 noremap <C-J>     <C-W>j
 noremap <C-K>     <C-W>k
 noremap <C-H>     <C-W>h
