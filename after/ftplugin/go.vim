@@ -1,12 +1,11 @@
 setlocal foldmethod=syntax
+setlocal spell
 
-set spell
-
-map <silent> <leader>d   :GoDef<CR>
-map <leader>i   :GoInfo<CR>
-map <leader>r   :GoRename<space>
-map <leader>c   :GoMetaLinter<CR>
-map <leader>h   :GoDoc<CR>
+map <buffer> <silent> <leader>d   :GoDef<CR>
+map <buffer> <leader>i   :GoInfo<CR>
+map <buffer> <leader>r   :GoRename<space>
+map <buffer> <leader>c   :GoMetaLinter<CR>
+map <buffer> <leader>h   :GoDoc<CR>
 
 let g:go_fmt_command = "goimports"
 let g:go_play_open_browser = 0

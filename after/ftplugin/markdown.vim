@@ -2,8 +2,8 @@ setlocal tabstop=2
 setlocal softtabstop=2
 setlocal shiftwidth=2
 setlocal spell
-noremap j gj
-noremap k gk
+noremap <buffer> j gj
+noremap <buffer> k gk
 setlocal wrap
 setlocal linebreak
 setlocal textwidth=0
@@ -23,12 +23,12 @@ function! CompilePDF()
 endfunction
 
 noremap  <buffer> <F6>      :w<CR>:call CompilePDF()<CR>
-inoremap <buffer> <F6>      <ESC>:w<CR>:call CompilePDF()<CR>
+inoremap <buffer> <F6> <ESC>:w<CR>:call CompilePDF()<CR>
 " }}}
 
 " open in browser {{{
-noremap  <buffer>  <F7>      :w<CR>:!urlhandler '%:p'<CR>
-inoremap <buffer> <F7>     <ESC>:w<CR>:!urlhandler '%:p'<CR>
+noremap  <buffer> <F7>      :w<CR>:!urlhandler '%:p'<CR>
+inoremap <buffer> <F7> <ESC>:w<CR>:!urlhandler '%:p'<CR>
 " }}}
 
 " {{{ Open PDF (function and binding)

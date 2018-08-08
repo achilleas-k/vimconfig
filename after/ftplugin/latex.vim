@@ -1,7 +1,7 @@
 " {{{ general options
 let g:tex_flavor = "latex"
-noremap j gj
-noremap k gk
+noremap <buffer> j gj
+noremap <buffer> k gk
 setlocal cc=0  " no max length for tex
 setlocal wrap
 setlocal linebreak
@@ -14,7 +14,7 @@ setlocal spell
 let g:vimtex_view_general_viewer = 'okular'
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 let g:vimtex_view_general_options_latexmk = '--unique'
-noremap <F8>   :VimtexTocToggle<CR>
+noremap <buffer> <F8>   :VimtexTocToggle<CR>
 " }}}
 
 " vim:fdm=marker

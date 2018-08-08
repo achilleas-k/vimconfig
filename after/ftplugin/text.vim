@@ -1,7 +1,7 @@
 setlocal cc=0
 setlocal spell
-noremap j gj
-noremap k gk
+noremap <buffer> j gj
+noremap <buffer> k gk
 setlocal wrap
 setlocal linebreak
 setlocal textwidth=0

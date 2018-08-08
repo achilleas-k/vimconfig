@@ -1,1 +1,1 @@
-set filetype=html
+setlocal filetype=html

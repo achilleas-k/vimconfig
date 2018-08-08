@@ -36,7 +36,7 @@ setlocal colorcolumn=80
 
 " {{{ python specific behaviour and bindings
 " don't remove indent on comments
-inoremap # X<BS>#
+inoremap <buffer> # X<BS>#
 " }}}
 
 " {{{ gf - jump to file at import

@@ -12,10 +12,10 @@ let g:clang_complete_auto = 1
 let g:clang_use_library = 1
 let g:ale_cpp_clangtidy_checks = []
 
-map [[ ?{<CR>w99[{:noh<CR>
-map ][ /}<CR>b99]}:noh<CR>
-map ]] j0[[%/{<CR>:noh<CR>
-map [] k$][%?}<CR>:noh<CR>
+map <buffer> [[ ?{<CR>w99[{:noh<CR>
+map <buffer> ][ /}<CR>b99]}:noh<CR>
+map <buffer> ]] j0[[%/{<CR>:noh<CR>
+map <buffer> [] k$][%?}<CR>:noh<CR>
 
-imap <C-L> <Plug>CompletorCppJumpToPlaceholder
-vmap <C-L> <Plug>CompletorCppJumpToPlaceholder
+imap <buffer> <C-L> <Plug>CompletorCppJumpToPlaceholder
+vmap <buffer> <C-L> <Plug>CompletorCppJumpToPlaceholder

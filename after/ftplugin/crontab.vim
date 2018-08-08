@@ -1,2 +1,2 @@
-set nobackup
-set nowritebackup
+setlocal nobackup
+setlocal nowritebackup

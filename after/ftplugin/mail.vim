@@ -1,6 +1,6 @@
 setlocal spell
-noremap j gj
-noremap k gk
+noremap <buffer> j gj
+noremap <buffer> k gk
 setlocal autoindent
 setlocal cc=0
 setlocal wrap
