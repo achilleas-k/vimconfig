@@ -224,7 +224,6 @@ let g:AutoPairsShortcutFastWrap = '<C-e>'
 
 " completor options {{{
 let g:completor_complete_options = 'noinsert,menuone,noselect'
-let g:completor_refresh_always = 0
 " }}}
 
 " }}}
