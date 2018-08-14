@@ -123,8 +123,9 @@ set guioptions-=m
 set guioptions-=T
 set guioptions-=L
 
-" enable italics in jellybeans
+" enable italics in jellybeans and make comments italic
 let g:jellybeans_use_term_italics = 1
+highlight Comment cterm=italic
 
 " Highlight word under cursor passively
 autocmd CursorMoved * exe printf('match MatchParen /\V\<%s\>/', escape(expand('<cword>'), '/\'))
