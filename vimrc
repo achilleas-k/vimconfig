@@ -21,8 +21,8 @@ Plug 'okcompute/vim-python-motions', { 'for': 'python' }
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
-Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'maralla/completor.vim'
 Plug 'othree/html5.vim', { 'for': 'html' }

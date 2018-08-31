@@ -11,8 +11,10 @@ setlocal wrapmargin=0
 setlocal fo-=a
 
 let g:vim_markdown_math = 1
+let g:vim_markdown_follow_anchor = 1
+let g:vim_markdown_toc_autofit = 1
 
-" {{{ Compile to PDF using pandoc (function and binding)
+" Compile to PDF using pandoc (function and binding) {{{
 function! CompilePDF()
     let l:curfile = fnameescape(expand('%:p'))
     let l:outfile = fnamemodify(l:curfile, ":r").".pdf"
@@ -31,7 +33,8 @@ noremap  <buffer> <F7>      :w<CR>:!urlhandler '%:p'<CR>
 inoremap <buffer> <F7> <ESC>:w<CR>:!urlhandler '%:p'<CR>
 " }}}
 
-" {{{ Open PDF (function and binding)
+
+" Open PDF (function and binding) {{{
 function! OpenPDF()
     let l:pdffile = fnamemodify(fnameescape(expand('%:p')), ":r").".pdf"
     let execstr = "silent !okular --unique ".l:pdffile." &> /dev/null &"
