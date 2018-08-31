@@ -22,7 +22,6 @@ Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'maralla/completor.vim'
 Plug 'othree/html5.vim', { 'for': 'html' }
@@ -299,13 +298,6 @@ set undofile
 
 " Rainbow disabled by default {{{
 let g:rainbow_active = 0
-" }}}
-
-" Custom filetype extensions {{{
-" markdown - probably unnecessary
-au BufNewFile,BufReadPost *.md set filetype=markdown
-" vue as html
-au BufNewFile,BufReadPost *.vue set filetype=html
 " }}}
 
 " Set terminal window title {{{

@@ -10,9 +10,7 @@ setlocal textwidth=0
 setlocal wrapmargin=0
 setlocal fo-=a
 
-let g:vim_markdown_math = 1
-let g:vim_markdown_follow_anchor = 1
-let g:vim_markdown_toc_autofit = 1
+let g:markdown_fenced_languages = ['python', 'bash=sh']
 
 " Compile to PDF using pandoc (function and binding) {{{
 function! CompilePDF()
@@ -44,4 +42,8 @@ function! OpenPDF()
 endfunction
 
 nnoremap <buffer> <F9> :call OpenPDF()<CR>
+" }}}
+
+" Syntax highlight overrides {{{
+highlight markdownCode term=standout ctermfg=6
 " }}}
