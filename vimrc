@@ -111,6 +111,8 @@ set mouse=a
 set ttymouse=xterm2  " makes selections fast in tmux
 " never autoinsert a completion option
 set completeopt=noinsert,menuone,noselect
+" move beyond end of line in block selection mode
+set virtualedit=block
 " }}}
 
 " Colours and GUI {{{
