@@ -167,11 +167,15 @@ set timeoutlen=1000
 set ttimeoutlen=0
 
 " General {{{
+
+" common setting toggles
 noremap <silent><leader>/ :nohlsearch<CR>
 noremap <silent><leader>s :set spell!<CR>
 noremap <silent><leader>p :set paste!<CR>
 noremap <silent><leader>w :set wrap!<CR>
 noremap <silent><leader>Y :%y+<CR>:echo "Buffer copied to clipboard"<CR>
+noremap <silent><leader>l :set cursorline!<CR>
+noremap <silent><leader>c :set cursorcolumn!<CR>
 
 " Previous/Next code block (function, method, etc)
 nmap <leader>k [[
