@@ -248,6 +248,7 @@ cnoremap <C-f> <Right>
 " Plugin related settings {{{
 " Airline {{{
 set laststatus=2
+let g:airline_highlighting_cache = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#flags = 'f'  " show full tag hierarchy
 let g:airline_left_sep = '' " '┃'
