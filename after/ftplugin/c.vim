@@ -19,3 +19,6 @@ map <buffer> [] k$][%?}<CR>:noh<CR>
 
 imap <buffer> <C-L> <Plug>CompletorCppJumpToPlaceholder
 vmap <buffer> <C-L> <Plug>CompletorCppJumpToPlaceholder
+
+let b:AutoPairsMapCR = 0
+imap <buffer> <silent><CR> <CR><Plug>AutoPairsReturn
