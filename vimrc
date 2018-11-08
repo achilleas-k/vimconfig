@@ -24,7 +24,7 @@ Plug 'godlygeek/tabular'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'maralla/completor.vim'
 Plug 'othree/html5.vim', { 'for': 'html' }
-Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'fatih/vim-go', { 'for': ['go', 'gohtmltmpl'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow', { 'on': 'RainbowToggle' }
 Plug 'lilydjwg/colorizer'
