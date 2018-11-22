@@ -16,6 +16,7 @@ setlocal t_ve=
 set hlsearch
 set ignorecase
 set smartcase
+set nomodifiable
 " }}}
 
 " vimpager stuff {{{
