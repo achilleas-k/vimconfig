@@ -129,8 +129,9 @@ set guioptions-=L
 let g:jellybeans_use_term_italics = 1
 highlight Comment cterm=italic
 
-" Highlight word under cursor passively
-autocmd CursorMoved * exe printf('match MatchParen /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+" Highlight word under cursor passively (with custom style)
+highlight MatchWord term=reverse ctermfg=69
+autocmd CursorMoved * exe printf('match MatchWord /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
 " Spell checker colours and styles
 highlight clear SpellBad
@@ -232,9 +233,8 @@ nmap <leader>gs :Gstatus<CR>
 " auto pair
 let g:AutoPairsShortcutFastWrap = '<C-e>'
 
-" completor options {{{
+" completor options
 let g:completor_complete_options = 'noinsert,menuone,noselect'
-" }}}
 
 " }}}
 
