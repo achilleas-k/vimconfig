@@ -15,6 +15,12 @@ let g:go_metalinter_autosave = 0
 let g:go_metalinter_autosave_enabled = []
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_arguments = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_format_strings = 0
+let g:go_highlight_variable_declarations = 0
+let g:go_highlight_variable_assignments = 0
 
 " let g:ale_linters = {'go': ['go build', 'gofmt', 'golint', 'gometalinter', 'gosimple', 'go vet', 'staticcheck']}
 let g:ale_linters = {'go': ['gometalinter']}
