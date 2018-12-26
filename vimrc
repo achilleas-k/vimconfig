@@ -109,7 +109,10 @@ set updatetime=1000
 set showcmd
 " mouse stuff for terminal
 set mouse=a
-set ttymouse=xterm2  " makes selections fast in tmux
+if !has('nvim')
+    " not supported in neovim
+    set ttymouse=xterm2  " makes selections fast in tmux
+endif
 " never autoinsert a completion option
 set completeopt=noinsert,menuone,noselect
 " move beyond end of line in block selection mode

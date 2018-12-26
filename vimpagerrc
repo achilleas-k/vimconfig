@@ -1,3 +1,9 @@
+if has('nvim')
+    " set up nvim runtime paths
+    set runtimepath^=~/.vim runtimepath+=~/.vim/after
+    let &packpath = &runtimepath
+endif
+
 " Plugins (colour scheme only) {{{
 call plug#begin('~/.vim/plugged')
 Plug 'nanotech/jellybeans.vim'
