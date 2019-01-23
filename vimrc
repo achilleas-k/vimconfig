@@ -69,6 +69,7 @@ filetype plugin on
 " Common settings {{{
 let mapleader=" "
 let maplocalleader=";"
+set cpo+=J  " two spaces between sentences
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
