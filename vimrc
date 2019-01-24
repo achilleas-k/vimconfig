@@ -201,7 +201,7 @@ noremap <leader>e   :ALENext<CR>
 noremap <leader>E   :ALEPrevious<CR>
 
 " tag jumping
-noremap     t   :MtaJumpToOtherTag<CR>
+noremap <leader>t   :MtaJumpToOtherTag<CR>
 
 " }}}
 
