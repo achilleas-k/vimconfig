@@ -47,3 +47,7 @@ nnoremap <buffer> <F9> :call OpenPDF()<CR>
 " Syntax highlight overrides {{{
 highlight markdownCode term=standout ctermfg=6
 " }}}
+
+" Vim surround bold {{{
+let g:surround_{char2nr('b')} = "**\r**"
+" }}}
