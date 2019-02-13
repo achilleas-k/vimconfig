@@ -11,6 +11,24 @@ setlocal wrapmargin=0
 setlocal fo-=a
 setlocal cpo+=J  " two spaces between sentences
 
+" Add support for markdown files in tagbar.
+" requires https://github.com/jszakmeister/markdown2ctags
+" available in the AUR
+let g:tagbar_type_markdown = {
+    \ 'ctagstype': 'markdown',
+    \ 'ctagsbin' : 'markdown2ctags',
+    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
+    \ 'kinds' : [
+        \ 's:sections',
+        \ 'i:images'
+    \ ],
+    \ 'sro' : '»',
+    \ 'kind2scope' : {
+        \ 's' : 'section',
+    \ },
+    \ 'sort': 0,
+\ }
+
 let g:markdown_fenced_languages = ['python', 'bash=sh', 'yaml']
 
 " Compile to PDF using pandoc (function and binding) {{{
