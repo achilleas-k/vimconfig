@@ -9,6 +9,7 @@ setlocal linebreak
 setlocal textwidth=0
 setlocal wrapmargin=0
 setlocal fo-=a
+setlocal cpo+=J  " two spaces between sentences
 
 let g:markdown_fenced_languages = ['python', 'bash=sh', 'yaml']
 
