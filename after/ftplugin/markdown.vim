@@ -10,7 +10,7 @@ setlocal textwidth=0
 setlocal wrapmargin=0
 setlocal fo-=a
 
-let g:markdown_fenced_languages = ['python', 'bash=sh']
+let g:markdown_fenced_languages = ['python', 'bash=sh', 'yaml']
 
 " Compile to PDF using pandoc (function and binding) {{{
 function! CompilePDF()
