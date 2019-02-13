@@ -70,3 +70,14 @@ highlight markdownCode term=standout ctermfg=6
 " Vim surround bold {{{
 let g:surround_{char2nr('b')} = "**\r**"
 " }}}
+
+
+" Section jumping {{{
+" Next previous (sub)section
+map <buffer> [[ k?^#<CR>:noh<CR>
+map <buffer> ]] /^#<CR>:noh<CR>
+
+" Top-level section navigation
+map <buffer> [{ k?^#\s<CR>:noh<CR>
+map <buffer> ]} /^#\s<CR>:noh<CR>
+" }}}
