@@ -17,12 +17,12 @@ setlocal cpo+=J  " two spaces between sentences
 let g:tagbar_type_markdown = {
     \ 'ctagstype': 'markdown',
     \ 'ctagsbin' : 'markdown2ctags',
-    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
+    \ 'ctagsargs' : '-f - --sort=yes --sro=$',
     \ 'kinds' : [
         \ 's:sections',
         \ 'i:images'
     \ ],
-    \ 'sro' : '»',
+    \ 'sro' : '$',
     \ 'kind2scope' : {
         \ 's' : 'section',
     \ },
