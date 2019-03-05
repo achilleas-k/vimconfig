@@ -6,6 +6,7 @@ map <buffer> <leader>i   :GoInfo<CR>
 map <buffer> <leader>r   :GoRename<space>
 map <buffer> <leader>c   :GoMetaLinter<CR>
 map <buffer> <leader>h   :GoDoc<CR>
+map <buffer> <leader>H   :GoDocBrowser<CR>
 
 let g:go_fmt_command = "goimports"
 let g:go_play_open_browser = 0
