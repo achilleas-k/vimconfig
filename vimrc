@@ -35,6 +35,7 @@ Plug 'airblade/vim-rooter'
 Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'rip-rip/clang_complete'
 Plug 'lervag/vimtex', { 'for': 'tex' }
+Plug 'kshenoy/vim-signature'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
