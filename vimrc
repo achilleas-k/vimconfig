@@ -69,6 +69,7 @@ filetype plugin on
 " Common settings {{{
 let mapleader=" "
 let maplocalleader=";"
+set modeline
 set cpo+=J  " two spaces between sentences
 set tabstop=4
 set softtabstop=4
@@ -79,13 +80,13 @@ set showmatch
 set ruler
 set incsearch
 set number
+set relativenumber
 set hlsearch
 set ignorecase
 set smartcase
 set spell
 set cursorline
 set nocursorcolumn
-set relativenumber
 set hidden
 set lazyredraw
 set wildmenu
