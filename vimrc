@@ -37,7 +37,6 @@ Plug 'rip-rip/clang_complete'
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'kshenoy/vim-signature'
 Plug 'machakann/vim-highlightedyank'
-Plug 'maxbrunsfeld/vim-yankstack'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
@@ -220,10 +219,8 @@ noremap <C-L>     <C-W>l
 " }}}
 
 " Plugin related mappings {{{
-call yankstack#setup()
 
-nmap <leader>r <Plug>yankstack_substitute_older_paste
-nmap <leader>R <Plug>yankstack_substitute_newer_paste
+noremap <silent><leader>y :YRShow<CR>
 
 " highlightedyank
 if !exists('##TextYankPost')
