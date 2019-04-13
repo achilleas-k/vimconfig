@@ -36,6 +36,7 @@ Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'rip-rip/clang_complete'
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'kshenoy/vim-signature'
+Plug 'machakann/vim-highlightedyank'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
@@ -218,6 +219,12 @@ noremap <C-L>     <C-W>l
 " }}}
 
 " Plugin related mappings {{{
+
+" highlightedyank
+if !exists('##TextYankPost')
+  map y <Plug>(highlightedyank)
+endif
+
 " FZF bindings
 noremap <c-f><c-b>  :Buffers<CR>
 noremap <c-f><c-o>  :Files<CR>
