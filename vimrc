@@ -232,6 +232,7 @@ noremap <c-f><c-b>  :Buffers<CR>
 noremap <c-f><c-o>  :Files<CR>
 noremap <c-f><c-g>  :Ag<SPACE>
 noremap <c-f><c-i>  :GFiles<CR>
+noremap <c-f><c-m>  :Marks<CR>
 
 " Tagbar
 nmap <silent> <F8> :TagbarToggle<CR>
