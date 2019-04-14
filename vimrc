@@ -125,6 +125,9 @@ set virtualedit=block
 " for manually installed help
 helptags ~/.vim/doc
 
+" vim cache root dir
+let $vimcachedir = expand('~/.cache/vim')
+
 " }}}
 
 " Colours and GUI {{{
@@ -309,7 +312,7 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 " }}}
 
 " GutenTags {{{
-let g:gutentags_cache_dir = '~/.vim/tags'
+let g:gutentags_cache_dir = $vimcachedir . '/tags'
 " }}}
 
 " ALE {{{
@@ -319,8 +322,8 @@ let g:ale_lint_on_text_changed = 1
 let g:ale_sign_column_always = 1
 " }}}
 
-" Undo stuff {{{
-set undodir=~/.vim/undodir/
+" Undo directory {{{
+set undodir=$vimcachedir/undo
 set undofile
 " }}}
 
@@ -342,6 +345,10 @@ endif
 " Multichar surround function {{{
 let g:surround_{char2nr('m')} = "\1Surround: \1\r\1\1"
 let g:surround_{char2nr('M')} = "\1S-Open: \1\r\2S-Close: \2"
+
+" YankRing history file location
+let g:yankring_history_dir = $vimcachedir
+
 " }}}
 
 " vim:fdm=marker
