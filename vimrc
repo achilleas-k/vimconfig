@@ -121,6 +121,10 @@ endif
 set completeopt=noinsert,menuone,noselect
 " move beyond end of line in block selection mode
 set virtualedit=block
+
+" for manually installed help
+helptags ~/.vim/doc
+
 " }}}
 
 " Colours and GUI {{{
