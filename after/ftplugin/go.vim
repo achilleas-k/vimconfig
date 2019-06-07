@@ -26,3 +26,5 @@ let g:go_highlight_variable_assignments = 0
 " let g:ale_linters = {'go': ['go build', 'gofmt', 'golint', 'gometalinter', 'gosimple', 'go vet', 'staticcheck']}
 let g:ale_linters = {'go': ['gometalinter']}
 let g:ale_go_gometalinter_options = '--fast --disable=gas --deadline=1s'
+
+let g:airline#extensions#whitespace#skip_indent_check_ft = {'go': ['mixed-indent-file']}
