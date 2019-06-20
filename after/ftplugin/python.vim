@@ -11,7 +11,7 @@ let g:jedi#popup_select_first = 0
 let g:jedi#show_call_signatures = 2 " call signatures in command line
 let g:jedi#smart_auto_mappings = 0 " autoinserts import word
 let g:jedi#auto_close_doc = 1
-set noshowmode  " required for call signatures in command line
+setlocal noshowmode  " required for call signatures in command line
 " }}}
 
 " ALE linters {{{
