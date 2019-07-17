@@ -186,34 +186,36 @@ set ttimeoutlen=0
 
 " General {{{
 
-" common setting toggles
+" Common setting toggles
 noremap <silent><leader>/ :nohlsearch<CR>
 noremap <silent><leader>s :set spell!<CR>
 noremap <silent><leader>p :set paste!<CR>
 noremap <silent><leader>w :set wrap!<CR>
-noremap <silent><leader>Y :%y+<CR>:echo "Buffer copied to clipboard"<CR>
 noremap <silent><leader>l :set cursorline!<CR>
 noremap <silent><leader>c :set cursorcolumn!<CR>
+noremap <F2>      :set relativenumber!<CR>
 
-" Previous/Next code block (function, method, etc)
+" Yank whole buffer to system clipboard
+noremap <silent><leader>Y :%y+<CR>:echo "Buffer copied to clipboard"<CR>
+
+" Previous/next code block (function, method, etc)
 nmap <leader>k [[
 nmap <leader>j ]]
 vmap <leader>k [[
 vmap <leader>j ]]
 
+" Fold and unfold with +
 nnoremap + za
 vnoremap + zf
 
-noremap <F2>      :set relativenumber!<CR>
-
-" don't remove indent on comments
+" Don't remove indent on comments
 inoremap # X<BS>#
 
-" error jumping
+" Error jumping
 noremap <leader>e   :ALENext<CR>
 noremap <leader>E   :ALEPrevious<CR>
 
-" tag jumping
+" Tag jumping
 noremap <leader>m   :MtaJumpToOtherTag<CR>
 
 " }}}
