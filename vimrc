@@ -244,7 +244,7 @@ if !exists('##TextYankPost')
   map y <Plug>(highlightedyank)
 endif
 
-" FZF bindings
+" FZF mappings
 noremap <c-f><c-b>  :Buffers<CR>
 noremap <c-f><c-o>  :Files<CR>
 noremap <c-f><c-g>  :Ag<SPACE>
