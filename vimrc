@@ -204,6 +204,14 @@ nmap <leader>j ]]
 vmap <leader>k [[
 vmap <leader>j ]]
 
+" Move line(s) up or down
+nnoremap <silent><c-n> :m .+1<cr>==
+nnoremap <silent><c-p> :m .-2<cr>==
+inoremap <silent><c-n> <esc>:m .+1<cr>==gi
+inoremap <silent><c-p> <esc>:m .-2<cr>==gi
+vnoremap <silent><c-n> :m '>+1<cr>gv=gv
+vnoremap <silent><c-p> :m '<-2<cr>gv=gv
+
 " Fold and unfold with +
 nnoremap + za
 vnoremap + zf
