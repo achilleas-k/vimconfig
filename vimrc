@@ -124,7 +124,8 @@ set completeopt=noinsert,menuone,noselect
 set virtualedit=block
 
 " for manually installed help
-helptags ~/.vim/doc
+" (disabled because no custom help files)
+" helptags ~/.vim/doc
 
 " vim cache root dir
 let $vimcachedir = expand('~/.cache/vim')
@@ -227,8 +228,6 @@ noremap <C-L>     <C-W>l
 " }}}
 
 " Plugin related mappings {{{
-
-noremap <silent><leader>y :YRShow<CR>
 
 " highlightedyank
 if !exists('##TextYankPost')
@@ -346,9 +345,6 @@ endif
 " Multichar surround function {{{
 let g:surround_{char2nr('m')} = "\1Surround: \1\r\1\1"
 let g:surround_{char2nr('M')} = "\1S-Open: \1\r\2S-Close: \2"
-
-" YankRing history file location
-let g:yankring_history_dir = $vimcachedir
 
 " }}}
 
