@@ -269,6 +269,14 @@ let g:AutoPairsShortcutFastWrap = '<C-e>'
 
 " completor options
 let g:completor_complete_options = 'noinsert,menuone,noselect'
+" Use lsp for completions
+let g:completor_filetype_map = {}
+" Enable lsp for go by using gopls
+let g:completor_filetype_map.go = {'ft': 'lsp', 'cmd': 'gopls'}
+" Enable lsp for rust by using rls
+let g:completor_filetype_map.rust = {'ft': 'lsp', 'cmd': 'rls'}
+" Enable lsp for c by using clangd
+let g:completor_filetype_map.c = {'ft': 'lsp', 'cmd': 'clangd-7'}
 
 " }}}
 
