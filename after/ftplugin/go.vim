@@ -22,3 +22,6 @@ let g:go_highlight_variable_assignments = 0
 let g:ale_linters = {'go': ['gopls']}
 
 let g:airline#extensions#whitespace#skip_indent_check_ft = {'go': ['mixed-indent-file']}
+
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
