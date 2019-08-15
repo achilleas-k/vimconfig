@@ -38,6 +38,7 @@ Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'kshenoy/vim-signature'
 Plug 'machakann/vim-highlightedyank'
 Plug 'ledger/vim-ledger', { 'for': 'ledger' }
+Plug 'hsanson/vim-android'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
