@@ -39,6 +39,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'machakann/vim-highlightedyank'
 Plug 'ledger/vim-ledger', { 'for': 'ledger' }
 Plug 'hsanson/vim-android'
+Plug 'udalov/kotlin-vim'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
@@ -367,4 +368,9 @@ let g:surround_{char2nr('M')} = "\1S-Open: \1\r\2S-Close: \2"
 
 " }}}
 
+" Android {{{
+let g:android_sdk_path = ""
+" }}}
+
+" }}}
 " vim:fdm=marker
