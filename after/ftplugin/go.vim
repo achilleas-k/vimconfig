@@ -8,7 +8,7 @@ map <buffer> <leader>c   :GoMetaLinter<CR>
 map <buffer> <leader>h   :GoDoc<CR>
 map <buffer> <leader>H   :GoDocBrowser<CR>
 
-let g:go_fmt_command = "goimports"
+let g:go_fmt_command = "gofmt"
 let g:go_play_open_browser = 0
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
