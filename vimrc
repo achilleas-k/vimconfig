@@ -188,6 +188,9 @@ set ttimeoutlen=0
 
 " General {{{
 
+" C-c as escape from insert mode
+inoremap <C-c> <esc>
+
 " Common setting toggles
 noremap <silent><leader>/ :nohlsearch<CR>
 noremap <silent><leader>s :set spell!<CR>
