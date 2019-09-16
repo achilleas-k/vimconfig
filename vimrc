@@ -260,9 +260,6 @@ let g:fzf_action = {'ctrl-h': 'split', 'ctrl-v': 'vsplit'}
 " Tagbar
 nmap <silent> <F8> :TagbarToggle<CR>
 
-" Toggle location list
-nnoremap <F4> :lwindow<CR>
-
 nnoremap <F5> :UndotreeToggle<CR>
 
 " fugitive
@@ -271,7 +268,10 @@ nmap <leader>gd :Gdiff<CR>
 nmap <leader>gs :Gstatus<CR>
 
 " auto pair
+
 let g:AutoPairsShortcutFastWrap = '<C-e>'
+let g:AutoPairsShortcutBackInsert = '<C-b>'
+let g:AutoPairsShortcutToggle = '<F4>'
 
 " completor options
 let g:completor_complete_options = 'noinsert,menuone,noselect'
