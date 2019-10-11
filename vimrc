@@ -272,7 +272,7 @@ nmap <leader>gs :Gstatus<CR>
 let g:AutoPairsShortcutFastWrap = '<C-e>'
 let g:AutoPairsShortcutBackInsert = '<C-b>'
 let g:AutoPairsShortcutToggle = '<F4>'
-let g:AutoPairsFlyMode = 1
+let g:AutoPairsFlyMode = 0
 
 " completor options
 let g:completor_complete_options = 'noinsert,menuone,noselect'
