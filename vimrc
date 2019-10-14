@@ -181,6 +181,10 @@ au BufWritePre *.py,*.tex,*.txt Cleanws
 " Buffer swapping
 noremap <silent> <leader>`  :b#<CR>
 
+" Next/previous buffer
+noremap <silent> <leader>]  :bn<CR>
+noremap <silent> <leader>[  :bp<CR>
+
 " Key combo timeouts
 set timeout
 set ttimeout
