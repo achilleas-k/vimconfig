@@ -153,6 +153,10 @@ let $vimcachedir = expand('~/.cache/vim')
 set undodir=$vimcachedir/undo
 set undofile
 
+" use cache dir for swp and backup
+set directory=$vimcachedir/swp
+set backupdir=$vimcachedir/backup
+
 " backspace
 set backspace=indent,eol,start
 
