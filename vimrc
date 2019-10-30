@@ -194,6 +194,7 @@ set ttimeoutlen=0
 " General {{{
 
 " C-c as escape from insert mode
+noremap <C-c> <esc>
 inoremap <C-c> <esc>
 
 " Common setting toggles
