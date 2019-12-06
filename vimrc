@@ -197,6 +197,13 @@ set ttimeoutlen=0
 noremap <C-c> <esc>
 inoremap <C-c> <esc>
 
+" Return (normal mode) inserts line
+nnoremap         o<esc>
+
+" Shift return enters line above
+inoremap    OM   O
+nnoremap    OM   O<esc>
+
 " Common setting toggles
 noremap <silent><leader>/ :nohlsearch<CR>
 noremap <silent><leader>s :set spell!<CR>
