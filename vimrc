@@ -40,6 +40,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'ledger/vim-ledger', { 'for': 'ledger' }
 Plug 'hsanson/vim-android'
 Plug 'udalov/kotlin-vim'
+Plug 'rhysd/conflict-marker.vim'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
