@@ -179,12 +179,6 @@ au BufWritePre *.py,*.tex,*.txt Cleanws
 " }}}
 
 " Custom mappings {{{
-" Buffer swapping
-noremap <silent> <leader>`  :b#<CR>
-
-" Next/previous buffer
-noremap <silent> <leader>]  :bn<CR>
-noremap <silent> <leader>[  :bp<CR>
 
 " Key combo timeouts
 set timeout
@@ -193,6 +187,13 @@ set timeoutlen=1000
 set ttimeoutlen=0
 
 " General {{{
+
+" Buffer swapping
+noremap <silent> <leader>`  :b#<CR>
+
+" Next/previous buffer
+noremap <silent> <leader>]  :bn<CR>
+noremap <silent> <leader>[  :bp<CR>
 
 " C-c as escape from insert mode
 noremap <C-c> <esc>
