@@ -113,8 +113,8 @@ set fillchars+=vert:│
 set showbreak=↳
 " update stuff quicker (default 4000)
 set updatetime=1000
-" show keystrokes for combined mappings
-set showcmd
+" don't show keystrokes
+set noshowcmd
 " mouse stuff for terminal
 set mouse=a
 if !has('nvim')
