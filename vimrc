@@ -108,6 +108,9 @@ set foldlevelstart=99
 set splitbelow
 " vertical split for diff
 set diffopt+=vertical
+" ignore whitespace and blank lines for diff
+set diffopt+=iwhiteall,iblank
+" formatting characters
 set list listchars=tab:>·,trail:·,extends:>,precedes:<,nbsp:-
 set fillchars+=vert:│
 set showbreak=↳
