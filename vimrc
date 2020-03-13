@@ -391,9 +391,5 @@ let g:surround_{char2nr('M')} = "\1S-Open: \1\r\2S-Close: \2"
 
 " }}}
 
-" Android {{{
-let g:android_sdk_path = ""
-" }}}
-
 " }}}
 " vim:fdm=marker
