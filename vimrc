@@ -252,6 +252,9 @@ noremap <leader>E   :ALEPrevious<CR>
 " Tag jumping
 noremap <leader>m   :MtaJumpToOtherTag<CR>
 
+" Select whole line without newline
+noremap <leader>v   0vg_
+
 " }}}
 
 " Splits {{{
