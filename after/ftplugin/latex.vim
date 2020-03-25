@@ -1,4 +1,4 @@
-" {{{ general options
+" general options {{{
 let g:tex_flavor = "latex"
 noremap <buffer> j gj
 noremap <buffer> k gk
@@ -10,7 +10,7 @@ setlocal wrapmargin=0
 setlocal spell
 " }}}
 
-" {{{ vimtex
+" vimtex {{{
 let g:vimtex_view_general_viewer = 'okular'
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 let g:vimtex_view_general_options_latexmk = '--unique'

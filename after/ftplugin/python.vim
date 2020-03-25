@@ -1,4 +1,4 @@
-" {{{ python-jedi
+" python-jedi {{{
 " disabling completion for completor
 " this makes most of the other opts redundant
 let g:jedi#auto_initialization = 1
@@ -21,7 +21,7 @@ let g:ale_fixers = {'python': ['yapf']}
 let g:ale_fix_on_save = 0
 " }}}
 
-" {{{ general
+" general {{{
 setlocal spell
 setlocal softtabstop=4
 setlocal shiftwidth=4
@@ -34,12 +34,12 @@ setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,clas
 setlocal colorcolumn=80
 " }}}
 
-" {{{ python specific behaviour and bindings
+" python specific behaviour and bindings {{{
 " don't remove indent on comments
 inoremap <buffer> # X<BS>#
 " }}}
 
-" {{{ gf - jump to file at import
+" gf - jump to file at import {{{
 " `gf` jumps to the filename under the cursor (import statement)
 " Similar to <leader>d with Jedi, but slightly different handling
 python << EOF
