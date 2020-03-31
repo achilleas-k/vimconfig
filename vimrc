@@ -411,6 +411,8 @@ let g:fzf_colors = {
             \ 'spinner': ['fg', 'Label'],
             \ 'header':  ['fg', 'Comment']
             \ }
+command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--color-path "37" --color-line-number "90" --color-match "36"', fzf#vim#with_preview(), <bang>0)
+
 " }}}
 
 " }}}
