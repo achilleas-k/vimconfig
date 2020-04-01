@@ -26,5 +26,6 @@ let g:airline#extensions#whitespace#skip_indent_check_ft = {'go': ['mixed-indent
 
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+let g:go_imports_mode='gopls'
 
 let g:go_rename_command = 'gopls'
