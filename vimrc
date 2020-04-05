@@ -255,6 +255,10 @@ noremap <leader>m   :MtaJumpToOtherTag<CR>
 " Select whole line without newline
 noremap <leader>v   0vg_
 
+" :W aliases for :w since I accidentally type it so much
+command W  :w
+command Wq :wq
+
 " }}}
 
 " Splits {{{
