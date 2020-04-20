@@ -41,6 +41,7 @@ Plug 'ledger/vim-ledger', { 'for': 'ledger' }
 Plug 'hsanson/vim-android'
 Plug 'udalov/kotlin-vim'
 Plug 'rhysd/conflict-marker.vim'
+Plug 'vim-scripts/haproxy'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
@@ -70,6 +71,9 @@ syntax on
 filetype plugin indent on
 filetype on
 filetype plugin on
+
+au BufRead,BufNewFile haproxy* set ft=haproxy
+
 " }}}
 
 " Common settings {{{
