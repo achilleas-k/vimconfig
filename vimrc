@@ -196,6 +196,9 @@ set ttimeoutlen=0
 
 " General {{{
 
+" Quick terminal
+noremap <silent> <leader>t  :terminal<CR>
+
 " Buffer swapping
 noremap <silent> <leader>`  :b#<CR>
 
