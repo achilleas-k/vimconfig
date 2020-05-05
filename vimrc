@@ -253,12 +253,16 @@ vnoremap + zf
 " Don't remove indent on comments
 inoremap # X<BS>#
 
-" Error jumping
+" Error jumping (ALE)
 noremap <leader>e   :ALENext<CR>
 noremap <leader>E   :ALEPrevious<CR>
 
-" Tag jumping
+" Tag jumping (MatchTagAlways)
 noremap <leader>m   :MtaJumpToOtherTag<CR>
+
+" Hunk jumping
+noremap <leader>c   :GitGutterNextHunk<CR>
+noremap <leader>C   :GitGutterPrevHunk<CR>
 
 " Select whole line without newline
 noremap <leader>v   0vg_
@@ -367,6 +371,10 @@ set signcolumn=yes
 highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+
+" Sign column background (shared by linter)
+highlight SignColumn      ctermbg=233
+
 " }}}
 
 " GutenTags {{{
