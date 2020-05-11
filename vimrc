@@ -42,6 +42,7 @@ Plug 'hsanson/vim-android'
 Plug 'udalov/kotlin-vim'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'vim-scripts/haproxy'
+Plug 'ActivityWatch/aw-watcher-vim'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
