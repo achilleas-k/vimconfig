@@ -226,7 +226,7 @@ noremap <silent><leader>s :set spell!<CR>
 noremap <silent><leader>p :set paste!<CR>
 noremap <silent><leader>w :set wrap!<CR>
 noremap <silent><leader>l :set cursorline!<CR>
-noremap <silent><leader>c :set cursorcolumn!<CR>
+noremap <silent><leader>L :set cursorcolumn!<CR>
 noremap <F2>      :set relativenumber!<CR>
 
 " Yank whole buffer to system clipboard
