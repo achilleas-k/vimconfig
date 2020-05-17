@@ -41,7 +41,7 @@ Plug 'hsanson/vim-android'
 Plug 'udalov/kotlin-vim'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'vim-scripts/haproxy'
-Plug 'ActivityWatch/aw-watcher-vim'
+Plug 'ActivityWatch/aw-watcher-vim', { 'on': 'AWStart' }
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
@@ -417,6 +417,13 @@ let g:surround_{char2nr('M')} = "\1S-Open: \1\r\2S-Close: \2"
 
 let g:fzf_preview_window = ''
 
+" }}}
+
+" Host-specific options {{{
+" Enable AW for Gina
+if hostname() == "Gina"
+    au BufEnter * AWStart
+endif
 " }}}
 
 " }}}
