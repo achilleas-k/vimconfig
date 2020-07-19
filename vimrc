@@ -133,6 +133,8 @@ endif
 set completeopt=noinsert,menuone,noselect
 " move beyond end of line in block selection mode
 set virtualedit=block
+" always show sign column (used by gitgutter)
+set signcolumn=yes
 
 " for manually installed help
 " (disabled because no custom help files)
@@ -140,6 +142,10 @@ set virtualedit=block
 
 " vim cache root dir
 let $vimcachedir = expand('~/.cache/vim')
+
+" Undo directory
+set undodir=$vimcachedir/undo
+set undofile
 
 " }}}
 
@@ -188,11 +194,12 @@ au BufWritePre *.py,*.tex,*.txt Cleanws
 
 " Custom mappings {{{
 
-" Key combo timeouts
+" Key combo timeouts {{{
 set timeout
 set ttimeout
 set timeoutlen=1000
 set ttimeoutlen=0
+" }}}
 
 " General {{{
 
@@ -253,17 +260,6 @@ vnoremap + zf
 " Don't remove indent on comments
 inoremap # X<BS>#
 
-" Error jumping (ALE)
-noremap <leader>e   :ALENext<CR>
-noremap <leader>E   :ALEPrevious<CR>
-
-" Tag jumping (MatchTagAlways)
-noremap <leader>m   :MtaJumpToOtherTag<CR>
-
-" Hunk jumping
-noremap <leader>c   :GitGutterNextHunk<CR>
-noremap <leader>C   :GitGutterPrevHunk<CR>
-
 " Select whole line without newline
 noremap <leader>v   0vg_
 
@@ -315,6 +311,18 @@ let g:AutoPairsFlyMode = 0
 
 " completor options
 let g:completor_complete_options = 'noinsert,menuone,noselect'
+
+" Error jumping (ALE)
+noremap <leader>e   :ALENext<CR>
+noremap <leader>E   :ALEPrevious<CR>
+
+" Tag jumping (MatchTagAlways)
+noremap <leader>m   :MtaJumpToOtherTag<CR>
+
+" Hunk jumping
+noremap <leader>c   :GitGutterNextHunk<CR>
+noremap <leader>C   :GitGutterPrevHunk<CR>
+
 " }}}
 
 " command line editing {{{
@@ -329,6 +337,7 @@ cnoremap <C-f> <Right>
 " }}}
 
 " Plugin related settings {{{
+
 " Airline {{{
 set laststatus=2
 let g:airline_highlighting_cache = 1
@@ -364,8 +373,6 @@ highlight TagbarHighlight guifg=cyan ctermfg=cyan
 " }}}
 
 " Gitgutter {{{
-" always show gitgutter column
-set signcolumn=yes
 
 " colours
 highlight GitGutterAdd    guifg=#009900 ctermfg=2
@@ -386,11 +393,6 @@ let g:ale_lint_on_save = 1
 let g:ale_lint_on_enter = 1
 let g:ale_lint_on_text_changed = 1
 let g:ale_sign_column_always = 1
-" }}}
-
-" Undo directory {{{
-set undodir=$vimcachedir/undo
-set undofile
 " }}}
 
 " Rainbow disabled by default {{{
@@ -414,9 +416,7 @@ let g:surround_{char2nr('M')} = "\1S-Open: \1\r\2S-Close: \2"
 " }}}
 
 " FZF styling {{{
-
 let g:fzf_preview_window = ''
-
 " }}}
 
 " Host-specific options {{{
