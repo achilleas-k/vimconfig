@@ -15,8 +15,10 @@ setlocal noshowmode  " required for call signatures in command line
 " }}}
 
 " ALE linters {{{
-let g:ale_linters = {'python': ['pycodestyle', 'pyflakes', 'mypy']}
+let g:ale_linters = {'python': ['pylint', 'pycodestyle', 'pyflakes', 'mypy']}
 let g:ale_python_mypy_options = '--ignore-missing-imports --check-untyped-defs'
+" Pylint codes: http://pylint-messages.wikidot.com/all-codes
+let g:ale_python_pylint_options = '--disable C0111'
 let g:ale_fixers = {'python': ['yapf']}
 let g:ale_fix_on_save = 0
 " }}}
