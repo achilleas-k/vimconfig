@@ -1,3 +1,5 @@
+if has('python3')
+endif
 " Plugin setup {{{
 call plug#begin('~/.vim/plugged')
 

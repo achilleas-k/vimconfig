@@ -42,7 +42,7 @@ inoremap <buffer> # X<BS>#
 " gf - jump to file at import {{{
 " `gf` jumps to the filename under the cursor (import statement)
 " Similar to <leader>d with Jedi, but slightly different handling
-python << EOF
+python3 << EOF
 import os
 import sys
 import vim
