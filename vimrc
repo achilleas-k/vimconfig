@@ -181,6 +181,12 @@ autocmd CursorMovedI * exe printf('match MatchWord /\V\<%s\>/', escape(expand('<
 " Spell checker colours and styles
 highlight clear SpellBad
 highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline gui=undercurl guisp=#ff0000
+
+" Diff colours
+highlight DiffAdd    term=bold ctermbg=4 guifg=#D2EBBE guibg=#004400
+highlight DiffChange term=bold ctermbg=5 guibg=#000044
+highlight DiffDelete term=bold ctermfg=12 ctermbg=6 guifg=#40000A guibg=#440000
+highlight DiffText   term=reverse cterm=reverse ctermfg=81 ctermbg=9 gui=reverse guifg=#8fbfdc guibg=#000000
 " }}}
 
 " Whitespace cleaner function {{{
@@ -390,7 +396,7 @@ highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 " Sign column background (shared by linter)
-highlight SignColumn      ctermbg=233
+highlight SignColumn      ctermbg=233 guibg=bg
 
 " }}}
 
