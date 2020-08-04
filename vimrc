@@ -44,6 +44,7 @@ Plug 'udalov/kotlin-vim'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'vim-scripts/haproxy'
 Plug 'ActivityWatch/aw-watcher-vim', { 'on': 'AWStart' }
+Plug 'ryanoasis/vim-devicons'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
