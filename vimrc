@@ -49,6 +49,7 @@ Plug 'ryanoasis/vim-devicons'
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'jcherven/jummidark.vim'
 
 call plug#end()
 " }}}
