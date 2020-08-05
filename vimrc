@@ -163,7 +163,7 @@ set background=dark
 set t_Co=256
 set termguicolors
 
-colorscheme jellybeans
+colorscheme jummidarkmod
 set guifont=monospace\ 9
 set guicursor+=a:blinkon0
 set guioptions-=r
@@ -171,13 +171,7 @@ set guioptions-=m
 set guioptions-=T
 set guioptions-=L
 
-" enable italics in jellybeans and make comments italic
-let g:jellybeans_use_term_italics = 1
-highlight Comment cterm=italic
-
-" colour edits
-highlight ErrorMsg guibg=bg guifg=#bb0000
-highlight Error    guibg=bg guifg=#bb0000
+" Common highlight overrides {{{
 
 " Highlight word under cursor passively (with custom style)
 highlight MatchWord term=reverse ctermfg=69
@@ -187,6 +181,8 @@ autocmd CursorMovedI * exe printf('match MatchWord /\V\<%s\>/', escape(expand('<
 " Spell checker colours and styles
 highlight clear SpellBad
 highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline gui=undercurl guisp=#ff0000
+
+" }}}
 
 " }}}
 
