@@ -16,3 +16,6 @@ let g:airline_theme = 'kolor'
 " red error signs with background matching SignColumn
 highlight Error      guibg=#383838 guifg=#bb0000
 highlight ErrorMsg   guibg=#383838 guifg=#bb0000
+
+" lower contrast listchars
+highlight SpecialKey guifg=#595959 guibg=bg
