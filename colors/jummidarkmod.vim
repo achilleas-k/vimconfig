@@ -18,4 +18,4 @@ highlight Error      guibg=bg guifg=#bb0000
 highlight ErrorMsg   guibg=bg guifg=#bb0000
 
 " lower contrast listchars
-highlight SpecialKey guifg=#595959 guibg=bg
+highlight SpecialKey guifg=#424242 guibg=bg
