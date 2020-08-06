@@ -7,6 +7,8 @@ endif
 " Based on jellybeans
 runtime colors/jellybeans.vim
 
+let g:colors_name = "jellybeansmod"
+
 " enable italics in jellybeans and make comments italic
 let g:jellybeans_use_term_italics = 1
 highlight Comment cterm=italic

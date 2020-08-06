@@ -7,6 +7,8 @@ endif
 " Based on jellybeans
 runtime colors/jummidark.vim
 
+let g:colors_name = "jummidarkmod"
+
 " make comments italic and slightly higher contrast
 highlight Comment cterm=italic guifg=#5f5f5f
 
