@@ -17,3 +17,9 @@ let g:airline_theme = 'jellybeans'
 " signcolumn error symbols
 highlight ErrorMsg guibg=bg guifg=#bb0000
 highlight Error    guibg=bg guifg=#bb0000
+
+" SignColumn background same as global bg
+highlight SignColumn      ctermbg=233 guibg=bg
+
+" Spelling
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline gui=undercurl guisp=#ff0000

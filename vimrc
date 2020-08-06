@@ -178,10 +178,6 @@ highlight MatchWord term=reverse ctermfg=69
 autocmd CursorMoved * exe printf('match MatchWord /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 autocmd CursorMovedI * exe printf('match MatchWord /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
-" Spell checker colours and styles
-highlight clear SpellBad
-highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline gui=undercurl guisp=#ff0000
-
 " }}}
 
 " }}}
@@ -393,9 +389,6 @@ highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
-" Sign column background (shared by linter)
-highlight SignColumn      ctermbg=233 guibg=bg
-
 " }}}
 
 " GutenTags {{{
@@ -435,9 +428,9 @@ let g:fzf_preview_window = ''
 
 " Host-specific options {{{
 " Enable AW for Gina
-if hostname() == "Gina"
-    au BufEnter * AWStart
-endif
+" if hostname() == "Gina"
+"     au BufEnter * AWStart
+" endif
 " }}}
 
 " }}}

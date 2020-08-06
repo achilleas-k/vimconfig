@@ -8,7 +8,7 @@ endif
 runtime colors/jummidark.vim
 
 " make comments italic and slightly higher contrast
-highlight Comment cterm=italic guifg=#777777
+highlight Comment cterm=italic guifg=#5f5f5f
 
 " kolor airline theme matches (sorta)
 let g:airline_theme = 'kolor'
@@ -19,3 +19,13 @@ highlight ErrorMsg   guibg=bg guifg=#bb0000
 
 " lower contrast listchars
 highlight SpecialKey guifg=#424242 guibg=bg
+
+" colour literals
+highlight Number guifg=#ff33ff
+highlight link Float Number
+
+" SignColumn background same as global bg
+highlight SignColumn      ctermbg=233 guibg=bg
+
+" Spelling
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline gui=undercurl guifg=#ff00aa
