@@ -33,5 +33,8 @@ highlight link Boolean Keyword
 highlight SignColumn      ctermbg=233 guibg=bg
 
 " Spelling
-highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline gui=undercurl guifg=#ff00aa
-highlight SpellRare term=standout guifg=#bb00aa
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline gui=undercurl guibg=#330022
+highlight SpellRare term=standout guibg=#333300
+
+" Current line number
+highlight CursorLineNr guifg=#00d7d7 guibg=bg
