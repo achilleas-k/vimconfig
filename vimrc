@@ -257,17 +257,12 @@ vmap <leader>j ]]
 " Move line(s) up or down
 nnoremap <silent><c-n> :m .+1<cr>==
 nnoremap <silent><c-p> :m .-2<cr>==
-inoremap <silent><c-n> <esc>:m .+1<cr>==gi
-inoremap <silent><c-p> <esc>:m .-2<cr>==gi
 vnoremap <silent><c-n> :m '>+1<cr>gv=gv
 vnoremap <silent><c-p> :m '<-2<cr>gv=gv
 
 " Fold and unfold with +
 nnoremap + za
 vnoremap + zf
-
-" Don't remove indent on comments
-inoremap # X<BS>#
 
 " Select whole line without newline
 noremap <leader>v   0vg_
@@ -332,6 +327,9 @@ noremap <leader>m   :MtaJumpToOtherTag<CR>
 " Hunk jumping
 noremap <leader>hc   :GitGutterNextHunk<CR>
 noremap <leader>hC   :GitGutterPrevHunk<CR>
+
+" Completor on insert mode C-n
+inoremap <silent><c-n> <C-R>=completor#do('complete')<CR>
 
 " }}}
 
@@ -424,6 +422,10 @@ let g:surround_{char2nr('M')} = "\1S-Open: \1\r\2S-Close: \2"
 
 " FZF styling {{{
 let g:fzf_preview_window = ''
+" }}}
+
+" Completor {{{
+let g:completor_auto_trigger = 0
 " }}}
 
 " Host-specific options {{{
