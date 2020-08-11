@@ -25,9 +25,11 @@ highlight SpecialKey guifg=#424242 guibg=bg
 " colour literals
 highlight Number guifg=#ff33ff
 highlight link Float Number
+highlight link Boolean Keyword
 
 " SignColumn background same as global bg
 highlight SignColumn      ctermbg=233 guibg=bg
 
 " Spelling
 highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline gui=undercurl guifg=#ff00aa
+highlight SpellRare term=standout guifg=#bb00aa
