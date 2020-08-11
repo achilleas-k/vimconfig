@@ -330,8 +330,8 @@ noremap <leader>E   :ALEPrevious<CR>
 noremap <leader>m   :MtaJumpToOtherTag<CR>
 
 " Hunk jumping
-noremap <leader>c   :GitGutterNextHunk<CR>
-noremap <leader>C   :GitGutterPrevHunk<CR>
+noremap <leader>hc   :GitGutterNextHunk<CR>
+noremap <leader>hC   :GitGutterPrevHunk<CR>
 
 " }}}
 
