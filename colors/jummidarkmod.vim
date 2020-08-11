@@ -24,7 +24,9 @@ highlight SpecialKey guifg=#424242 guibg=bg
 
 " colour literals
 highlight Number guifg=#ff33ff
+highlight clear Float
 highlight link Float Number
+highlight clear Boolean
 highlight link Boolean Keyword
 
 " SignColumn background same as global bg
