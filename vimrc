@@ -24,7 +24,7 @@ Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
 Plug 'godlygeek/tabular'
 Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'maralla/completor.vim'
+Plug 'lifepillar/vim-mucomplete'
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'fatih/vim-go', { 'for': ['go', 'gohtmltmpl'] }
 Plug 'jiangmiao/auto-pairs'
@@ -113,8 +113,9 @@ set nofixendofline
 "highlight ColorColumn ctermbg=244 guibg=#101010
 set foldcolumn=1
 set foldlevelstart=99
-" for help and docstrings
+" put new splits below and vsplits right
 set splitbelow
+set splitright
 " vertical split for diff
 set diffopt+=vertical
 " ignore whitespace and blank lines for diff
@@ -314,9 +315,6 @@ let g:AutoPairsShortcutJump = '<C-e><C-j>'
 let g:AutoPairsShortcutToggle = '<F4>'
 let g:AutoPairsFlyMode = 0
 
-" completor options
-let g:completor_complete_options = 'noinsert,menuone,noselect'
-
 " Error jumping (ALE)
 noremap <leader>e   :ALENext<CR>
 noremap <leader>E   :ALEPrevious<CR>
@@ -328,9 +326,7 @@ noremap <leader>m   :MtaJumpToOtherTag<CR>
 noremap <leader>hc   :GitGutterNextHunk<CR>
 noremap <leader>hC   :GitGutterPrevHunk<CR>
 
-" Completor on insert mode C-n
-inoremap <silent><c-n> <C-R>=completor#do('complete')<CR>
-
+imap <c-n> <plug>(MUcompleteFwd)
 " }}}
 
 " command line editing {{{
@@ -424,8 +420,13 @@ let g:surround_{char2nr('M')} = "\1S-Open: \1\r\2S-Close: \2"
 let g:fzf_preview_window = ''
 " }}}
 
-" Completor {{{
-let g:completor_auto_trigger = 0
+" Mucomplete options{{{
+let g:mucomplete#can_complete = {}
+let g:mucomplete#can_complete.go = {'omni': { t -> t =~ '\m\%(\k\k\|\.\)$' }}
+let g:mucomplete#can_complete.python = {'omni': { t -> t =~ '\m\%(\k\k\|\.\)$' }}
+let g:mucomplete#chains = {}
+let g:mucomplete#chains.go = ['path', 'omni']
+let g:mucomplete#chains.python = ['path', 'omni']
 " }}}
 
 " Host-specific options {{{

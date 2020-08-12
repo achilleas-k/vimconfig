@@ -17,8 +17,5 @@ map <buffer> ][ /}<CR>b99]}:noh<CR>
 map <buffer> ]] j0[[%/{<CR>:noh<CR>
 map <buffer> [] k$][%?}<CR>:noh<CR>
 
-imap <buffer> <C-L> <Plug>CompletorCppJumpToPlaceholder
-vmap <buffer> <C-L> <Plug>CompletorCppJumpToPlaceholder
-
 let b:AutoPairsMapCR = 0
 imap <buffer> <silent><CR> <CR><Plug>AutoPairsReturn
