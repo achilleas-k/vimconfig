@@ -431,9 +431,9 @@ let g:mucomplete#chains.python = ['path', 'omni']
 
 " Host-specific options {{{
 " Enable AW for Gina
-" if hostname() == "Gina"
-"     au BufEnter * AWStart
-" endif
+if hostname() == "Gina"
+    au BufEnter * AWStart
+endif
 " }}}
 
 " }}}
