@@ -296,6 +296,7 @@ noremap <c-f><c-o>  :Files<CR>
 noremap <c-f><c-g>  :Ag<SPACE>
 noremap <c-f><c-i>  :GFiles<CR>
 noremap <c-f><c-m>  :Marks<CR>
+noremap <c-f><c-t>  :Tags<CR>
 let g:fzf_action = {'ctrl-h': 'split', 'ctrl-v': 'vsplit'}
 
 " Tagbar
