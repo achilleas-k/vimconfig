@@ -13,10 +13,13 @@ setlocal noshowmode  " required for call signatures in command line
 " }}}
 
 " ALE linters {{{
+" set line length to a local variable and use it for linters and colorcolumn
+let line_length = 99
 let g:ale_linters = {'python': ['pylint', 'pycodestyle', 'pyflakes', 'mypy']}
 let g:ale_python_mypy_options = '--ignore-missing-imports --check-untyped-defs'
 " Pylint codes: http://pylint-messages.wikidot.com/all-codes
-let g:ale_python_pylint_options = '--disable C0111'
+let g:ale_python_pylint_options = '--disable C0111 --max-line-length=' . line_length
+let g:ale_python_pycodestyle_options = '--max-line-length=' . line_length
 let g:ale_fixers = {'python': ['yapf']}
 let g:ale_fix_on_save = 0
 " }}}
@@ -28,10 +31,10 @@ setlocal shiftwidth=4
 setlocal expandtab
 setlocal autoindent
 setlocal formatoptions=cqj
-setlocal textwidth=78
 setlocal foldmethod=indent
 setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-setlocal colorcolumn=80
+execute "setlocal colorcolumn=" . line_length
+execute "setlocal textwidth=" . line_length
 " }}}
 
 " python specific behaviour and bindings {{{
