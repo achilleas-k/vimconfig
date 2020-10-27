@@ -166,6 +166,7 @@ set background=dark
 set t_Co=256
 set termguicolors
 
+" Use :so $VIMRUNTIME/syntax/hitest.vim to preview
 colorscheme jummidarkmod
 set guifont=monospace\ 9
 set guicursor+=a:blinkon0
