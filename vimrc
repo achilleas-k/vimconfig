@@ -110,6 +110,7 @@ set sidescrolloff=5
 set winheight=5
 set winminheight=5
 set nofixendofline
+set history=10000
 "let &colorcolumn=join(range(81,999),",")
 "highlight ColorColumn ctermbg=244 guibg=#101010
 set foldcolumn=1
