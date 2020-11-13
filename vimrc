@@ -44,7 +44,6 @@ Plug 'hsanson/vim-android'
 Plug 'udalov/kotlin-vim'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'vim-scripts/haproxy'
-Plug 'ActivityWatch/aw-watcher-vim', { 'on': 'AWStart' }
 Plug 'ryanoasis/vim-devicons'
 
 " Colour schemes
@@ -434,13 +433,6 @@ let g:mucomplete#can_complete.python = {'omni': { t -> t =~ '\m\%(\k\k\|\.\)$' }
 let g:mucomplete#chains = {}
 let g:mucomplete#chains.go = ['path', 'omni']
 let g:mucomplete#chains.python = ['path', 'omni']
-" }}}
-
-" Host-specific options {{{
-" Enable AW for Gina
-if hostname() == "Gina"
-    au BufEnter * AWStart
-endif
 " }}}
 
 " }}}
