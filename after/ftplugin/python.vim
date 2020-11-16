@@ -14,7 +14,7 @@ setlocal noshowmode  " required for call signatures in command line
 
 " ALE linters {{{
 " set line length to a local variable and use it for linters and colorcolumn
-let line_length = 99
+let line_length = 120
 let g:ale_linters = {'python': ['pylint', 'pycodestyle', 'pyflakes', 'mypy']}
 let g:ale_python_mypy_options = '--ignore-missing-imports --check-untyped-defs'
 " Pylint codes: http://pylint-messages.wikidot.com/all-codes
