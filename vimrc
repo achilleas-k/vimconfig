@@ -229,13 +229,6 @@ noremap <silent> <leader>[  :bp<CR>
 noremap <C-c> <esc>
 inoremap <C-c> <esc>
 
-" Return (normal mode) inserts line
-nnoremap         o<esc>
-
-" Shift return enters line above (normal and insert)
-inoremap    OM   O
-nnoremap    OM   O<esc>
-
 " List contents of all registers (that typically contain pasteable text).
 nnoremap <silent> "" :registers "0123456789abcdefghijklmnopqrstuvwxyz*+.<CR>
 
