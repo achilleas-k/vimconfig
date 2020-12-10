@@ -300,7 +300,8 @@ nmap <silent> <F8> :TagbarToggle<CR>
 nnoremap <F5> :UndotreeToggle<CR>
 
 " fugitive
-nmap <leader>gc :Gwrite<CR>:Gcommit<CR>
+nmap <leader>gw :Gwrite<CR>
+nmap <leader>gc :Gcommit<CR>
 nmap <leader>gd :Gdiff<CR>
 nmap <leader>gs :Gstatus<CR>
 
