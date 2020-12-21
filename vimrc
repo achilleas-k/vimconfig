@@ -148,6 +148,7 @@ set signcolumn=yes
 
 " vim cache root dir
 let $vimcachedir = expand('~/.cache/vim')
+let &g:directory=$vimcachedir
 
 " Undo directory
 set undodir=$vimcachedir/undo
