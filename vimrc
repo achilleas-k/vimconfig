@@ -104,6 +104,7 @@ set nocursorcolumn
 set hidden
 set lazyredraw
 set wildmenu
+set wildmode=list:full
 set scrolloff=5
 set sidescrolloff=5
 set winheight=5
