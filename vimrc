@@ -45,6 +45,7 @@ Plug 'udalov/kotlin-vim'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'vim-scripts/haproxy'
 Plug 'ryanoasis/vim-devicons'
+Plug 'cespare/vim-toml'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
