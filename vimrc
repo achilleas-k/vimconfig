@@ -389,6 +389,7 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 " GutenTags {{{
 let g:gutentags_cache_dir = $vimcachedir . '/tags'
+let g:gutentags_generate_on_empty_buffer = 1
 " }}}
 
 " ALE {{{
