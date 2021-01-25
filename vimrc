@@ -228,6 +228,9 @@ noremap <silent> <leader>`  :b#<CR>
 noremap <silent> <leader>]  :bn<CR>
 noremap <silent> <leader>[  :bp<CR>
 
+" Close buffer
+noremap <silent> <c-b><c-d> :bd<CR>
+
 " C-c as escape from insert mode
 noremap <C-c> <esc>
 inoremap <C-c> <esc>
