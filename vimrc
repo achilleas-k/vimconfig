@@ -46,6 +46,7 @@ Plug 'rhysd/conflict-marker.vim'
 Plug 'vim-scripts/haproxy'
 Plug 'ryanoasis/vim-devicons'
 Plug 'cespare/vim-toml'
+Plug 'vim-scripts/BufOnly.vim'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
@@ -229,7 +230,10 @@ noremap <silent> <leader>]  :bn<CR>
 noremap <silent> <leader>[  :bp<CR>
 
 " Close buffer
-noremap <silent> <c-b><c-d> :bd<CR>
+noremap <silent> <leader>x :bd<CR>
+
+" Close all other buffers
+noremap <silent> <leader>o :BufOnly<CR>
 
 " C-c as escape from insert mode
 noremap <C-c> <esc>
