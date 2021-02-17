@@ -5,7 +5,8 @@ map <buffer> <silent> <leader>d   :GoDef<CR>
 map <buffer> <leader>i   :GoInfo<CR>
 map <buffer> <leader>I   :GoImports<CR>
 map <buffer> <leader>r   :GoRename<space>
-map <buffer> <leader>c   :GoMetaLinter<CR>
+map <buffer> <leader>c   :GoCallers<CR>
+map <buffer> <leader>t   :GoImplements<CR>
 map <buffer> <leader>h   :GoDoc<CR>
 map <buffer> <leader>H   :GoDocBrowser<CR>
 
