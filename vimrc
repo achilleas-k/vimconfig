@@ -236,6 +236,9 @@ noremap <silent> <leader>o :BufOnly<CR>
 noremap <C-c> <esc>
 inoremap <C-c> <esc>
 
+" Shift insert (insert mode) adds new line regardless of cursor pos
+inoremap OM  <c-o>o
+
 " List contents of all registers (that typically contain pasteable text).
 nnoremap <silent> "" :registers "0123456789abcdefghijklmnopqrstuvwxyz*+.<CR>
 
