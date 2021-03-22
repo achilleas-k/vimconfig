@@ -41,3 +41,6 @@ highlight CursorLineNr guifg=#00d7d7 guibg=bg
 
 " Make IncSearch differ from Search
 highlight IncSearch term=reverse ctermbg=237 guibg=#6a6a6a
+
+" unlink diffAdded from Identifier and make it match diff add
+highlight diffAdded guifg=#009900
