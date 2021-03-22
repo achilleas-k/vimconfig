@@ -47,6 +47,7 @@ Plug 'vim-scripts/haproxy'
 Plug 'ryanoasis/vim-devicons'
 Plug 'cespare/vim-toml'
 Plug 'vim-scripts/BufOnly.vim'
+Plug 'gerw/vim-hilinktrace'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
