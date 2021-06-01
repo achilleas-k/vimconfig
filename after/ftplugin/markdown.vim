@@ -29,7 +29,7 @@ let g:tagbar_type_markdown = {
     \ 'sort': 0,
 \ }
 
-let g:markdown_fenced_languages = ['python', 'bash=sh', 'yaml', 'crontab', 'go']
+let g:markdown_fenced_languages = ['python', 'bash=sh', 'yaml', 'crontab', 'go', 'json']
 
 " Compile to PDF using pandoc (function and binding) {{{
 function! CompilePDF()
