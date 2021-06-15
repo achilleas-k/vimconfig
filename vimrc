@@ -40,8 +40,6 @@ Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'kshenoy/vim-signature'
 Plug 'machakann/vim-highlightedyank'
 Plug 'ledger/vim-ledger', { 'for': 'ledger' }
-Plug 'hsanson/vim-android'
-Plug 'udalov/kotlin-vim'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'vim-scripts/haproxy'
 Plug 'ryanoasis/vim-devicons'
