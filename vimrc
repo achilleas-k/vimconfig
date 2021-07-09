@@ -157,7 +157,8 @@ set t_Co=256
 set termguicolors
 
 " Use :so $VIMRUNTIME/syntax/hitest.vim to preview
-colorscheme jummidarkmod
+let $colorscheme = 'jummidarkmod'
+colorscheme $colorscheme
 set guifont=monospace\ 9
 set guicursor+=a:blinkon0
 set guioptions-=r
@@ -423,7 +424,7 @@ let g:fzf_layout = { 'down': '40%'  }
 command! -bang -nargs=+ -complete=file Ag call fzf#vim#ag_raw('--color-line-number "1;37" --color-match "30;36" --color-path "1;90" '.shellescape(<q-args>), <bang>0)
 " }}}
 
-" Mucomplete options{{{
+" Mucomplete options {{{
 let g:mucomplete#can_complete = {}
 let g:mucomplete#can_complete.go = {'omni': { t -> t =~ '\m\%(\k\k\|\.\)$' }}
 let g:mucomplete#can_complete.python = {'omni': { t -> t =~ '\m\%(\k\k\|\.\)$' }}
@@ -432,5 +433,8 @@ let g:mucomplete#chains.go = ['path', 'omni']
 let g:mucomplete#chains.python = ['path', 'omni']
 " }}}
 
+" Reload config command {{{
+com! Reload source ~/.vim/colors/$colorscheme.vim <bar> source ~/.vim/vimrc
+" }}}
 " }}}
 " vim:fdm=marker
