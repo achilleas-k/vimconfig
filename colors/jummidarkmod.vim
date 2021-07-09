@@ -44,3 +44,6 @@ highlight IncSearch term=reverse ctermbg=237 guibg=#6a6a6a
 
 " unlink diffAdded from Identifier and make it match diff add
 highlight diffAdded guifg=#009900
+
+highlight StatusLine guifg=#00d7d7 guibg=#000000
+highlight WildMenu   guifg=#000000 guibg=#00d7d7
