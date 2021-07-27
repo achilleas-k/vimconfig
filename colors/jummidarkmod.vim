@@ -47,3 +47,5 @@ highlight diffAdded guifg=#009900
 
 highlight StatusLine guifg=#00d7d7 guibg=#000000
 highlight WildMenu   guifg=#000000 guibg=#00d7d7
+
+highlight Cursor guibg=#ffffff

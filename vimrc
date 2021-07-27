@@ -171,7 +171,7 @@ set termguicolors
 " Use :so $VIMRUNTIME/syntax/hitest.vim to preview
 let $colorscheme = 'jummidarkmod'
 colorscheme $colorscheme
-set guifont=monospace\ 9
+set guifont=monospace\ 11
 set guicursor+=a:blinkon0
 set guioptions-=r
 set guioptions-=m
