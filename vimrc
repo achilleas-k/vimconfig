@@ -325,8 +325,8 @@ let g:AutoPairsFlyMode = 0
 " Error jumping (ALE)
 noremap <leader>e   :ALENext<CR>
 noremap <leader>E   :ALEPrevious<CR>
-noremap <leader>n   :lnext<CR>
-noremap <leader>p   :lprev<CR>
+" noremap <leader>n   :lnext<CR>
+" noremap <leader>p   :lprev<CR>
 
 " Tag jumping (MatchTagAlways)
 noremap <leader>m   :MtaJumpToOtherTag<CR>
