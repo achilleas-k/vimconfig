@@ -300,6 +300,7 @@ endif
 noremap <c-f><c-b>  :Buffers<CR>
 noremap <c-f><c-o>  :Files<CR>
 noremap <c-f><c-g>  :Ag<SPACE>
+noremap <c-f><c-f>  :AgF<SPACE>
 noremap <c-f><c-i>  :GFiles<CR>
 noremap <c-f><c-m>  :Marks<CR>
 noremap <c-f><c-t>  :Tags<CR>
@@ -430,16 +431,17 @@ let g:surround_{char2nr('m')} = "\1Surround: \1\r\1\1"
 let g:surround_{char2nr('M')} = "\1S-Open: \1\r\2S-Close: \2"
 " }}}
 
-" FZF styling {{{
+" FZF styling and customizations {{{
 " let g:fzf_layout = { 'down': '40%'  }
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
 " let g:fzf_preview_window = ''
 
 let $FZF_PREVIEW_COMMAND="COLORTERM=truecolor bat --theme='Coldark-Dark' --style=numbers --color=always {}"
 
-
 " set colours for ag
 command! -bang -nargs=+ -complete=file Ag call fzf#vim#ag_raw('--color-line-number "1;37" --color-match "30;36" --color-path "1;90" '.shellescape(<q-args>), <bang>0)
+" fixed string version of ag
+command! -bang -nargs=+ -complete=file AgF call fzf#vim#ag_raw('--color-line-number "1;37" --color-match "30;36" --color-path "1;90" --fixed-strings '.shellescape(<q-args>), <bang>0)
 " }}}
 
 " Mucomplete options {{{
