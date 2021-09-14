@@ -85,7 +85,6 @@ au BufRead,BufNewFile haproxy* set ft=haproxy
 let mapleader=" "
 let maplocalleader=";"
 set modeline
-set cpo+=J  " two spaces between sentences
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -113,6 +112,21 @@ set winminheight=5
 set nofixendofline
 set history=10000
 set visualbell
+
+" format options: global defaults
+" some of these are (un)set by default, but I specify explicitly for clarity
+" and portability
+" individual filetypes edit these in the after/plugin scripts
+set formatoptions+=n  " recognise numbered lists
+set formatoptions+=j  " remove comment leader when joining lines
+set formatoptions+=p  " don't break lines at single spaces that follow periods (pairs with cpo-J)
+set formatoptions+=l  " don't break long lines when entering insert mode
+set formatoptions+=q  " allow formatting of comments with gq (and gw)
+set formatoptions-=r  " don't automatically insert comment leader on return
+set formatoptions-=o  " don't automatically insert comment leader on 'o' or 'O'
+
+set cpoptions+=J  " two spaces between sentences
+
 "let &colorcolumn=join(range(81,999),",")
 "highlight ColorColumn ctermbg=244 guibg=#101010
 set foldcolumn=1
