@@ -305,11 +305,6 @@ noremap <C-L>     <C-W>l
 
 " Plugin related mappings {{{
 
-" highlightedyank
-if !exists('##TextYankPost')
-  map y <Plug>(highlightedyank)
-endif
-
 " FZF mappings
 noremap <c-f><c-b>  :Buffers<CR>
 noremap <c-f><c-o>  :Files<CR>
