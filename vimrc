@@ -462,6 +462,9 @@ let g:mucomplete#chains.go = ['path', 'omni']
 let g:mucomplete#chains.python = ['path', 'omni']
 " }}}
 
+" shorter highlightedyank highlight duration
+let g:highlightedyank_highlight_duration = 150
+
 " Reload config command {{{
 com! Reload source ~/.vim/colors/$colorscheme.vim <bar> source ~/.vim/vimrc
 " }}}
