@@ -43,7 +43,7 @@ Plug 'ledger/vim-ledger', { 'for': 'ledger' }
 Plug 'rhysd/conflict-marker.vim'
 Plug 'vim-scripts/haproxy'
 Plug 'ryanoasis/vim-devicons'
-Plug 'cespare/vim-toml'
+Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'gerw/vim-hilinktrace'
 
