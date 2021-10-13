@@ -67,8 +67,9 @@ autocmd BufReadPost *
 \   exe "normal! g`\"" |
 \ endif
 
-" Always go to first line for commit messages
+" Always go to first line for commit and tag messages
 au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
+au FileType gitcommit au! BufEnter TAG_EDITMSG call setpos('.', [0, 1, 1, 0])
 " }}}
 
 " Syntax and file types {{{
