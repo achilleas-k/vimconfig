@@ -359,6 +359,11 @@ cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
 " }}}
 
+" scroll and cursor bind shortcuts{{{
+nnoremap <leader>bs  :windo set scrollbind!<cr>
+nnoremap <leader>bc  :windo set cursorbind!<cr>
+" }}}
+
 " }}}
 
 " Plugin related settings {{{
