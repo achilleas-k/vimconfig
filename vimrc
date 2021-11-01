@@ -172,6 +172,12 @@ let &g:directory=$vimcachedir
 set undodir=$vimcachedir/undo
 set undofile
 
+" cursor shapes
+let &t_SI = "\<Esc>[5 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"
+autocmd VimLeave *  call system('printf "\e[5 q" > $TTY')
+
 " }}}
 
 " Colours and GUI {{{
