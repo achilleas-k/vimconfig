@@ -50,7 +50,7 @@ Plug 'gerw/vim-hilinktrace'
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
 Plug 'arcticicestudio/nord-vim'
-Plug 'jcherven/jummidark.vim'
+Plug 'jcherven/jummidark.vim', { 'branch': 'main' }
 
 call plug#end()
 " }}}
