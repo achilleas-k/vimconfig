@@ -68,8 +68,8 @@ autocmd BufReadPost *
 \ endif
 
 " Always go to first line for commit and tag messages
-au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
-au FileType gitcommit au! BufEnter TAG_EDITMSG call setpos('.', [0, 1, 1, 0])
+autocmd FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
+autocmd FileType gitcommit au! BufEnter TAG_EDITMSG call setpos('.', [0, 1, 1, 0])
 " }}}
 
 " Syntax and file types {{{
@@ -78,7 +78,7 @@ filetype plugin indent on
 filetype on
 filetype plugin on
 
-au BufRead,BufNewFile haproxy* set ft=haproxy
+autocmd BufRead,BufNewFile haproxy* set ft=haproxy
 
 " }}}
 
@@ -227,7 +227,7 @@ endfunction
 com! Cleanws call <SID>StripTrailingWhitespaces()
 
 " run the cleaner on save for certain types
-au BufWritePre *.py,*.tex,*.txt Cleanws
+autocmd BufWritePre *.py,*.tex,*.txt Cleanws
 " }}}
 
 " Custom mappings {{{
@@ -437,7 +437,7 @@ let g:rainbow_active = 0
 " }}}
 
 " Set terminal window title {{{
-au BufEnter * let &titlestring = 'vim(' . v:servername . '): ' . expand("%:t")
+autocmd BufEnter * let &titlestring = 'vim(' . v:servername . '): ' . expand("%:t")
 if &term =~ "screen"
     set t_ts=k
     set t_fs=\
