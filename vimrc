@@ -204,8 +204,8 @@ set guioptions-=L
 
 " Highlight word under cursor passively (with custom style)
 highlight MatchWord term=reverse ctermfg=69
-autocmd CursorMoved * exe printf('match MatchWord /\V\<%s\>/', escape(expand('<cword>'), '/\'))
-autocmd CursorMovedI * exe printf('match MatchWord /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+autocmd CursorMoved,InsertLeave * exe printf('match MatchWord /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+autocmd InsertEnter * match none
 
 " }}}
 
