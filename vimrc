@@ -453,9 +453,11 @@ let g:surround_{char2nr('M')} = "\1S-Open: \1\r\2S-Close: \2"
 " }}}
 
 " FZF styling and customizations {{{
-" let g:fzf_layout = { 'down': '40%'  }
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
-" let g:fzf_preview_window = ''
+if exists('$TMUX')
+    let g:fzf_layout = { 'tmux': '-p90%,60%' }
+else
+    let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+endif
 
 let $FZF_PREVIEW_COMMAND="COLORTERM=truecolor bat --theme='Coldark-Dark' --style=numbers --color=always {}"
 
