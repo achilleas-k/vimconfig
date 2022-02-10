@@ -23,7 +23,6 @@ Plug 'okcompute/vim-python-motions', { 'for': 'python' }
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 Plug 'tommcdo/vim-exchange'
 Plug 'Valloric/MatchTagAlways'
-Plug 'godlygeek/tabular'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'othree/html5.vim', { 'for': 'html' }
@@ -33,6 +32,7 @@ Plug 'luochen1990/rainbow', { 'on': 'RainbowToggle' }
 Plug 'lilydjwg/colorizer'
 Plug 'w0rp/ale'
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-easy-align'
 Plug 'airblade/vim-rooter'
 Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'rip-rip/clang_complete'
@@ -368,6 +368,14 @@ cnoremap <C-f> <Right>
 " scroll and cursor bind shortcuts{{{
 nnoremap <leader>bs  :windo set scrollbind!<cr>
 nnoremap <leader>bc  :windo set cursorbind!<cr>
+" }}}
+
+" EasyAlign {{{
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 " }}}
 
 " }}}
