@@ -1,7 +1,7 @@
 setlocal foldmethod=syntax
 setlocal spell
 
-map <buffer> <silent> <leader>d   :GoDef<CR>
+map <buffer> <leader>d   :GoDef<CR>
 map <buffer> <leader>i   :GoInfo<CR>
 map <buffer> <leader>I   :GoImports<CR>
 map <buffer> <leader>r   :GoRename<space>
