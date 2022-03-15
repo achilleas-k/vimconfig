@@ -4,6 +4,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Plugins
+Plug 'editorconfig/editorconfig-vim'
 Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
