@@ -20,9 +20,7 @@ let g:ale_python_mypy_options = '--ignore-missing-imports --check-untyped-defs'
 " Pylint codes: http://pylint-messages.wikidot.com/all-codes
 let g:ale_fixers = {'python': ['autopep8']}
 let g:ale_fix_on_save = 1
-let g:ale_python_pylint_options = '--disable C0111 --max-line-length=' . line_length
-let g:ale_python_pycodestyle_options = '--max-line-length=' . line_length
-let g:ale_python_autopep8_options = '--max-line-length=' . line_length
+let g:ale_python_pylint_options = '--disable C0111'
 " }}}
 
 " general {{{
