@@ -255,9 +255,6 @@ noremap <silent> <leader>x :bd<CR>
 " Close all other buffers
 noremap <silent> <leader>o :BufOnly<CR>
 
-" Close any locationlist and quickfix windows
-noremap <silent> <leader>O :lclose<CR>:cclose<CR>
-
 " C-c as escape from insert mode
 noremap <C-c> <esc>
 inoremap <C-c> <esc>
