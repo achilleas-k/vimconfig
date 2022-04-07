@@ -1,6 +1,7 @@
 setlocal tabstop=2
 setlocal softtabstop=2
 setlocal shiftwidth=2
+setlocal endofline
 
 let g:ale_linters = {'json': ['jq']}
 let g:ale_fixers = {'json': ['jq']}
