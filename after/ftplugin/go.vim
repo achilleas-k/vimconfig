@@ -22,7 +22,7 @@ let b:go_highlight_variable_declarations = 0
 let b:go_highlight_variable_assignments = 0
 let b:ale_go_golangci_lint_package = 1
 
-let b:ale_linters = {'go': ['gopls']}
+let b:ale_linters = {'go': ['gopls', 'golangci-lint']}
 
 let g:airline#extensions#whitespace#skip_indent_check_ft = {'go': ['mixed-indent-file']}
 
