@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins
 Plug 'editorconfig/editorconfig-vim'
+Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
@@ -420,6 +421,11 @@ let g:airline_symbols.whitespace = 'Ξ'
 " tagbar sorting - default to order of appearance
 let g:tagbar_sort = 0
 highlight TagbarHighlight guifg=cyan ctermfg=cyan
+" }}}
+
+" Calendar {{{
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 0
 " }}}
 
 " Gitgutter {{{
