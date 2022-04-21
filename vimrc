@@ -48,6 +48,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'gerw/vim-hilinktrace'
+Plug 'mtth/scratch.vim'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
@@ -302,6 +303,11 @@ noremap <leader>v   0vg_
 command W  :w
 command Wq :wq
 
+" Scratch window
+noremap  ¬           :Scratch<CR>
+noremap  <leader>si  :ScratchInsert<CR>
+noremap  <leader>sp  :ScatchPreview<CR>
+vnoremap <leader>sv  :ScratchSelection<CR>
 " }}}
 
 " Splits {{{
@@ -517,6 +523,10 @@ let g:mucomplete#chains.python = ['path', 'omni']
 
 " shorter highlightedyank highlight duration
 let g:highlightedyank_highlight_duration = 150
+
+" Use half the screen height for scratch {{{
+let g:scratch_height = 0.5
+" }}}
 
 " Reload config command {{{
 com! Reload source ~/.vim/colors/$colorscheme.vim <bar> source ~/.vim/vimrc
