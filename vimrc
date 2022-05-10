@@ -275,7 +275,9 @@ noremap <silent><leader>p :set paste!<CR>
 noremap <silent><leader>w :set wrap!<CR>
 noremap <silent><leader>l :set cursorline!<CR>
 noremap <silent><leader>L :set cursorcolumn!<CR>
-noremap <F2>      :set relativenumber!<CR>
+noremap <silent><F2>      :set relativenumber!<CR>
+noremap <silent><leader>n :set relativenumber!<CR>
+noremap <silent><leader>s :set incsearch!<CR>
 
 " Yank whole buffer to system clipboard
 noremap <silent><leader>Y :%y+<CR>:echo "Buffer copied to clipboard"<CR>
