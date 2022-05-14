@@ -52,7 +52,7 @@ Plug 'mtth/scratch.vim'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
-Plug 'arcticicestudio/nord-vim'
+Plug 'arcticicestudio/nord-vim', { 'branch': 'main' }
 Plug 'jcherven/jummidark.vim', { 'branch': 'main' }
 
 call plug#end()
