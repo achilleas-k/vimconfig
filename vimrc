@@ -340,7 +340,7 @@ nmap <silent> <F8> :TagbarToggle<CR>
 nnoremap <F5> :UndotreeToggle<CR>
 
 " fugitive
-nmap <leader>gw :Git write<CR>
+nmap <leader>gw :Gwrite<CR>
 nmap <leader>gc :Git commit<CR>
 nmap <leader>gd :Git diff<CR>
 nmap <leader>gs :Git status<CR>
