@@ -348,7 +348,6 @@ nmap <leader>gs :Git status<CR>
 " auto pair
 let g:AutoPairsShortcutFastWrap = '<C-e><C-e>'
 let g:AutoPairsShortcutBackInsert = '<C-e><C-b>'
-let g:AutoPairsShortcutJump = '<C-e><C-j>'
 let g:AutoPairsShortcutToggle = '<F4>'
 let g:AutoPairsFlyMode = 0
 
