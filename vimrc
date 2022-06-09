@@ -331,6 +331,7 @@ noremap <c-f><c-i>  :GFiles<CR>
 noremap <c-f><c-m>  :Marks<CR>
 noremap <c-f><c-t>  :Tags<CR>
 noremap <c-f><c-d>  :BuffersDelete<CR>
+noremap <c-f><c-c>  :Commits<CR>
 let g:fzf_action = {'ctrl-h': 'split', 'ctrl-v': 'vsplit'}
 
 " Tagbar
