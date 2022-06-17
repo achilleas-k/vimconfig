@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins
 Plug 'editorconfig/editorconfig-vim'
-Plug 'itchyny/calendar.vim', { 'on': 'Calendar' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
