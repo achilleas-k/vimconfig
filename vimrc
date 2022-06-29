@@ -48,6 +48,7 @@ Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'gerw/vim-hilinktrace'
 Plug 'mtth/scratch.vim'
+Plug 'will133/vim-dirdiff'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
