@@ -30,7 +30,7 @@ Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'fatih/vim-go', { 'for': ['go', 'gohtmltmpl'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow', { 'on': 'RainbowToggle' }
-Plug 'lilydjwg/colorizer'
+Plug 'lilydjwg/colorizer',  { 'on': 'ColorHighlight' }
 Plug 'w0rp/ale'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
