@@ -390,6 +390,9 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 " }}}
 
+" Switch to Greek input and spell checking
+command Greek :set keymap=greek | :set spelllang=en,el
+
 " }}}
 
 " Plugin related settings {{{
