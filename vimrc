@@ -307,7 +307,7 @@ command Wq :wq
 " Scratch window
 noremap  ¬           :Scratch<CR>
 noremap  <leader>si  :ScratchInsert<CR>
-noremap  <leader>sp  :ScatchPreview<CR>
+noremap  <leader>sp  :ScratchPreview<CR>
 vnoremap <leader>sv  :ScratchSelection<CR>
 " }}}
 
