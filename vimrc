@@ -270,7 +270,7 @@ nnoremap <silent> "" :registers "0123456789abcdefghijklmnopqrstuvwxyz*+.<CR>
 
 " Common setting toggles
 noremap <silent><leader>/ :nohlsearch<CR>
-noremap <silent><leader>S :set spell!<CR>
+noremap <silent><leader>s :set spell!<CR>
 noremap <silent><leader>p :set paste!<CR>
 noremap <silent><leader>w :set wrap!<CR>
 noremap <silent><leader>l :set cursorline!<CR>
@@ -306,9 +306,9 @@ command Wq :wq
 
 " Scratch window
 noremap  ¬           :Scratch<CR>
-noremap  <leader>si  :ScratchInsert<CR>
-noremap  <leader>sp  :ScratchPreview<CR>
-vnoremap <leader>sv  :ScratchSelection<CR>
+" noremap  <leader>si  :ScratchInsert<CR>
+" noremap  <leader>sp  :ScratchPreview<CR>
+" vnoremap <leader>sv  :ScratchSelection<CR>
 " }}}
 
 " Splits {{{
