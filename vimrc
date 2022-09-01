@@ -490,9 +490,9 @@ endif
 let $FZF_PREVIEW_COMMAND="COLORTERM=truecolor bat --theme='Coldark-Dark' --style=numbers --color=always {}"
 
 " set colours for ag
-command! -bang -nargs=+ -complete=file Ag call fzf#vim#ag_raw('--color-line-number "1;37" --color-match "30;36" --color-path "1;35" '.shellescape(<q-args>), <bang>0)
+command! -bang -nargs=+ -complete=file Ag call fzf#vim#ag_raw('--hidden --color-line-number "1;37" --color-match "30;36" --color-path "1;35" '.shellescape(<q-args>), <bang>0)
 " fixed string version of ag
-command! -bang -nargs=+ -complete=file AgF call fzf#vim#ag_raw('--color-line-number "1;37" --color-match "30;36" --color-path "1;35" --fixed-strings '.shellescape(<q-args>), <bang>0)
+command! -bang -nargs=+ -complete=file AgF call fzf#vim#ag_raw('--hidden --color-line-number "1;37" --color-match "30;36" --color-path "1;35" --fixed-strings '.shellescape(<q-args>), <bang>0)
 
 " custom command for deleting buffers
 " source: https://github.com/junegunn/fzf.vim/pull/733#issuecomment-559720813
