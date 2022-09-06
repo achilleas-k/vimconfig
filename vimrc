@@ -142,7 +142,7 @@ set splitright
 " vertical split for diff
 set diffopt+=vertical
 " ignore whitespace and blank lines for diff
-set diffopt+=iwhiteall,iblank
+set diffopt+=iwhiteeol,iblank
 " formatting characters
 set list listchars=tab:>·,trail:·,extends:>,precedes:<,nbsp:-
 set fillchars+=vert:│
