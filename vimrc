@@ -207,7 +207,7 @@ set guioptions-=L
 " Common highlight overrides {{{
 
 " Highlight word under cursor passively (with custom style)
-highlight MatchWord term=reverse ctermfg=69
+highlight MatchWord term=reverse ctermfg=69 guifg=#1188FF
 autocmd CursorMoved,InsertLeave * exe printf('match MatchWord /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 autocmd InsertEnter * match none
 
