@@ -419,7 +419,7 @@ let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.spell = 'Ꞩ'
 let g:airline_symbols.notexists = '∄'
-let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_symbols.whitespace = '···'
 " }}}
 
 " Tagbar {{{
