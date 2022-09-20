@@ -3,4 +3,4 @@
 setlocal nospell
 
 " map shift+return to close the window after select
-noremap  <buffer><silent> OM   <cr>:lclose<cr>
+noremap  <buffer><silent> OM   <cr>:lclose<cr>:cclose<cr>

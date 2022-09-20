@@ -31,3 +31,6 @@ let b:go_info_mode='gopls'
 let b:go_imports_mode='gopls'
 
 let b:go_rename_command = 'gopls'
+
+" use quickfix instead of location list for command outputs
+let g:go_list_type = 'quickfix'
