@@ -213,6 +213,9 @@ autocmd InsertEnter * match none
 
 " }}}
 
+" Make the quickfix window fullwidth
+autocmd filetype qf wincmd J
+
 " }}}
 
 " Whitespace cleaner function {{{
