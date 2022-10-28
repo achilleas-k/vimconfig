@@ -49,6 +49,7 @@ Plug 'vim-scripts/BufOnly.vim'
 Plug 'gerw/vim-hilinktrace'
 Plug 'mtth/scratch.vim'
 Plug 'will133/vim-dirdiff'
+Plug 'troydm/zoomwintab.vim'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
@@ -404,6 +405,9 @@ let g:airline#extensions#tabline#right_alt_sep = ''
 let g:airline#extensions#tabline#fnamecollapse = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#tagbar#flags = 'f'  " show full tag hierarchy
+let g:airline#extensions#zoomwintab#enabled = 1
+let g:airline#extensions#zoomwintab#status_zoomed_in = '[Z]'
+
 let g:airline_left_sep = '' " '┃'
 let g:airline_right_sep = '' " '┃'
 let g:airline_inactive_collapse = 0
