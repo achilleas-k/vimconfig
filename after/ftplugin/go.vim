@@ -2,6 +2,7 @@ setlocal foldmethod=syntax
 setlocal spell
 
 map <buffer> <leader>d   :GoDef<CR>
+map <buffer> <leader>D   <Plug>(go-def-vertical)
 map <buffer> <leader>i   :GoInfo<CR>
 map <buffer> <leader>I   :GoImports<CR>
 map <buffer> <leader>r   :GoRename<space>
