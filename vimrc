@@ -323,15 +323,15 @@ noremap <leader>= :vsplit<CR>
 
 " FZF mappings
 noremap <c-f><c-b>  :Buffers<CR>
-noremap <c-f><c-o>  :Files<CR>
-noremap <c-f><c-g>  :Ag<SPACE>
+noremap <c-f><c-c>  :Commits<CR>
+noremap <c-f><c-d>  :BuffersDelete<CR>
 noremap <c-f><c-f>  :AgF<SPACE>
+noremap <c-f><c-g>  :Ag<SPACE>
 noremap <c-f><c-i>  :GFiles<CR>
 noremap <c-f><c-m>  :Marks<CR>
-noremap <c-f><c-t>  :Tags<CR>
+noremap <c-f><c-o>  :Files<CR>
 noremap <c-f><c-r>  :BTags<CR>
-noremap <c-f><c-d>  :BuffersDelete<CR>
-noremap <c-f><c-c>  :Commits<CR>
+noremap <c-f><c-t>  :Tags<CR>
 let g:fzf_action = {'ctrl-h': 'split', 'ctrl-v': 'vsplit'}
 
 " Tagbar
