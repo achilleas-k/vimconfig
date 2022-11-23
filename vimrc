@@ -296,6 +296,13 @@ nnoremap <silent><c-p> :m .-2<cr>==
 vnoremap <silent><c-n> :m '>+1<cr>gv=gv
 vnoremap <silent><c-p> :m '<-2<cr>gv=gv
 
+" Quickfix
+command! Cnext try | cnext | catch | cfirst | catch | endtry
+command! Cprev try | cprev | catch | clast | catch | endtry
+nnoremap <silent><leader>qn :Cnext<cr>
+nnoremap <silent><leader>qp :Cprev<cr>
+nnoremap <silent><leader>qq :cclose<cr>
+
 " Fold and unfold with +
 nnoremap + za
 vnoremap + zf
