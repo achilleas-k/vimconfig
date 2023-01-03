@@ -331,7 +331,6 @@ noremap <leader>= :vsplit<CR>
 " FZF mappings
 noremap <c-f><c-b>  :Buffers<CR>
 noremap <c-f><c-c>  :Commits<CR>
-noremap <c-f><c-d>  :BuffersDelete<CR>
 noremap <c-f><c-f>  :AgF<SPACE>
 noremap <c-f><c-g>  :Ag<SPACE>
 noremap <c-f><c-i>  :GFiles<CR>
@@ -495,27 +494,6 @@ let $FZF_PREVIEW_COMMAND="COLORTERM=truecolor bat --theme='Coldark-Dark' --style
 command! -bang -nargs=+ -complete=file Ag call fzf#vim#ag_raw('--hidden --color-line-number "1;37" --color-match "30;36" --color-path "1;35" '.shellescape(<q-args>), <bang>0)
 " fixed string version of ag
 command! -bang -nargs=+ -complete=file AgF call fzf#vim#ag_raw('--hidden --color-line-number "1;37" --color-match "30;36" --color-path "1;35" --fixed-strings '.shellescape(<q-args>), <bang>0)
-
-" custom command for deleting buffers
-" source: https://github.com/junegunn/fzf.vim/pull/733#issuecomment-559720813
-function! s:list_buffers()
-  redir => list
-  silent ls
-  redir END
-  return split(list, "\n")
-endfunction
-
-function! s:delete_buffers(lines)
-  execute 'bwipeout' join(map(a:lines, {_, line -> split(line)[0]}))
-endfunction
-
-command! BuffersDelete call fzf#run(fzf#wrap({
-  \ 'source': s:list_buffers(),
-  \ 'sink*': { lines -> s:delete_buffers(lines) },
-  \ 'options': '--multi --reverse --bind ctrl-a:select-all+accept'
-\ }))
-
-
 
 " }}}
 
