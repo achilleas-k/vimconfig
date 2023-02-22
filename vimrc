@@ -144,7 +144,7 @@ set diffopt+=vertical
 " ignore whitespace and blank lines for diff
 set diffopt+=iwhiteeol,iblank
 " formatting characters
-set list listchars=tab:>·,trail:·,extends:>,precedes:<,nbsp:-
+set list listchars=tab:>\ ,trail:·,extends:>,precedes:<,leadmultispace:\|\ \ \ ,nbsp:-
 set fillchars+=vert:│
 set showbreak=↳
 " update stuff quicker (default 4000)
