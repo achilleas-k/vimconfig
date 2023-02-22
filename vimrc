@@ -366,6 +366,10 @@ noremap <leader>hc   :GitGutterNextHunk<CR>
 noremap <leader>hC   :GitGutterPrevHunk<CR>
 
 imap <c-n> <plug>(MUcompleteFwd)
+
+" fugitive
+noremap <leader>B    :GBrowse<CR>
+
 " }}}
 
 " command line editing {{{
