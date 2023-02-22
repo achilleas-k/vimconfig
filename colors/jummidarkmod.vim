@@ -28,6 +28,7 @@ highlight clear Float
 highlight link Float Number
 highlight clear Boolean
 highlight link Boolean Keyword
+highlight Constant cterm=bold gui=bold guifg=#afafff
 
 " SignColumn background same as global bg
 highlight SignColumn      ctermbg=233 guibg=bg
@@ -49,5 +50,3 @@ highlight StatusLine guifg=#00d7d7 guibg=#000000
 highlight WildMenu   guifg=#000000 guibg=#00d7d7
 
 highlight Cursor guibg=#ffffff
-
-highlight Constant term=bold ctermfg=161 guifg=#d7005f
