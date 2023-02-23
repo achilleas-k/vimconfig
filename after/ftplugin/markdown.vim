@@ -64,7 +64,7 @@ nnoremap <buffer> <F9> :call OpenPDF()<CR>
 " }}}
 
 " Syntax highlight overrides {{{
-highlight markdownCode term=standout ctermfg=6
+highlight link markdownCode Statement
 " }}}
 
 " Vim surround bold {{{
