@@ -329,6 +329,7 @@ noremap <leader>= :vsplit<CR>
 " Plugin related mappings {{{
 
 " FZF mappings
+noremap <c-k>  :Buffers<CR>
 noremap <c-f><c-b>  :Buffers<CR>
 noremap <c-f><c-c>  :Commits<CR>
 noremap <c-f><c-f>  :AgF<SPACE>
