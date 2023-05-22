@@ -115,6 +115,7 @@ set winheight=5
 set winminheight=5
 set nofixendofline
 set history=10000
+set viminfo+=:10000
 set visualbell
 set noshowmode
 
