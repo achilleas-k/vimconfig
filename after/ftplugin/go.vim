@@ -1,15 +1,15 @@
 setlocal foldmethod=syntax
 setlocal spell
 
+map <buffer> <leader>c   :GoCallers<CR>
 map <buffer> <leader>d   :GoDef<CR>
 map <buffer> <leader>D   <Plug>(go-def-vertical)
-map <buffer> <leader>i   :GoInfo<CR>
-map <buffer> <leader>I   :GoImports<CR>
-map <buffer> <leader>r   :GoRename<space>
-map <buffer> <leader>c   :GoCallers<CR>
-map <buffer> <leader>t   :GoImplements<CR>
-map <buffer> <leader>h   :GoDoc<CR>
 map <buffer> <leader>H   :GoDocBrowser<CR>
+map <buffer> <leader>h   :GoDoc<CR>
+map <buffer> <leader>I   :GoImports<CR>
+map <buffer> <leader>i   :GoInfo<CR>
+map <buffer> <leader>r   :GoRename<space>
+map <buffer> <leader>t   :GoImplements<CR>
 
 let b:go_fmt_command = "gofmt"
 let b:go_play_open_browser = 0
