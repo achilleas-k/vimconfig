@@ -10,6 +10,7 @@ map <buffer> <leader>I   :GoImports<CR>
 map <buffer> <leader>i   :GoInfo<CR>
 map <buffer> <leader>r   :GoRename<space>
 map <buffer> <leader>t   :GoImplements<CR>
+map <buffer> <leader>T   :GoTest ./...<CR>
 
 let b:go_fmt_command = "gofmt"
 let b:go_play_open_browser = 0
