@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins
 Plug 'editorconfig/editorconfig-vim'
-Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -28,6 +27,7 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'fatih/vim-go', { 'for': ['go', 'gohtmltmpl'] }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow', { 'on': 'RainbowToggle' }
 Plug 'lilydjwg/colorizer',  { 'on': 'ColorHighlight' }
@@ -508,9 +508,11 @@ command! -bang -nargs=+ -complete=file AgF call fzf#vim#ag_raw('--hidden --color
 let g:mucomplete#can_complete = {}
 let g:mucomplete#can_complete.go = {'omni': { t -> t =~ '\m\%(\k\k\|\.\)$' }}
 let g:mucomplete#can_complete.python = {'omni': { t -> t =~ '\m\%(\k\k\|\.\)$' }}
+let g:mucomplete#can_complete.rust = {'omni': { t -> t =~ '\m\%(\k\k\|\.\|::\)$' }}
 let g:mucomplete#chains = {}
 let g:mucomplete#chains.go = ['path', 'omni']
 let g:mucomplete#chains.python = ['path', 'omni']
+let g:mucomplete#chains.rust = ['path', 'omni']
 " }}}
 
 " shorter highlightedyank highlight duration
