@@ -347,8 +347,8 @@ let g:fzf_action = {'ctrl-h': 'split', 'ctrl-v': 'vsplit'}
 " Tagbar
 nmap <silent> <F8> :TagbarToggle<CR>
 
-nnoremap <F5> :UndotreeToggle<CR>
-nnoremap <leader>bu :UndotreeToggle<CR>
+nnoremap <silent> <F5> :UndotreeToggle<CR>
+nnoremap <silent> <leader>bu :UndotreeToggle<CR>
 
 " auto pair
 let g:AutoPairsShortcutFastWrap = '<C-e><C-e>'
