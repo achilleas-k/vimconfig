@@ -345,8 +345,8 @@ noremap <c-f><c-w>  :Windows<CR>
 let g:fzf_action = {'ctrl-h': 'split', 'ctrl-v': 'vsplit'}
 
 " Tagbar
-nmap <silent> <F8> :TagbarToggle<CR>
-nmap <silent> <leader>bt :TagbarToggle<CR>
+nnoremap <silent> <F8> :TagbarToggle<CR>
+nnoremap <silent> <leader>bt :TagbarToggle<CR>
 
 nnoremap <silent> <F5> :UndotreeToggle<CR>
 nnoremap <silent> <leader>bu :UndotreeToggle<CR>
