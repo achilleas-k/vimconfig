@@ -50,6 +50,7 @@ Plug 'gerw/vim-hilinktrace'
 Plug 'mtth/scratch.vim'
 Plug 'will133/vim-dirdiff'
 Plug 'jasonccox/vim-wayland-clipboard'
+Plug 'hashivim/vim-terraform'
 
 " Colour schemes
 Plug 'nanotech/jellybeans.vim'
