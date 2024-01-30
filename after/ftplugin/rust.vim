@@ -6,6 +6,5 @@ let b:ale_rust_cargo_use_clippy = executable('cargo-clippy')
 let b:ale_completion_enabled = 1
 
 map <buffer> <leader>d   :tag <C-R>=expand('<cword>')<CR><CR>
-map <buffer> <leader>k   :tag <C-R>=expand('<cword>')<CR><CR>
 
 set omnifunc=ale#completion#OmniFunc

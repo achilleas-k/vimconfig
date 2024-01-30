@@ -3,7 +3,6 @@ setlocal spell
 
 map <buffer> <leader>c   :GoCallers<CR>
 map <buffer> <leader>d   :GoDef<CR>
-map <buffer> <leader>k   :GoDef<CR>
 map <buffer> <leader>D   <Plug>(go-def-vertical)
 map <buffer> <leader>H   :GoDocBrowser<CR>
 map <buffer> <leader>h   :GoDoc<CR>
