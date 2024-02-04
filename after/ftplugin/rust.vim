@@ -8,5 +8,6 @@ let b:ale_completion_enabled = 1
 map <buffer> <leader>d   :ALEGoToDefinition<CR>
 map <buffer> <leader>i   :ALEHover<CR>
 map <buffer> <leader>r   :ALERename<CR>
+map <buffer> <leader>t   :ALEGoToImplementation<CR>
 
 set omnifunc=ale#completion#OmniFunc
