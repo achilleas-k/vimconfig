@@ -5,6 +5,8 @@ let b:ale_rust_cargo_use_check = 1  " use check instead of build
 let b:ale_rust_cargo_use_clippy = executable('cargo-clippy')
 let b:ale_completion_enabled = 1
 
-map <buffer> <leader>d   :tag <C-R>=expand('<cword>')<CR><CR>
+map <buffer> <leader>d   :ALEGoToDefinition<CR>
+map <buffer> <leader>i   :ALEHover<CR>
+map <buffer> <leader>r   :ALERename<CR>
 
 set omnifunc=ale#completion#OmniFunc
