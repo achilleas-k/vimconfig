@@ -1,5 +1,8 @@
 setlocal foldmethod=syntax
 setlocal spell
+setlocal cpo-=J
+setlocal formatoptions-=p
+setlocal nojoinspaces
 
 map <buffer> <leader>c   :GoCallers<CR>
 map <buffer> <leader>d   :GoDef<CR>
