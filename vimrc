@@ -377,6 +377,8 @@ imap <c-n> <plug>(MUcompleteFwd)
 " fugitive
 noremap <leader>B    :GBrowse<CR>
 
+" context
+noremap <leader>f   :ContextToggle<CR>
 " }}}
 
 " command line editing {{{
