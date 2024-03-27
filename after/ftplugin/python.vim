@@ -29,8 +29,7 @@ let g:ale_python_ruff_format_options = '--line-length=' . line_length
 " }}}
 
 " Mapping {{{
-nmap <buffer> <leader>d   <Plug>(ale_go_to_definition)
-nmap <buffer> <leader>h   <Plug>(ale_hover)
+nmap <buffer> <leader>h   :call jedi#show_documentation()<CR>
 " }}}
 
 " general {{{
