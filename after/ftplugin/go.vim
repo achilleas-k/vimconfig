@@ -1,3 +1,8 @@
+call LspAddServer([#{name: 'gopls',
+                 \   filetype: 'go',
+                 \   path: '/home/achilleas/.local/share/go/bin/gopls',
+                 \   args: ['serve']
+                 \ }])
 setlocal foldmethod=syntax
 setlocal spell
 setlocal cpo-=J

@@ -1,3 +1,8 @@
+call LspAddServer([#{name: 'pylsp',
+                 \   filetype: 'python',
+                 \   path: '/usr/bin/pylsp',
+                 \   args: []
+                 \ }])
 " python-jedi {{{
 let jedi#auto_initialization = 1
 let jedi#force_py_version = 3

@@ -4,6 +4,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Plugins
+Plug 'yegappan/lsp'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
@@ -519,6 +520,56 @@ let g:mucomplete#chains = {}
 let g:mucomplete#chains.go = ['path', 'omni']
 let g:mucomplete#chains.python = ['path', 'omni']
 let g:mucomplete#chains.rust = ['path', 'omni']
+" }}}
+
+" LSP {{{
+" https://github.com/yegappan/lsp/issues/364
+let lspOpts = #{
+            \   aleSupport: v:true,
+            \   autoComplete: v:true,
+            \   autoHighlight: v:false,
+            \   autoHighlightDiags: v:true,
+            \   autoPopulateDiags: v:false,
+            \   completionMatcher: 'case',
+            \   completionMatcherValue: 1,
+            \   diagSignErrorText: 'E>',
+            \   diagSignHintText: 'H>',
+            \   diagSignInfoText: 'I>',
+            \   diagSignWarningText: 'W>',
+            \   echoSignature: v:false,
+            \   hideDisabledCodeActions: v:false,
+            \   highlightDiagInline: v:true,
+            \   hoverInPreview: v:false,
+            \   ignoreMissingServer: v:false,
+            \   keepFocusInDiags: v:true,
+            \   keepFocusInReferences: v:true,
+            \   completionTextEdit: v:true,
+            \   diagVirtualTextAlign: 'above',
+            \   diagVirtualTextWrap: 'default',
+            \   noNewlineInCompletion: v:true,
+            \   omniComplete: v:null,
+            \   outlineOnRight: v:false,
+            \   outlineWinSize: 20,
+            \   semanticHighlight: v:true,
+            \   showDiagInBalloon: v:true,
+            \   showDiagInPopup: v:true,
+            \   showDiagOnStatusLine: v:false,
+            \   showDiagWithSign: v:true,
+            \   showDiagWithVirtualText: v:false,
+            \   showInlayHints: v:false,
+            \   showSignature: v:false,
+            \   snippetSupport: v:false,
+            \   ultisnipsSupport: v:false,
+            \   useBufferCompletion: v:false,
+            \   usePopupInCodeAction: v:false,
+            \   useQuickfixForLocations: v:false,
+            \   vsnipSupport: v:false,
+            \   bufferCompletionTimeout: 100,
+            \   customCompletionKinds: v:false,
+            \   completionKinds: {},
+            \   filterCompletionDuplicates: v:false,
+            \ }
+autocmd User LspSetup call LspOptionsSet(lspOpts)
 " }}}
 
 " shorter highlightedyank highlight duration
