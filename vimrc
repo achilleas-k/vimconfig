@@ -162,7 +162,7 @@ if !has('nvim')
     set ttymouse=xterm2  " makes selections fast in tmux
 endif
 " never autoinsert a completion option
-set completeopt=noinsert,menuone,noselect
+set completeopt=menuone
 " move beyond end of line in block selection mode
 set virtualedit=block
 " always show sign column (used by gitgutter)
