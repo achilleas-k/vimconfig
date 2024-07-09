@@ -35,7 +35,7 @@ Plug 'w0rp/ale'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'airblade/vim-rooter'
-Plug 'https://codeberg.org/Dokana/vim-systemd-syntax.git', { 'branch': 'trunk' }
+Plug 'wgwoods/vim-systemd-syntax'
 Plug 'rip-rip/clang_complete'
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'kshenoy/vim-signature'
