@@ -121,6 +121,7 @@ set history=10000
 set viminfo+=:10000
 set visualbell
 set noshowmode
+set conceallevel=0
 
 " format options: global defaults
 " some of these are (un)set by default, but I specify explicitly for clarity
