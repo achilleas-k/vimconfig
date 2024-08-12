@@ -4,7 +4,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-" Based on jellybeans
+" Based on jummidark
 runtime colors/jummidark.vim
 
 let g:colors_name = "jummidarkmod"
