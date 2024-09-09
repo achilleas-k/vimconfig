@@ -357,7 +357,8 @@ nnoremap <silent> <leader>bu :UndotreeToggle<CR>
 " auto pair
 let g:AutoPairsShortcutFastWrap = '<C-e><C-e>'
 let g:AutoPairsShortcutBackInsert = '<C-e><C-b>'
-let g:AutoPairsShortcutToggle = '<F4>'
+let g:AutoPairsShortcutJump = '<C-e><C-n>'
+let g:AutoPairsShortcutToggle = '<C-e><C-a>'
 let g:AutoPairsFlyMode = 0
 
 " Error jumping (ALE)
