@@ -28,7 +28,7 @@ Plug 'lifepillar/vim-mucomplete'
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'fatih/vim-go', { 'for': ['go', 'gohtmltmpl'] }
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-Plug 'jiangmiao/auto-pairs'
+Plug 'LunarWatcher/auto-pairs'
 Plug 'luochen1990/rainbow', { 'on': 'RainbowToggle' }
 Plug 'lilydjwg/colorizer',  { 'on': 'ColorHighlight' }
 Plug 'w0rp/ale'
@@ -359,6 +359,7 @@ let g:AutoPairsShortcutFastWrap = '<C-e><C-e>'
 let g:AutoPairsShortcutBackInsert = '<C-e><C-b>'
 let g:AutoPairsShortcutJump = '<C-e><C-n>'
 let g:AutoPairsShortcutToggle = '<C-e><C-a>'
+let g:AutoPairsMapBS = 1
 let g:AutoPairsFlyMode = 0
 
 " Error jumping (ALE)
