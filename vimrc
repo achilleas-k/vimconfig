@@ -360,6 +360,7 @@ let g:AutoPairsShortcutBackInsert = '<C-e><C-b>'
 let g:AutoPairsShortcutJump = '<C-e><C-n>'
 let g:AutoPairsShortcutToggle = '<C-e><C-a>'
 let g:AutoPairsMapBS = 1
+let g:AutoPairsMultilineClose = 1
 let g:AutoPairsFlyMode = 0
 
 " Error jumping (ALE)
