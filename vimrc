@@ -57,6 +57,7 @@ Plug 'wellle/context.vim'
 Plug 'nanotech/jellybeans.vim'
 Plug 'arcticicestudio/nord-vim', { 'branch': 'main' }
 Plug 'jcherven/jummidark.vim', { 'branch': 'main' }
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 call plug#end()
 " }}}
