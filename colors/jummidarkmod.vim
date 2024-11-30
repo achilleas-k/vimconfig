@@ -51,5 +51,5 @@ highlight WildMenu   guifg=#000000 guibg=#00d7d7
 
 highlight Cursor guibg=#ffffff
 
-" selection backgrouns
+" selection background
 highlight Visual guibg=#404040
