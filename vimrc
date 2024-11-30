@@ -201,7 +201,7 @@ set t_Co=256
 set termguicolors
 
 " Use :so $VIMRUNTIME/syntax/hitest.vim to preview
-let $colorscheme = 'jummidarkmod'
+let $colorscheme = 'catppuccin_mocha'
 colorscheme $colorscheme
 set guifont=monospace\ 11
 set guicursor+=a:blinkon0
@@ -216,6 +216,12 @@ set guioptions-=L
 highlight MatchWord term=reverse ctermfg=69 guifg=#1188FF
 autocmd CursorMoved,InsertLeave * exe printf('match MatchWord /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 autocmd InsertEnter * match none
+
+" Spelling
+highlight clear Spellbad
+highlight clear SpellRare
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline gui=undercurl guibg=#330022
+highlight SpellRare term=standout guibg=#333300
 
 " }}}
 
