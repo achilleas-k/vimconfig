@@ -381,6 +381,9 @@ imap <c-n> <plug>(MUcompleteFwd)
 
 " fugitive
 noremap <leader>B    :GBrowse<CR>
+noremap <leader>gs   :Git status<CR>
+noremap <leader>gb   :Git blame<CR>
+noremap <leader>gd   :Gdiff<CR>
 
 " context
 noremap <leader>f   :ContextToggle<CR>
