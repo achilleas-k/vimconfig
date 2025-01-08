@@ -58,6 +58,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'arcticicestudio/nord-vim', { 'branch': 'main' }
 Plug 'jcherven/jummidark.vim', { 'branch': 'main' }
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'artanikin/vim-synthwave84'
 
 call plug#end()
 " }}}
