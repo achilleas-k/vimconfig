@@ -524,6 +524,7 @@ let g:mucomplete#chains = {}
 let g:mucomplete#chains.go = ['path', 'omni']
 let g:mucomplete#chains.python = ['path', 'omni']
 let g:mucomplete#chains.rust = ['path', 'omni']
+let g:mucomplete#chains.gitcommit = ['path', 'keyn', 'dict', 'uspl']  " omni in gitcommit is set by rhubarb to complete github issues/PRs, which I don't use
 " }}}
 
 " shorter highlightedyank highlight duration
