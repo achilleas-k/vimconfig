@@ -41,13 +41,11 @@ function! CompilePDF()
     :redraw!
 endfunction
 
-noremap  <buffer> <F6>      :w<CR>:call CompilePDF()<CR>
-inoremap <buffer> <F6> <ESC>:w<CR>:call CompilePDF()<CR>
+noremap  <buffer> <leader>c  :w<CR>:call CompilePDF()<CR>
 " }}}
 
 " open in browser {{{
-noremap  <buffer> <F7>      :w<CR>:!firefox --new-window 'file://%:p'<CR>
-inoremap <buffer> <F7> <ESC>:w<CR>:!firefox --new-window 'file://%:p'<CR>
+noremap  <buffer> <leader>o  :w<CR>:!firefox --new-window 'file://%:p'<CR>
 " }}}
 
 
