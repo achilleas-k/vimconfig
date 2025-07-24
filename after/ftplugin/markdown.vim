@@ -46,8 +46,8 @@ inoremap <buffer> <F6> <ESC>:w<CR>:call CompilePDF()<CR>
 " }}}
 
 " open in browser {{{
-noremap  <buffer> <F7>      :w<CR>:!google-chrome-stable --app='file://%:p'<CR>
-inoremap <buffer> <F7> <ESC>:w<CR>:!google-chrome-stable --app='file://%:p'<CR>
+noremap  <buffer> <F7>      :w<CR>:!firefox --new-window 'file://%:p'<CR>
+inoremap <buffer> <F7> <ESC>:w<CR>:!firefox --new-window 'file://%:p'<CR>
 " }}}
 
 
