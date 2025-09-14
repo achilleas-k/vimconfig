@@ -11,6 +11,8 @@ let b:clang_jumpto_declaration_key = '<Leader>d'
 let b:clang_complete_auto = 1
 let b:clang_use_library = 1
 let b:ale_cpp_clangtidy_checks = []
+let b:ale_fix_on_save = 1
+let b:ale_fixers = {'c': ['clang-format']}
 
 map <buffer> [[ ?{<CR>w99[{:noh<CR>
 map <buffer> ][ /}<CR>b99]}:noh<CR>
