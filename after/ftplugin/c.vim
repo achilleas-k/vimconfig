@@ -7,10 +7,10 @@ setlocal formatoptions=cqj
 setlocal textwidth=78
 setlocal colorcolumn=80
 
-let g:clang_jumpto_declaration_key = '<Leader>d'
-let g:clang_complete_auto = 1
-let g:clang_use_library = 1
-let g:ale_cpp_clangtidy_checks = []
+let b:clang_jumpto_declaration_key = '<Leader>d'
+let b:clang_complete_auto = 1
+let b:clang_use_library = 1
+let b:ale_cpp_clangtidy_checks = []
 
 map <buffer> [[ ?{<CR>w99[{:noh<CR>
 map <buffer> ][ /}<CR>b99]}:noh<CR>
