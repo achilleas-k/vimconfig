@@ -347,7 +347,7 @@ noremap <c-f><c-o>  :Files<CR>
 noremap <c-f><c-r>  :BTags<CR>
 noremap <c-f><c-t>  :Tags<CR>
 noremap <c-f><c-w>  :Windows<CR>
-let g:fzf_action = {'ctrl-h': 'split', 'ctrl-v': 'vsplit'}
+let g:fzf_action = {'ctrl-l': 'split', 'ctrl-v': 'vsplit'}
 
 " Tagbar
 nnoremap <silent> <F8> :TagbarToggle<CR>
