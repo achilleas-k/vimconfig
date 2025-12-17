@@ -323,9 +323,9 @@ command Wq :wq
 
 " Scratch window
 noremap  ¬           :Scratch<CR>
+vnoremap ¬           :ScratchSelection<CR>
 " noremap  <leader>si  :ScratchInsert<CR>
 " noremap  <leader>sp  :ScratchPreview<CR>
-" vnoremap <leader>sv  :ScratchSelection<CR>
 " }}}
 
 " Splits {{{
